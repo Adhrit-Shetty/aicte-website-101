@@ -1,3 +1,4 @@
 .idea/
 bower-components/
 *~
+node_modules/
