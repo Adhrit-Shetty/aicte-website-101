@@ -90,10 +90,8 @@ function onGetRequest(request,response,next)
             link='./public/javascripts'+link;
         else if(path.extname(link)=='.css')
             link='./public/stylesheets'+link;
-        console.log("!::",path.normalize(link));
         link = path.join(__dirname,link);
         link = path.normalize(link);
-        console.log("Nlasdad:",link);
         console.log(link+"-"+fs.existsSync(link));
         if(fs.existsSync(link))
         {
