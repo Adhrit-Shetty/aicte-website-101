@@ -29,7 +29,7 @@ app.all('*', function(req, res, next){
     console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
     if (req.secure) {
         return next();
-    };
+    }
 
     res.redirect('https://localhost:'+app.get('secPort')+req.url);
 });
@@ -78,9 +78,10 @@ function onGetRequest(request,response,next)
         console.log("Request from user :"+request.url);
         var link;
         if(request.url=='/')
-            link=path.resolve('/','/start.html');
+            link='/start.html';
         else
-            link=path.resolve('/',request.url).toString();
+            link=(request.url).toString();
+        console.log('Link:',link);
         if(path.extname(link)=='.html')
             link='./public/html'+link;
         else if(path.extname(link)=='.jpg'|| path.extname(link)=='.png')
@@ -89,33 +90,34 @@ function onGetRequest(request,response,next)
             link='./public/javascripts'+link;
         else if(path.extname(link)=='.css')
             link='./public/stylesheets'+link;
-        console.log(path.normalize(link));
-        console.log(link+"-"+fs.existsSync('.'+link));
-        if(fs.existsSync('.'+link))
+        link = path.join(__dirname,link);
+        link = path.normalize(link);
+        console.log(link+"-"+fs.existsSync(link));
+        if(fs.existsSync(link))
         {
             if(path.extname(link)=='.html')
             {
 
                 response.writeHead(200,{"Content-Type":"text/html"});
-                var stream=fs.createReadStream("."+link);
+                var stream=fs.createReadStream(link);
                 stream.pipe(response);
             }
             else if(path.extname(link)=='.jpg' || path.extname(link)=='.png')
             {
-                var img = fs.readFileSync('.'+link);
+                var img = fs.readFileSync(link);
                 response.writeHead(200, {'Content-Type': 'image/gif' });
                 response.end(img, 'binary');
             }
             else if(path.extname(link)=='.css')
             {
                 response.writeHead(200, {'Content-Type': 'text/css' });
-                var stream = fs.createReadStream("."+link);
+                var stream = fs.createReadStream(link);
                 stream.pipe(response);
             }
             else if(path.extname(link)=='.js')
             {
                 response.writeHead(200, {'Content-Type':'text/javascript' });
-                var stream = fs.createReadStream("."+link);
+                var stream = fs.createReadStream(link);
                 stream.pipe(response);
             }
             else
