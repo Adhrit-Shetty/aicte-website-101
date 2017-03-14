@@ -6,11 +6,17 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
-//var home = require('./routes/home');
-//var users = require('./routes/users');
-
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var home = require('./routes/home');
+var register = require('./routes/register');
+var User = require('./models/user.js');
 var app = express();
+var url = 'mongodb://localhost:27017/Aicte';
+var mongoose = require('mongoose'),
+    assert = require('assert');
+mongoose.connect(url);
+var db = mongoose.connection;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,6 +24,16 @@ app.set('view engine', 'ejs');
 
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
+app.use(passport.initialize());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+db.on('error',console.error.bind(console,'connection error:'));
+db.once('open',function () {
+    console.log('Connected to server Successfully');
+});
+
 app.use(favicon(path.join(__dirname,'/public/images/favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -33,8 +49,9 @@ app.all('*', function(req, res, next){
 
     res.redirect('https://localhost:'+app.get('secPort')+req.url);
 });
-app.get('*',onGetRequest);
 //app.use('/', home);
+app.use('/register.html',register);
+app.get('*',onGetRequest);
 //app.use('/users', users);
 
 //====================================================================================
