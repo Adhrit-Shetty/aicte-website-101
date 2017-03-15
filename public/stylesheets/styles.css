@@ -1,0 +1,19 @@
+/* menu styes */
+.list-unstyled,
+.list-unstyled ul { min-width: 120px }
+
+/* Grid demo styles */
+.grid-demo {
+    padding: 10px 30px;
+}
+
+.grid-demo [class*="col-"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #e5e1ea;
+    border: 1px solid #d1d1d1;
+}
+

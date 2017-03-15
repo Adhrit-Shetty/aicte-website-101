@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "homepage": "index/index.html",
+  "authors": [
+    "ashniu123 <nisheet1.sinvhal@gmail.com>"
+  ],
+  "description": "Front end for aicte-website-101",
+  "main": "html/index.html",
+  "license": "None",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "Yamm3": "yamm3#^1.1.0"
+  }
+}

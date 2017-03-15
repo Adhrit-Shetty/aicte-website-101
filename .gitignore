@@ -1,4 +1,5 @@
 .idea/
-bower-components/
+bower_components/
 *~
 node_modules/
+.log

@@ -12,7 +12,7 @@ var home = require('./routes/home');
 var register = require('./routes/register');
 var User = require('./models/user.js');
 var app = express();
-var url = 'mongodb://localhost:27017/Aicte';
+var url = 'mongodb://localhost:27017/Aicte101';
 var mongoose = require('mongoose'),
     assert = require('assert');
 mongoose.connect(url);
@@ -95,7 +95,7 @@ function onGetRequest(request,response,next)
         console.log("Request from user :"+request.url);
         var link;
         if(request.url=='/')
-            link='/start.html';
+            link='/index.html';
         else
             link=(request.url).toString();
         console.log('Link:',link);
