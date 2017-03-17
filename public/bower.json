@@ -9,9 +9,9 @@
   "license": "None",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "4.0.0-alpha.6",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
-    "Yamm3": "yamm3#^1.1.0"
+    "bootstrap-material-design": "^4.0.2"
   }
 }
