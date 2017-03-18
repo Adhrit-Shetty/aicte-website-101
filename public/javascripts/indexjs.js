@@ -17,26 +17,23 @@ $(function () {
     }
 });
 
-//Enable bootstrap's material Design
-$('body').bootstrapMaterialDesign();
+/*********Ripple Js********/
+$.ripple(".btn", {
+    debug: false, // Turn Ripple.js logging on/off
+    on: 'mousedown', // The event to trigger a ripple effect
 
-//Group Tree
-!function ($) {
+    opacity: 0.4, // The opacity of the ripple
+    color: "auto", // Set the background color. If set to "auto", it will use the text color
+    multi: false, // Allow multiple ripples per element
 
-    // Le left-menu sign
-    /* for older jquery version
-     $('#left ul.nav li.parent > a > span.sign').click(function () {
-     $(this).find('i:first').toggleClass("icon-minus");
-     }); */
+    duration: 0.7, // The duration of the ripple
 
-    $(document).on("click","#left ul.nav li.parent > a > span.sign", function(){
-        $(this).find('i:first').toggleClass("icon-minus");
-    });
+    // Filter function for modifying the speed of the ripple
+    rate: function(pxPerSecond) {
+        return pxPerSecond;
+    },
 
-    // Open Le current menu
-    $("#left ul.nav li.parent.active > a > span.sign").find('i:first').addClass("icon-minus");
-    $("#left ul.nav li.current").parents('ul.children').addClass("in");
-
-}(window.jQuery);
-
-/********************/
+    easing: 'linear' // The CSS3 easing function of the ripple
+});
+/**********Material**********/
+$.material.init();

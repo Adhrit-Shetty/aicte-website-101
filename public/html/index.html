@@ -1,204 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Welcome to AICTE!</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="shortcut icon" href="../images/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Welcome to AICTE</title>
 
-    <link rel="stylesheet" href="../bower_components/tether/dist/css/tether.min.css">
-    <!--<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/snackbarjs/1.1.0/snackbar.min.css">
+    <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
 
 </head>
+
 <body>
-<div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
-    <header class="bmd-layout-header">
-        <div class="navbar navbar-light bg-faded">
-            <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
-                <span class="sr-only">Toggle drawer</span>
-                <i class="material-icons">menu</i>
-            </button>
-            <ul class="nav navbar-nav">
-                <li class="nav-item">Title</li>
-            </ul>
-        </div>
-    </header>
-    <div id="dw-s2" class="bmd-layout-drawer bg-faded">
-        <header>
-            <a class="navbar-brand">Title</a>
-        </header>
-        <ul class="bmd-layout-container">
-            <div id="left" class="span3">
-                <ul id="menu-group-1" class="nav menu">
-                    <li class="item-1 deeper parent active">
-                        <a class="" href="#">
-                            <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-1" class="sign"><i class="icon-plus icon-white"></i></span>
-                            <span class="lbl">Menu Group i</span>
-                        </a>
-                        <ul class="children nav-child unstyled small collapse" id="sub-item-1">
-                            <li class="item-2 deeper parent active">
-                                <a class="" href="#">
-                                    <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-2" class="sign"><i class="icon-plus icon-white"></i></span>
-                                    <span class="lbl">Menu 1</span>
-                                </a>
-                                <ul class="children nav-child unstyled small collapse" id="sub-item-2">
-                                    <li class="item-3 current active">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 1.1</span> (current menu)
-                                        </a>
-                                    </li>
-                                    <li class="item-4">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 1.2</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item-5 deeper parent">
-                                <a class="" href="#">
-                                    <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
-                                    <span class="lbl">Menu 2</span>
-                                </a>
-                                <ul class="children nav-child unstyled small collapse" id="sub-item-5">
-                                    <li class="item-6">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 2.1</span>
-                                        </a>
-                                    </li>
-                                    <li class="item-7">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 2.2</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="item-8 deeper parent">
-                        <a class="" href="#">
-                            <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-8" class="sign"><i class="icon-plus icon-white"></i></span>
-                            <span class="lbl">Menu Group ii</span>
-                        </a>
-                        <ul class="children nav-child unstyled small collapse" id="sub-item-8">
-                            <li class="item-9 deeper parent">
-                                <a class="" href="#">
-                                    <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="sign"><i class="icon-plus icon-white"></i></span>
-                                    <span class="lbl">Menu 1</span>
-                                </a>
-                                <ul class="children nav-child unstyled small collapse" id="sub-item-9">
-                                    <li class="item-10">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 1.1</span>
-                                        </a>
-                                    </li>
-                                    <li class="item-11">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 1.2</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item-12 deeper parent">
-                                <a class="" href="#">
-                                    <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-12" class="sign"><i class="icon-plus icon-white"></i></span>
-                                    <span class="lbl">Menu 2</span>
-                                </a>
-                                <ul class="children nav-child unstyled small collapse" id="sub-item-12">
-                                    <li class="item-13">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 2.1</span>
-                                        </a>
-                                    </li>
-                                    <li class="item-14">
-                                        <a class="" href="#">
-                                            <span class="sign"><i class="icon-play"></i></span>
-                                            <span class="lbl">Menu 2.2</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+    <a class="navmenu-brand visible-md visible-lg" href="#">Project name</a>
+    <ul class="nav nav-stacked">
+        <li>
+            <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    Menu 1
+                    <i class="fa fa-caret-right"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Choice1</a></li>
+                    <li><a href="#">Choice2</a></li>
+                    <li><a href="#">Choice3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Choice..</a></li>
                 </ul>
             </div>
-        </ul>
+        </li>
+        <li>
+            <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    Menu 2
+                    <i class="fa fa-caret-right"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Choice1</a></li>
+                    <li><a href="#">Choice2</a></li>
+                    <li><a href="#">Choice3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Choice..</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Project name</a>
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <h1>Navmenu Template</h1>
     </div>
-    <div class="bmd-layout-content">
-    <main class="container">
-        <div class="container-fluid" style="height: 80vh">
-            <p>Main content</p>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-raised btn-success">Success</button>
-        </div>
-    </main>
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 footerleft ">
-                <div class="logofooter"> Logo</div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                <p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA</p>
-                <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
-                <p><i class="fa fa-envelope"></i> E-mail : info@webenlance.com</p>
-
-            </div>
-            <div class="col-md-2 col-sm-6 paddingtop-bottom">
-                <h6 class="heading7">GENERAL LINKS</h6>
-                <ul class="footer-ul">
-                    <li><a href="#"> Career</a></li>
-                    <li><a href="#"> Privacy Policy</a></li>
-                    <li><a href="#"> Terms & Conditions</a></li>
-                    <li><a href="#"> Client Gateway</a></li>
-                    <li><a href="#"> Ranking</a></li>
-                    <li><a href="#"> Case Studies</a></li>
-                    <li><a href="#"> Frequently Ask Questions</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 paddingtop-bottom">
-                <h6 class="heading7">LATEST POST</h6>
-                <div class="post">
-                    <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-                    <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-                    <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 paddingtop-bottom">
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                    <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tortor at elementum tempus. Vestibulum sed leo rhoncus, elementum orci id, facilisis diam. Praesent pulvinar luctus dui, nec laoreet dui posuere in. Curabitur sit amet purus velit. Vestibulum ut auctor nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ac auctor sem, vel pharetra magna. Sed feugiat sem et turpis ornare molestie. Praesent fringilla vel felis eu vulputate. Sed nec sapien sit amet tellus cursus volutpat nec sit amet ligula. Mauris mattis ultricies nisl, nec rhoncus orci tristique a. Mauris nisi neque, hendrerit et cursus in, commodo et tortor. Maecenas ac interdum purus. Mauris sem urna, ullamcorper quis faucibus vitae, laoreet et metus. Nulla et ultricies diam. Mauris et urna velit.</p>
+    <button class="btn btn-danger">CLick Me!</button>
+    <input class="form-control" type="text" value="Blah">
+</div><!-- /.container -->
 
 
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/tether/dist/js/tether.min.js"></script>
-<!--<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
-<script src="../bower_components/bootstrap-material-design/dist/bootstrap-material-design.iife.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+<script src="../bower_components/Ripple.js/dist/ripple.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/snackbarjs/1.1.0/snackbar.min.js"></script>
 <script src="../javascripts/indexjs.js"></script>
 </body>
 </html>
