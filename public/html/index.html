@@ -12,67 +12,189 @@
     <link rel="stylesheet" href="../bower_components/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
+    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-pink.min.css" />-->
+    <link rel="stylesheet" href="../bower_components/Yamm3/yamm/yamm.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
 
 </head>
 
 <body>
-<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-    <a class="navmenu-brand visible-md visible-lg" href="#">Project name</a>
-    <ul class="nav nav-stacked">
-        <li>
-            <div class="btn-group">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                    Menu 1
-                    <i class="fa fa-caret-right"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Choice1</a></li>
-                    <li><a href="#">Choice2</a></li>
-                    <li><a href="#">Choice3</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Choice..</a></li>
+<div id="wrapper">
+    <header>
+        <section id="brand" class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
+                     style="height:150px;width:150px;padding: 10px">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                <h1>All India Council for Technical Education<br/>
+                    <small>Important Comany Claim</small>
+                </h1>
+            </div>
+            <form class="col-lg-3 col-md-3 col-sm-3 col-xs-9" style="padding: auto;margin: 0;">
+                <label class="sr-only">Search</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-addon">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <nav id="nav">
+            <div class="navbar navbar-default">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav visible-lg visible-md visible-sm">
+                    <li class="active"><a href="./">About Us</a></li>
+                    <li><a href="#">Bureaus</a></li>
+                    <li><a href="#">Grievance</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Bulletin</a></li>
                 </ul>
             </div>
-        </li>
-        <li>
-            <div class="btn-group">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                    Menu 2
-                    <i class="fa fa-caret-right"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Choice1</a></li>
-                    <li><a href="#">Choice2</a></li>
-                    <li><a href="#">Choice3</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Choice..</a></li>
+            <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+                <button class="navmenu-brand">X</button>
+                <ul class="nav navmenu-nav">
+                    <li class="active"><a href="./">About Us</a></li>
+                    <li><a href="#">Bureaus</a></li>
+                    <li><a href="#">Grievance</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Bulletin</a></li>
                 </ul>
             </div>
-        </li>
-    </ul>
-</div>
+        </nav>
 
-<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
-    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Project name</a>
-</div>
+    </header>
 
-<div class="container">
-    <div class="page-header">
-        <h1>Navmenu Template</h1>
+    <main class="container">
+        <!--Main jumbotron for a primary marketing message or call to action -->
+        <div class="row">
+            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel"><h3 class="page-header">Announcements</h3>
+                dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque nibh et
+                tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla, eu tincidunt
+                dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt arcu commodo,
+                vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat. Nulla id dapibus neque.
+                Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus eu pellentesque
+                vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus nec facilisis
+                placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo rhoncus eu. Nulla
+                libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit gravida lectus gravida
+                tincidunt.dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque
+                nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla, eu
+                tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt
+                arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat.
+                Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus
+                eu pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus
+                nec facilisis placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo
+                rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit
+                gravida lectus gravida tincidunt.
+            </div>
+            <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12 white-panel">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="page-header">Introduction</h3> dolor sit amet, consectetur adipiscing elit. Mauris
+                        dapibus
+                        suscipit egestas. Sed pellentesque nibh et tincidunt viverra. Morbi convallis, sem quis vehicula
+                        facilisis, nibh lectus commodo nulla, eu tincidunt dui velit sit amet nisl. Mauris a facilisis
+                        felis, id fringilla enim. Vestibulum tincidunt arcu commodo, vulputate felis id, ultrices nunc.
+                        In
+                        eu facilisis odio. Aliquam erat volutpat. Nulla id dapibus neque. Sed pretium massa ante, nec
+                        auctor
+                        ligula gravida id. Aliquam consectetur tellus eu pellentesque vehicula. Aliquam posuere
+                        ullamcorper
+                        ante porttitor lacinia. Proin tellus lorem, luctus nec facilisis placerat, placerat eget tellus.
+                        Maecenas accumsan ornare lacus, volutpat fringilla leo rhoncus eu. Nulla libero nisi, auctor sit
+                        amet arcu sit amet, sagittis pretium neque. Duis at elit gravida lectus gravida tincidunt.
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
+                        <h3 class="page-header">Vision &amp; Mission</h3>
+                        dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque
+                        nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo
+                        nulla, eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim.
+                        Vestibulum tincidunt arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio.
+                        Aliquam erat volutpat. Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida
+                        id. Aliquam consectetur tellus eu pellentesque vehicula. Aliquam posuere ullamcorper ante
+                        porttitor lacinia. Proin tellus lorem, luctus nec facilisis placerat, placerat eget tellus.
+                        Maecenas accumsan ornare lacus, volutpat fringilla leo rhoncus eu. Nulla libero nisi, auctor sit
+                        amet arcu sit amet, sagittis pretium neque. Duis at elit gravida lectus gravida tincidunt.
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
+                        <h3 class="page-header">Pledge</h3>
+                        dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque
+                        nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo
+                        nulla, eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim.
+                        Vestibulum tincidunt arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio.
+                        Aliquam erat volutpat. Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida
+                        id. Aliquam consectetur tellus eu pellentesque vehicula. Aliquam posuere ullamcorper ante
+                        porttitor lacinia. Proin tellus lorem, luctus nec facilisis placerat, placerat eget tellus.
+                        Maecenas accumsan ornare lacus, volutpat fringilla leo rhoncus eu. Nulla libero nisi, auctor sit
+                        amet arcu sit amet, sagittis pretium neque. Duis at elit gravida lectus gravida tincidunt.
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 white-panel">
+                        <h3 class="page-header">Anti-Ragging</h3>
+                        dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque
+                        dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque
+                    </div>
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel">
+                        <h3 class="page-header">Recent</h3>
+                        dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque
+                        nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo
+                        nulla, eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim.
+                        Vestibulum tincidunt arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio.
+                        Aliquam erat volutpat. Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida
+                        id. Aliquam consectetur tellus eu pellentesque vehicula. Aliquam posuere ullamcorper ante
+                        porttitor lacinia. Proin tellus lorem, luctus nec facilisis placerat, placerat eget tellus.
+                        Maecenas accumsan ornare lacus, volutpat fringilla leo rhoncus eu. Nulla libero nisi, auctor sit
+                        amet arcu sit amet, sagittis pretium neque. Duis at elit gravida lectus gravida tincidunt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h5 class="logofooter">Company Bio</h5>
+                <p class="footerleft">We are a team of college students working on this project like it's our full time
+                    job. Any amount would help support and continue development on this project and is greatly
+                    appreciated.</p>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <h5 class="white-text">Settings</h5>
+                <ul class="footer-ul">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <h5 class="social">Connect</h5>
+                <ul class="footer-ul">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tortor at elementum tempus. Vestibulum sed leo rhoncus, elementum orci id, facilisis diam. Praesent pulvinar luctus dui, nec laoreet dui posuere in. Curabitur sit amet purus velit. Vestibulum ut auctor nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ac auctor sem, vel pharetra magna. Sed feugiat sem et turpis ornare molestie. Praesent fringilla vel felis eu vulputate. Sed nec sapien sit amet tellus cursus volutpat nec sit amet ligula. Mauris mattis ultricies nisl, nec rhoncus orci tristique a. Mauris nisi neque, hendrerit et cursus in, commodo et tortor. Maecenas ac interdum purus. Mauris sem urna, ullamcorper quis faucibus vitae, laoreet et metus. Nulla et ultricies diam. Mauris et urna velit.</p>
-    <button class="btn btn-danger">CLick Me!</button>
-    <input class="form-control" type="text" value="Blah">
-</div><!-- /.container -->
-
-
+</footer>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>

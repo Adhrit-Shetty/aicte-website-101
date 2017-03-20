@@ -1,9 +1,10 @@
-/*****Navbar******/
+/*!*****Navbar******!*/
 html, body {
     height: 100%;
 }
 body {
-    padding: 50px 0 0 0;
+    padding: 0;
+    background:#e1e1e1;
 }
 
 .navmenu {
@@ -12,55 +13,48 @@ body {
 
 .navbar {
     display: block;
-    text-align: center;
+    /*text-align: center;*/
 }
 .navbar-brand {
     display: inline-block;
-    float: none;
+    /*float: none;*/
 }
 .navbar-toggle {
     position: absolute;
     float: left;
     margin-left: 15px;
 }
+/***********Main**********/
+#wrapper {
+    box-shadow:0 0 8px rgba(0,0,0,0.25);
+}
 
-.container {
+img {
+    width: 100%;
     max-width: 100%;
+    height: auto;
 }
 
-@media (min-width: 1px) {
-    .navbar-toggle {
-        display: block !important;
-    }
+/*
+stylize any heading tags withing white-panel below
+*/
+.white-panel{
+    background: #fff;
+    /*box-shadow:0 0 8px rgba(0,0,0,0.25);*/
+    border: 2px solid #eee;
+    padding: 10px;
 }
 
-@media (min-width: 992px) {
-    body {
-        padding: 0 0 0 300px;
-    }
-    .navmenu {
-        padding-top: 0;
-    }
-    .navbar {
-        display: none !important; /* IE8 fix */
-    }
-}
-
-.dropdown-menu {
-    top: 0;
-    left: 100%;
-}
 
 /***Footer***/
-footer { background-color:#0c1a1e; min-height:400px; font-family: 'Open Sans', sans-serif;color: #00c853 }
+footer { background-color:#0c1a1e; min-height:100px; font-family: 'Open Sans', sans-serif;color: #00c853 }
 .footerleft { margin-top:50px; padding:0 36px; }
-.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+.logofooter { margin-bottom:5px; font-size:25px; color:#fff; font-weight:700;}
 
 .footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
 .footerleft p i { width:20px; color:#999;}
 
 
-.paddingtop-bottom {  margin-top:50px;}
 .footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
 .footer-ul li { line-height:29px; font-size:12px;}
 .footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }

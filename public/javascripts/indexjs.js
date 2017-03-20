@@ -10,7 +10,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 }
 //Android stock Browser
 $(function () {
-    var nua = navigator.userAgent
+    var nua = navigator.userAgent;
     var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
     if (isAndroid) {
         $('select.form-control').removeClass('form-control').css('width', '100%')
@@ -37,3 +37,8 @@ $.ripple(".btn", {
 });
 /**********Material**********/
 $.material.init();
+
+/***********Offcanvas**************/
+$('.navmenu-brand').click(function() {
+    $('.navmenu').offcanvas('hide');
+});
