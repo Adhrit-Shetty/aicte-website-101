@@ -12,6 +12,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', 'Roboto', sans-serif;
 }
 
+
+
+
 /*!*****Navbar******!*/
 
 .navmenu {
@@ -70,7 +73,7 @@ stylize any heading tags withing white-panel below
 
 
 /***Footer***/
-footer { background-color:#0c1a1e; min-height:100px; font-family: 'Open Sans', sans-serif;color: #00c853 }
+footer { background-color:#0a568c; min-height:100px; font-family:  'Fira Sans', 'Roboto', sans-serif;color: cyan }
 .footerleft { margin-top:50px; padding:0 36px; }
 .logofooter { margin-bottom:5px; font-size:25px; color:#fff; font-weight:700;}
 
