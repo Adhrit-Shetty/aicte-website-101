@@ -1,11 +1,18 @@
-/*!*****Navbar******!*/
+/***********General**********/
 html, body {
     height: 100%;
 }
 body {
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     background:#e1e1e1;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', 'Roboto', sans-serif;
+}
+
+/*!*****Navbar******!*/
 
 .navmenu {
     padding-top: 50px;
