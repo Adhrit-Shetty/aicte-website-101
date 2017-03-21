@@ -6,19 +6,26 @@ var bodyParser = require('body-parser');
 var app = express();
 var path = require('path');
 var fs = require('fs');
-var hostname = "localhost";
-var port = 3000;
-var home = express.Router();
-home.use(bodyParser.json());
+var url = 'mongodb://localhost:27017/Aicte101';
+var mongoose = require('mongoose'),
+    assert = require('assert');
+mongoose.connect(url);
+var db = mongoose.connection;
+db.on('error',console.error.bind(console,'connection error:'));
+
+var search = express.Router();
+search.use(bodyParser.json());
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
 app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
-home.route('/')  //add routes as per demand
-   .all(function(request,response,next){
-        console.log("\n\nin!\n\n");
-        next();
-    })
+search.route('/')
+    .post(function(request,response,next){
+        console.log(request.body);
+
+        response.redirect('/');
+
+    });
 //====================================================================================
-module.exports=home;
+module.exports=search;
