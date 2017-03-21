@@ -44,17 +44,17 @@ $('.navmenu-brand').click(function() {
 });
 
 /**************Navbar***************/
-$('#nav>div').affix({
+$('#fullNav').affix({
     offset: {
         top: $('#brand').height()
     }
 });
 
 
-$('#nav>div').on('affix.bs.affix', function () {
+$('#fullNav').on('affix.bs.affix', function () {
     $('main').addClass('pushDown');
 });
 
-$('#nav>div').on('affix-top.bs.affix', function () {
+$('#fullNav').on('affix-top.bs.affix', function () {
     $('main').removeClass('pushDown');
 });
