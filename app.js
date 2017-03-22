@@ -57,7 +57,7 @@ app.all('*', function(req, res, next){
 app.get('*',onGetRequest);
 app.use('/',search);
 app.use('/my_institute.html',institute);
-app.use('/my_institute.html',year);
+app.use('/my_year.html',year);
 app.use('/register.html',register);
 //app.use('/users', users);
 
