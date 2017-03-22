@@ -7,11 +7,6 @@ var app = express();
 var path = require('path');
 var fs = require('fs');
 var url = 'mongodb://localhost:27017/Aicte101';
-var mongoose = require('mongoose'),
-    assert = require('assert');
-mongoose.connect(url);
-var db = mongoose.connection;
-db.on('error',console.error.bind(console,'connection error:'));
 
 var search = express.Router();
 search.use(bodyParser.json());
