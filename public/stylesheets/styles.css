@@ -2,18 +2,16 @@
 html, body {
     height: 100%;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
-    background:#e1e1e1;
+    background: #e1e1e1;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', 'Roboto', sans-serif;
 }
-
-
-
 
 /*!*****Navbar******!*/
 
@@ -26,10 +24,12 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     /*text-align: center;*/
 }
+
 .navbar-brand {
     display: inline-block;
     /*float: none;*/
 }
+
 .navbar-toggle {
     position: absolute;
     float: left;
@@ -46,6 +46,41 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .side-collapse-container {
+        width: 100%;
+        position: relative;
+        left: 0;
+        transition: left .4s;
+    }
+
+    .side-collapse-container.out {
+        /*left:200px;*/
+    }
+
+    .side-collapse {
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 60%;
+        position: fixed;
+        overflow: hidden;
+        transition: width .4s;
+        border-right: 1px solid black;
+        z-index: 10;
+    }
+
+    .not-top {
+        top: 0;
+    !important;
+    }
+
+    .side-collapse.in {
+        width: 0;
+    }
+}
+
 /***********Main**********/
 
 .pushDown {
@@ -53,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #wrapper {
-    box-shadow:0 0 8px rgba(0,0,0,0.25);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
 
 img {
@@ -62,36 +97,76 @@ img {
     height: auto;
 }
 
-/*
-stylize any heading tags withing white-panel below
-*/
-.white-panel{
+.white-panel {
     background: #fff;
     /*box-shadow:0 0 8px rgba(0,0,0,0.25);*/
     border: 2px solid #eee;
     padding: 10px;
 }
 
-
 /***Footer***/
-footer { background-color:#000; min-height:100px; font-family:  'Fira Sans', 'Roboto', sans-serif;color: cyan }
-.footerleft { margin-top:50px; padding:0 36px; }
-.logofooter { margin-bottom:5px; font-size:25px; color:#fff; font-weight:700;}
+footer {
+    background-color: #000;
+    min-height: 100px;
+    font-family: 'Fira Sans', 'Roboto', sans-serif;
+    color: cyan;
+}
 
-.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
-.footerleft p i { width:20px; color:#999;}
+.footerleft {
+    margin-top: 50px;
+    padding: 0 36px;
+}
 
+.logofooter {
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
 
-.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
-.footer-ul li { line-height:29px; font-size:12px;}
-.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
-.footer-ul i { margin-right:10px;}
-.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+.footerleft p {
+    color: #fff;
+    font-size: 12px !important;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.footerleft p i {
+    width: 20px;
+    color: #999;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 2px;
+}
+
+.footer-ul li {
+    line-height: 29px;
+    font-size: 12px;
+}
+
+.footer-ul li a {
+    color: #a0a3a4;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.footer-ul i {
+    margin-right: 10px;
+}
+
+.footer-ul li a:hover {
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    color: #ff670f;
+}
 
 .social:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
+/***************/
 
 
