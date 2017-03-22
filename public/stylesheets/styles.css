@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', 'Roboto', sans-serif;
+    font-family: 'Lato-Light', 'Roboto', sans-serif;
 }
 /*******button styling*******/
 
@@ -218,30 +218,30 @@ footer {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+.nc
+{
 
-/********Scrollbar*******/
-/* Let's get this party started */
-::-webkit-scrollbar {
-    width: 12px;
+  color:white;
+  font-weight:bolder;
+  font-family:'Lato-Light', 'Roboto', sans-serif;
+}
+.nc1
+{
+
+  background-color:black;
+  font-weight:bolder;
+    color:white;
+    font-family:'Lato-Light', 'Roboto', sans-serif;
+
+}
+.main-navigation {
+    box-shadow: inset 0 0 1em rgba(0,0,0,.2);
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+.all {
+
+    box-shadow: 0 15px 15px -15px #FFA500;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(0, 0, 255, 0.8);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(255, 0, 0, 0.4);
-}
-
-
+/***************/
+/*box-shadow: 0 0 15px #FFA500;*/
