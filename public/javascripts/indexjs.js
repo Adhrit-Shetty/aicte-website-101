@@ -88,7 +88,4 @@ $('#collapse-menu').click(function () {
     $('#bar2').toggleClass('middle-bar');
     $('#bar3').toggleClass('bottom-bar');
 });
-
-$('')
-
 /********************/
