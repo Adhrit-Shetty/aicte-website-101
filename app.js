@@ -8,7 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var home = require('./routes/home');
+var search = require('./routes/search');
 var register = require('./routes/register');
 var User = require('./models/user.js');
 var app = express();
@@ -50,8 +50,9 @@ app.all('*', function(req, res, next){
     res.redirect('https://localhost:'+app.get('secPort')+req.url);
 });
 //app.use('/', home);
-app.use('/register.html',register);
 app.get('*',onGetRequest);
+app.use('/',search);
+app.use('/register.html',register);
 //app.use('/users', users);
 
 //====================================================================================
@@ -99,15 +100,15 @@ function onGetRequest(request,response,next)
         else
             link=(request.url).toString();
         console.log('Link:',link);
-        if(path.extname(link)=='.html')
-            link='./public/html'+link;
-        else if(path.extname(link)=='.jpg'|| path.extname(link)=='.png')
-            link='./public/images'+link;
-        else if(path.extname(link)=='.js')
-            link='./public/javascripts'+link;
-        else if(path.extname(link)=='.css')
-            link='./public/stylesheets'+link;
-        link = path.join(__dirname,link);
+         if(path.extname(link)=='.html')
+           link='./public/html'+link;
+        // else if(path.extname(link)=='.jpg'|| path.extname(link)=='.png')
+        //     link='./public/images'+link;
+        // else if(path.extname(link)=='.js')
+        //     link='./public/javascripts'+link;
+        // else if(path.extname(link)=='.css')
+        //     link='./public/stylesheets'+link;
+        // link = path.join(__dirname,link);
         link = path.normalize(link);
         console.log(link+"-"+fs.existsSync(link));
         if(fs.existsSync(link))
