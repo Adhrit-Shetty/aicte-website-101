@@ -11,6 +11,10 @@ var LocalStrategy = require('passport-local').Strategy;
 var search = require('./routes/search');
 var register = require('./routes/register');
 var User = require('./models/user.js');
+var institute = require('./routes/institute.js');
+var year = require('./routes/year.js');
+var Institution = require('./models/institution.js');
+var Year = require('./models/year.js');
 var app = express();
 var url = 'mongodb://localhost:27017/Aicte101';
 var mongoose = require('mongoose'),
@@ -37,7 +41,7 @@ db.once('open',function () {
 app.use(favicon(path.join(__dirname,'/public/images/favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended : true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -52,6 +56,8 @@ app.all('*', function(req, res, next){
 //app.use('/', home);
 app.get('*',onGetRequest);
 app.use('/',search);
+app.use('/my_institute.html',institute);
+app.use('/my_institute.html',year);
 app.use('/register.html',register);
 //app.use('/users', users);
 

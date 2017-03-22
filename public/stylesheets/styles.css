@@ -12,6 +12,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato-Light', 'Roboto', sans-serif;
 }
+/*******button styling*******/
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 /*!*****Navbar******!*/
 
@@ -56,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .side-collapse-container.out {
-        /*left:200px;*/
+        /*left:200px; If u want Push effect*/
     }
 
     .side-collapse {
@@ -79,6 +89,35 @@ h1, h2, h3, h4, h5, h6 {
     .side-collapse.in {
         width: 0;
     }
+
+    #miniNav {
+        overflow-y: scroll;
+    }
+
+    .noscroll {
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .icon-bar {
+        width: 22px;
+        transition: all 0.4s;
+    }
+
+    .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+
+    .middle-bar {
+        opacity: 0;
+    }
+
+    .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+
 }
 
 /***********Main**********/
@@ -89,6 +128,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #wrapper {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.opaque {
+    height: 100%;
+    width: 0;
+    /*position: fixed;*/
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: rgb(0,0,0);*/
+    background-color: rgba(0, 0, 0, 0.9);
+    /*overflow-x: hidden;*/
+    transition: 0.5s;
 }
 
 img {

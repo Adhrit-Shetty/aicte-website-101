@@ -18,10 +18,8 @@ register.route('/')
     .post(function(request,response,next){
         console.log(request.body);
         addUser(request,response);
-       })
-    .get(function(request,response,next){
-        next();
-    });
+       });
+
 //====================================================================================
 //=========================FUNCTIONS==================================================
 function addUser(request,response)
