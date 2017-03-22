@@ -11,6 +11,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var search = require('./routes/search');
 var register = require('./routes/register');
 var User = require('./models/user.js');
+var institute = require('./routes/institute.js');
 var Institution = require('./models/institution.js');
 var Year = require('./models/year.js');
 var app = express();
@@ -54,6 +55,7 @@ app.all('*', function(req, res, next){
 //app.use('/', home);
 app.get('*',onGetRequest);
 app.use('/',search);
+app.use('/my_institute.html',institute);
 app.use('/register.html',register);
 //app.use('/users', users);
 

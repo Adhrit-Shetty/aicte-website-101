@@ -359,20 +359,19 @@
         <form method="post">
             <label>Institute Name : </label><input type="text" name="name">
             <br />
-            <label>Institute Type : </label><input type="text" name="name">
+            <label>Institute Type : </label><input type="text" name="insttype">
             <br />
-            <label>Minority Institute : </label><br /><label> Yes </label>
-            <input type="radio" name = "minority"><label> No </label>
-            <input type="radio" name = "minority"><br />
+            <label>Minority Institute : </label><br />
+            <input type="radio" name="minority" value="1"><label>Yes</label>
+            <input type="radio" name="minority" value="0"><label>No</label><br />
             <label>Women's Institute : </label><br /><label> Yes </label>
-            <input type="radio" name = "women"><label> No </label>
-            <input type="radio" name = "women"><br />
+            <input type="radio" name="women" value="1"><label>Yes</label>
+            <input type="radio" name="women" value="0"><label>No</label><br />
             <label>Approval Status : </label>
             <select name="ApprovalStatus">
                 <option value="Approved">Approved</option>
                 <option value="Unapproved">Unapproved</option>
                 <option value="Closed">Closed</option>
-
             </select>
             <br />
             <input type="submit" value="submit">
