@@ -6,6 +6,10 @@ var Schema = mongoose.Schema;
 var yearSchema;
 yearSchema = new Schema(
     {
+        y :
+        {
+            type : Number
+        },
         intake: {
             type: Number
         },
