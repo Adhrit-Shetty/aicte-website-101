@@ -15,7 +15,7 @@ var dataSchema = new Schema(
         minority: {
             type: Boolean
         },
-        womens: {
+        women: {
             type: Boolean
         },
         ApprovalStatus: {

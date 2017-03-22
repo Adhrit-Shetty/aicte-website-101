@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <ul class="nav navbar-nav visible-lg visible-md visible-sm">
-                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="aboutus.html">About Us<span
+                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span
                             class="caret"></span>
                     </a>
                         <ul class="dropdown-menu">
@@ -356,14 +356,26 @@
 
     <main class="container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <form>
+        <form method="post">
             <label>Institute Name : </label><input type="text" name="name">
             <br />
             <label>Institute Type : </label><input type="text" name="name">
             <br />
-            <label>Minority : </label><br /><label> Yes </label>
+            <label>Minority Institute : </label><br /><label> Yes </label>
             <input type="radio" name = "minority"><label> No </label>
-            <input type="radio" name = "minority">
+            <input type="radio" name = "minority"><br />
+            <label>Women's Institute : </label><br /><label> Yes </label>
+            <input type="radio" name = "women"><label> No </label>
+            <input type="radio" name = "women"><br />
+            <label>Approval Status : </label>
+            <select name="ApprovalStatus">
+                <option value="Approved">Approved</option>
+                <option value="Unapproved">Unapproved</option>
+                <option value="Closed">Closed</option>
+
+            </select>
+            <br />
+            <input type="submit" value="submit">
         </form>
         <br />
     </main>
