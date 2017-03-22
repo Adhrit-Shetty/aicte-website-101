@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', 'Roboto', sans-serif;
+    font-family: 'Lato-Light', 'Roboto', sans-serif;
 }
 
 /*!*****Navbar******!*/
@@ -166,7 +166,28 @@ footer {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+.nc
+{
+
+  color:white;
+  font-weight:bolder;
+  font-family:'Lato-Light', 'Roboto', sans-serif;
+}
+.nc1
+{
+
+  color:black;
+  font-weight:b
+
+}
+.main-navigation {
+    box-shadow: inset 0 0 1em rgba(0,0,0,.2);
+}
+
+.all {
+
+    box-shadow: 0 15px 15px -15px #FFA500;
+}
 
 /***************/
-
-
+/*box-shadow: 0 0 15px #FFA500;*/
