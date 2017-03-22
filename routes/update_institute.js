@@ -25,6 +25,8 @@ institute.route('/')
         Institute.find({'name': request.body.name},function(err, data){
             if(err)
                 response.json(err);
+            else if(data[0]==undefined)
+                response.json("No such entry!");
             else
             {
                 console.log(data);
