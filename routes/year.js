@@ -27,7 +27,7 @@ router.route('/')
         else
         {
             console.log(data);
-            Year.create({'intake' : request.body.intake,'enrolled' : request.body.enrolled,
+            Year.create({'y':request.body.y,'intake' : request.body.intake,'enrolled' : request.body.enrolled,
             'passed' : request.body.passed,'placed' : request.body.placed,
             'instituteid' : data[0]},function (error,new_data){
                 if(err)
@@ -46,7 +46,7 @@ router.route('/')
                                     response.json(err);
                                 else
                                 {
-                                    response.json(new_inst_data}, new_data);
+                                    response.json([new_inst_data,new_data]);
                                 }
                             });
                         }
