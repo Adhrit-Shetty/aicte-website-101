@@ -38,11 +38,6 @@ $.ripple(".btn", {
 /**********Material**********/
 $.material.init();
 
-/***********Offcanvas**************/
-$('.navmenu-brand').click(function () {
-    $('.navmenu').offcanvas('hide');
-});
-
 /**************Navbar***************/
 $('#fullNav').affix({
     offset: {
@@ -70,26 +65,30 @@ $(document).ready(function () {
         event.stopPropagation();
         $(sel).toggleClass('in');
         $(sel2).toggleClass('out');
-        console.log($(window).scrollTop());
         scrolled.push($(window).scrollTop());
         $('#fullNav').toggleClass('navbar-fixed-top');
         $('#fullNav').toggleClass('affix-top');
         $('#miniNav').toggleClass('not-top');
         $('body').toggleClass('noscroll opaque');
-        console.log("Chana:", scrolled[0]);
     });
 
     $(document).click(function (event) {
         var clickover = $(event.target);
+        event.stopPropagation();
         var _opened = $("body").hasClass("noscroll opaque");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            event.stopPropagation();
+        if (_opened === true && !clickover.hasClass("navbar-toggle") && !clickover.hasClass('navbar-fixed-top') && !clickover.hasClass('input-group') && !clickover.hasClass('form-control')) {
             $("#collapse-menu").click();
-            console.log("Click:", scrolled);
             $('body,html').animate({scrollTop: scrolled[0]}, 0);
             scrolled = [];
         }
     });
+});
+
+$('#fullNav').on('affixed-top.bs.affix', function () {
+    if ($('#fullNav').hasClass('navbar-fixed-top')) {
+        $('#fullNav').removeClass('affix-top');
+        $('#miniNav').toggleClass('not-top');
+    }
 });
 
 $('#collapse-menu').click(function () {
