@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
-    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-pink.min.css" />-->
     <link rel="stylesheet" href="../stylesheets/styles.css">
 
 </head>
@@ -25,22 +24,19 @@
     <header>
         <section id="brand" class="container side-collapse-container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-9">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 push-left">
                     <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
                          style="height:150px;width:150px;padding: 10px">
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7" id="mastHeadBrand">
                     <h1>All India Council for Technical Education<br/>
-                        <small>In learning you will teach, and in teaching you will learn</small>
+                        <small class="hidden-xs">In learning you will teach, and in teaching you will learn</small>
                     </h1>
-                </div>
-                <div class="hidden-lg hidden-md hidden-sm col-xs-3" style="padding: 45px 20px 5px 0">
-                    <h1>AICTE</h1>
                 </div>
             </div>
         </section>
-        <nav role="navigation" class="navbar navbar-inverse" id="fullNav">
-            <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse all" id="fullNav" style="background-color:black;" >
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
                             data-target-2=".side-collapse-container"
@@ -50,12 +46,12 @@
                         <span class="icon-bar" id="bar3"></span>
                     </button>
                 </div>
-                <div class="navbar-inverse side-collapse in not-top" id="miniNav">
+                <div class="navbar-inverse side-collapse in not-top" id="miniNav" style="background-color:black;">
                     <nav role="navigation" class="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="visible-xs" style="width: 94%;padding: 0 3%;">
                                 <label class="sr-only">Search</label>
-                                <form method="POST" style="padding: 0;margin: 0">
+                                <form method="POST" style="padding: 0;margin: 0" id="searchMiniNav">
                                     <div class="input-group">
                                         <label class="sr-only">Search</label>
                                         <input type="text" name="search" class="form-control" placeholder="Search"
@@ -65,117 +61,117 @@
                                     </div>
                                 </form>
                             </li>
-                            <li><a class="dropdown-toggle" data-toggle="dropdown" href="aboutus.html">About Us<span
+                            <li><a class="dropdown-toggle nc hvr-underline-from-center" data-toggle="dropdown" href="#" aria-expanded="false">ABOUT US<span
                                     class="caret"></span>
                             </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="">About AICTE</a></li>
-                                    <li><a href="">Regional office</a></li>
-                                    <li><a href="">Faculty</a></li>
+                                <ul class="dropdown-menu " role="menu" style="font-family:'Lato-Light', 'Roboto', sans-serif;">
+                                    <li><a class="hvr-shutter-out-horizontal"  href="">About AICTE</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal"  href="">Regional office</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal"  href="">Faculty</a></li>
 
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bureaus <span
-                                        class="caret"></span>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#" aria-expanded="false">BUREAUS<span
+                                        class="fa fa-caret-down"></span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Administrative Bureau</a></li>
-                                    <li><a href="#">Academic Bureau</a></li>
-                                    <li><a href="#">Finance Bureau</a></li>
-                                    <li><a href="#">Approval Bureau</a></li>
-                                    <li><a href="#">Parliament Questions</a></li>
-                                    <li><a href="#">Research,Institutions and faculty development</a></li>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Administrative Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Academic Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Finance Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Approval Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Parliament Questions</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Research,Institutions and faculty development</a></li>
 
                                 </ul>
 
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Grievance <span
-                                        class="caret"></span>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#" aria-expanded="false">GRIEVANCES<span
+                                        class="fa fa-caret-down"></span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Anti Ragging</a></li>
-                                    <li><a href="#">RTI</a></li>
-                                    <li><a href="#">CVC</a></li>
-                                    <li><a href="#">Public grievance</a></li>
-                                    <li><a href="#">SC/ST Cell</a></li>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Anti Ragging</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">RTI</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">CVC</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Public grievance</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">SC/ST Cell</a></li>
                                 </ul>
 
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
-                                        class="caret"></span>
+                            <li class="dropdown nc ">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#" aria-expanded="false">REPORTS<span
+                                        class="fa fa-caret-down"></span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Annual Report</a></li>
-                                    <li><a href="#">Committee Report</a></li>
-                                    <li><a href="#">Knowledge Commission Report</a></li>
-                                    <li><a href="#">Sarva Shiksha Abhiyan </a></li>
-                                    <li><a href="#">Rashtiya Uchatar Shiksha Abhiyan - RUSA</a></li>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Annual Report</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Committee Report</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Knowledge Commission Report</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Sarva Shiksha Abhiyan </a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Rashtiya Uchatar Shiksha Abhiyan - RUSA</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dashboard</a>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">DASHBOARD<span class="fa fa-dashboard"></span></a>
+
 
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education <span
-                                        class="caret"></span>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#" aria-expanded="false" >EDUCATION<span
+                                        class="fa fa-caret-down"></span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Educational Network</a></li>
-                                    <li><a href="#">Collaborations</a></li>
-                                    <li><a href="#">Mobile Education</a></li>
-                                    <li><a href="#">Finishing Schools</a></li>
-                                    <li><a href="#">Vocal Education</a></li>
-                                    <li><a href="#">Community Colleges</a></li>
-                                    <li><a href="#">Distance Education</a></li>
-                                    <li><a href="#">Institutions in India</a></li>
-                                    <li><a href="#">Use of ICT</a></li>
-                                    <li><a href="#">Library Services</a></li>
-                                    <li><a href="#">Project Factory</a></li>
-                                </ul>
-
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students <span
-                                        class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Admission</a></li>
-                                    <li><a href="#">Scholarship</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">Ethics</a></li>
-                                    <li><a href="#">Loans</a></li>
-                                    <li><a href="#">Facilities for Differently abled</a></li>
-                                    <li><a href="#">Facilities for Girls</a></li>
-                                    <li><a href="#">Placements</a></li>
-                                    <li><a href="#">Want to be Entrepreneur</a></li>
-                                    <li><a href="#">Research funds</a></li>
-                                    <li><a href="#">Model Syllabus</a></li>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Educational Network</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Collaborations</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Mobile Education</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Finishing Schools</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Vocal Education</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Community Colleges</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Distance Education</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Institutions in India</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Use of ICT</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Library Services</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Project Factory</a></li>
                                 </ul>
 
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bulletin <span
-                                        class="caret"></span>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"aria-expanded="false" >STUDENTS<span
+                                        class="fa fa-caret-down"></span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Advertisements</a></li>
-                                    <li><a href="#">Jobs</a></li>
-                                    <li><a href="#">Circulars</a></li>
-                                    <li><a href="#">Tenders</a></li>
-                                    <li><a href="#">Newsletters</a></li>
-                                    <li><a href="#">Photo-gallery</a></li>
-                                    <li><a href="#">Start-Up Policy</a></li>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Admission</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Scholarship</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Awards</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Ethics</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Loans</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Facilities for Differently abled</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Facilities for Girls</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Placements</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Want to be Entrepreneur</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Research funds</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Model Syllabus</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center " data-toggle="dropdown" href="#" aria-expanded="false">BULLETIN<span
+                                        class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Advertisements</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Jobs</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Circulars</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Tenders</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Newsletters</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Photo-gallery</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Start-Up Policy</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        <form method="post" class="navbar-right navbar-form hidden-xs"
-                              style="padding: 0;margin: 0">
-                            <label class="sr-only">Search</label>
-                            <input type="text" name="search" class="form-control" placeholder="Search"
+                        <form method="post" class="navbar-right navbar-form hidden-xs" style="padding: 0;margin: 0">
+                            <label class="sr-only">SEARCH</label>
+                            <input type="text" name="search" class="form-control extend-input" placeholder="Search"
                                    aria-describedby="search">
                             <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                         </form>
@@ -186,11 +182,11 @@
 
     </header>
 
-    <main class="container side-collapse-container">
+    <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row">
-            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel"><h3
-                    class="page-header">Announcements</h3>
+        <div class="row white-panel-row">
+            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel nc1 "><h3
+                    class="page-header"><i>Announcements</i></h3>
                 dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque nibh et
                 tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla, eu tincidunt
                 dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt arcu commodo,
@@ -216,9 +212,9 @@
                 </nav>
             </div>
             <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-12 white-panel">
-                        <h3 class="page-header">Introduction</h3>
+                <div class="row white-panel-row">
+                    <div class="col-xs-12 white-panel nc1">
+                        <h3 class="page-header"><i>Introduction</i></h3>
                         <p>
                             Technical education in India contributes a major share to the overall education system and
                             plays a vital role in the social and economic development of our nation. In India, technical
@@ -244,15 +240,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row white-panel-row nc1">
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
-                        <h3 class="page-header">Vision</h3>
+                        <h3 class="page-header"><i>Vision</i></h3>
                         “To be a world class organization leading technological and socioeconomic development of the
                         Country by enhancing the global competitiveness of technical manpower and by ensuring high
                         quality technical education to all sections of the society.”
                     </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
-                        <h3 class="page-header">Pledge</h3>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel nc1">
+                        <h3 class="page-header"><i>Pledge</i></h3>
                         India is my country and all Indians are my brothers and sisters.
                         I love my country and I am proud of its rich and varied heritage.
                         I shall always strive to be worthy of it.
@@ -265,9 +261,9 @@
                         In their well being and prosperity alone, lies my happiness.
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 white-panel">
-                        <h3 class="page-header">Mission</h3>
+                <div class="row white-panel-row">
+                    <div class="col-xs-12 white-panel nc1">
+                        <h3 class="page-header"><i>Mission</i></h3>
 
                         A true facilitator and an objective regulator
                         Transparent governance and accountable approach towards the society.
@@ -291,7 +287,7 @@
                         sensitive to stakeholders’ expectations.
                     </div>
                 </div>
-                <div class="row">
+                <div class="row white-panel-row">
                     <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 white-panel">
                         <h3 class="page-header">Anti-Ragging</h3>
                         <img src="../images/antiragging.jpg" alt="ANTI-RAGGING">
@@ -326,61 +322,22 @@
         </div>
     </main>
     <footer>
-        <div class="container side-collapse-container">
-            <div class="row">
-                <div class="btn-group  btn-group-sm" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default ">About Us</button>
-                    <button type="button" class="btn btn-default">Contact US</button>
-                    <button type="button" class="btn btn-default">Feedback</button>
-                    <button type="button" class="btn btn-default ">Help</button>
-                    <button type="button" class="btn btn-default">Website Policy</button>
-                    <button type="button" class="btn btn-default">Sitemap</button>
-
+        <div class="container-fluid side-collapse-container" style="background-color:#004D40;">
+            Footer Starts here
+            <div class="row white-panel-row">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
+                    <div class="btn-group  btn-group-sm" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default ">About Us</button>
+                        <button type="button" class="btn btn-default">Contact US</button>
+                        <button type="button" class="btn btn-default">Feedback</button>
+                        <button type="button" class="btn btn-default ">Help</button>
+                        <button type="button" class="btn btn-default">Website Policy</button>
+                        <button type="button" class="btn btn-default">Sitemap</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <h5 class="logofooter">Company Bio</h5>
-                    <p class="footerleft">We are a team of college students working on this project like it's our full
-                        time
-                        job. Any amount would help support and continue development on this project and is greatly
-                        appreciated.</p>
-                </div>
-
-                <div class="col-lg-3 col-sm-12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul class="footer-ul">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-12">
-                    <h5 class="social">Connect</h5>
-                    <ul class="footer-ul">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div style="padding: 40px 10px;" class="footer- right">
-                    <a href="http://google.com/+">Google+</a>
-                    <a class="btn btn-social-icon btn-google"
-                       onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-google']);"><span
-                            class="fa fa-google"></span></a>
-                    <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                    <a class="btn btn-social-icon btn-facebook"
-                       onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span
-                            class="fa fa-facebook"></span></a>
-                    <a href="http://twitter.com/">Twitter</a>
-                    <a class="btn btn-social-icon btn-twitter"
-                       onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-twitter']);"><span
-                            class="fa fa-twitter"></span></a>
+                <div style="padding: 40px 10px;" class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                    <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i
+                            class="fa fa-facebook"></i></a>
                 </div>
             </div>
             <div>
