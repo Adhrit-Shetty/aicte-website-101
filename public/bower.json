@@ -13,6 +13,7 @@
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "Ripple.js": "ripplejs#^1.2.1",
-    "materialize": "^0.98.0"
+    "materialize": "^0.98.0",
+    "jquery-ui": "^1.12.1"
   }
 }

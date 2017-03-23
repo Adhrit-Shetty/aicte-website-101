@@ -101,4 +101,10 @@ $('#collapse-menu').click(function () {
     $('#bar2').toggleClass('middle-bar');
     $('#bar3').toggleClass('bottom-bar');
 });
+/**********Scroll-top***********/
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function () {
+    $('.scroll-top a').blur();
+    $('body,html').animate({scrollTop: 0}, 2000, "easeInOutExpo");
+});
 /********************/
