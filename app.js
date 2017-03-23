@@ -10,6 +10,8 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var search = require('./routes/search');
 var register = require('./routes/register');
+var announcement = require('./routes/announcement');
+var announcement_list = require('./routes/announcement_list');
 var User = require('./models/user.js');
 var institute = require('./routes/institute.js');
 var u_institute = require('./routes/update_institute.js');
@@ -57,6 +59,8 @@ app.all('*', function(req, res, next){
 app.get('*',onGetRequest);
 app.use('/',search);
 app.use('/my_institute.html',institute);
+app.use('/announcement.html',announcement);
+app.use('/announcement_list.html',announcement_list);
 app.use('/my_update_institution.html',u_institute);
 app.use('/my_update_year.html',u_year);
 app.use('/my_year.html',year);
