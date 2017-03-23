@@ -12,9 +12,9 @@ var search = require('./routes/search');
 var register = require('./routes/register');
 var User = require('./models/user.js');
 var institute = require('./routes/institute.js');
+var u_institute = require('./routes/update_institute.js');
+var u_year = require('./routes/update_year.js');
 var year = require('./routes/year.js');
-var Institution = require('./models/institution.js');
-var Year = require('./models/year.js');
 var app = express();
 var url = 'mongodb://localhost:27017/Aicte101';
 var mongoose = require('mongoose'),
@@ -57,7 +57,9 @@ app.all('*', function(req, res, next){
 app.get('*',onGetRequest);
 app.use('/',search);
 app.use('/my_institute.html',institute);
-app.use('/my_institute.html',year);
+app.use('/my_update_institution.html',u_institute);
+app.use('/my_update_year.html',u_year);
+app.use('/my_year.html',year);
 app.use('/register.html',register);
 //app.use('/users', users);
 

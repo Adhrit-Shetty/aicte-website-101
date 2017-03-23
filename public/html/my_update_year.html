@@ -357,31 +357,28 @@
     <main class="container">
         <!--Main jumbotron for a primary marketing message or call to action -->
         <form method="post">
-            <label>Institute Name : </label><input type="text" name="name">
-            <br />
-            <label>Institute Type : </label>
-            <select name="insttype">
-                <option disabled selected value=""> --select an option-- </option>
-                <option value="Unaided-Private">Unaided-Private</option>
-                <option value="Government-Aided">Government-Aided</option>
-                <option value="Government">Government</option>
+            <label>Institute Name : </label><input type="text" name="name"><br />
+            <label>Year : </label>
+            <select name="y">
+                <option disabled selected value=""> --Select an option-- </option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
             </select>
+            <br /><br />
+            Enter only data fields to be updated!
             <br />
-            <label>Minority Institute : </label><br />
-            <input type="radio" name="minority" value="1"><label>Yes</label>
-            <input type="radio" name="minority" value="0"><label>No</label><br />
-            <label>Women's Institute : </label><br />
-            <input type="radio" name="women" value="1"><label>Yes</label>
-            <input type="radio" name="women" value="0"><label>No</label><br />
-            <label>Approval Status : </label>
-            <select name="ApprovalStatus">
-                <option disabled selected value=""> --select an option-- </option>
-                <option value="Approved">Approved</option>
-                <option value="Unapproved">Unapproved</option>
-                <option value="Closed">Closed</option>
-            </select>
+            <label>Intake : </label><input type="text" name="intake">
+            <br />
+            <label>Enrolled : </label><input type="text" name="enrolled">
+            <br />
+            <label>Passed : </label><input type="text" name="passed">
+            <br />
+            <label>Placed : </label><input type="text" name="placed">
+            <br />
             <br />
             <input type="submit" value="submit">
+
         </form>
         <br />
     </main>
