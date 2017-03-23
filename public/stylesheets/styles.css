@@ -117,6 +117,23 @@ h1, h2, h3, h4, h5, h6 {
         transform-origin: 10% 90%;
     }
 
+    #mastHeadBrand h1 {
+        font-size: 3.1rem;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+
+    .extend-input {
+        width: 76vw !important;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .nav > li > a {
+        padding: 10px 8px;
+    }
 }
 
 /***********Main**********/

@@ -91,6 +91,11 @@ $('#fullNav').on('affixed-top.bs.affix', function () {
     }
 });
 
+
+$(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function () {
+    $(this).find(".fa-caret-down").toggleClass("fa-caret-up");
+});
+
 $('#collapse-menu').click(function () {
     $('#bar1').toggleClass('top-bar');
     $('#bar2').toggleClass('middle-bar');

@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
-    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-pink.min.css" />-->
     <link rel="stylesheet" href="../stylesheets/styles.css">
 
 </head>
@@ -25,17 +24,14 @@
     <header>
         <section id="brand" class="container side-collapse-container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-9">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 push-left">
                     <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
                          style="height:150px;width:150px;padding: 10px">
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7" id="mastHeadBrand">
                     <h1>All India Council for Technical Education<br/>
-                        <small>In learning you will teach, and in teaching you will learn</small>
+                        <small class="hidden-xs">In learning you will teach, and in teaching you will learn</small>
                     </h1>
-                </div>
-                <div class="hidden-lg hidden-md hidden-sm col-xs-3" style="padding: 45px 20px 5px 0">
-                    <h1>AICTE</h1>
                 </div>
             </div>
         </section>
@@ -65,8 +61,9 @@
                                     </div>
                                 </form>
                             </li>
-                            <li><a class="dropdown-toggle" data-toggle="dropdown" href="aboutus.html">About Us<span
-                                    class="caret"></span>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+                                <span
+                                        class="fa fa-caret-down"></span>
                             </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="">About AICTE</a></li>
@@ -77,7 +74,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bureaus <span
-                                        class="caret"></span>
+                                        class="fa fa-caret-down"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Administrative Bureau</a></li>
@@ -92,7 +89,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Grievance <span
-                                        class="caret"></span>
+                                        class="fa fa-caret-down"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Anti Ragging</a></li>
@@ -105,7 +102,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports <span
-                                        class="caret"></span>
+                                        class="fa fa-caret-down"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Annual Report</a></li>
@@ -116,12 +113,13 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dashboard</a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dashboard
+                                    <span class="fa fa-dashboard"></span></a>
 
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education <span
-                                        class="caret"></span>
+                                        class="fa fa-caret-down"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Educational Network</a></li>
@@ -140,7 +138,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students <span
-                                        class="caret"></span>
+                                        class="fa fa-caret-down"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Admission</a></li>
@@ -159,7 +157,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bulletin <span
-                                        class="caret"></span>
+                                        class="fa fa-caret-down"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Advertisements</a></li>
@@ -172,10 +170,9 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form method="post" class="navbar-right navbar-form hidden-xs"
-                              style="padding: 0;margin: 0">
+                        <form method="post" class="navbar-right navbar-form hidden-xs" style="padding: 0;margin: 0">
                             <label class="sr-only">Search</label>
-                            <input type="text" name="search" class="form-control" placeholder="Search"
+                            <input type="text" name="search" class="form-control extend-input" placeholder="Search"
                                    aria-describedby="search">
                             <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                         </form>
