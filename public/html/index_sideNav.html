@@ -40,7 +40,7 @@
             </div>
         </section>
         <nav role="navigation" class="navbar navbar-inverse" id="fullNav">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
                             data-target-2=".side-collapse-container"
@@ -55,7 +55,7 @@
                         <ul class="nav navbar-nav">
                             <li class="visible-xs" style="width: 94%;padding: 0 3%;">
                                 <label class="sr-only">Search</label>
-                                <form method="POST" style="padding: 0;margin: 0">
+                                <form method="POST" style="padding: 0;margin: 0" id="searchMiniNav">
                                     <div class="input-group">
                                         <label class="sr-only">Search</label>
                                         <input type="text" name="search" class="form-control" placeholder="Search"
@@ -186,9 +186,9 @@
 
     </header>
 
-    <main class="container side-collapse-container">
+    <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row">
+        <div class="row white-panel-row">
             <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel"><h3
                     class="page-header">Announcements</h3>
                 dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed pellentesque nibh et
@@ -216,7 +216,7 @@
                 </nav>
             </div>
             <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <div class="row">
+                <div class="row white-panel-row">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">Introduction</h3>
                         <p>
@@ -244,7 +244,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row white-panel-row">
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
                         <h3 class="page-header">Vision</h3>
                         “To be a world class organization leading technological and socioeconomic development of the
@@ -265,7 +265,7 @@
                         In their well being and prosperity alone, lies my happiness.
                     </div>
                 </div>
-                <div class="row">
+                <div class="row white-panel-row">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">Mission</h3>
 
@@ -291,7 +291,7 @@
                         sensitive to stakeholders’ expectations.
                     </div>
                 </div>
-                <div class="row">
+                <div class="row white-panel-row">
                     <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 white-panel">
                         <h3 class="page-header">Anti-Ragging</h3>
                         <img src="../images/antiragging.jpg" alt="ANTI-RAGGING">
@@ -326,61 +326,22 @@
         </div>
     </main>
     <footer>
-        <div class="container side-collapse-container">
-            <div class="row">
-                <div class="btn-group  btn-group-sm" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default ">About Us</button>
-                    <button type="button" class="btn btn-default">Contact US</button>
-                    <button type="button" class="btn btn-default">Feedback</button>
-                    <button type="button" class="btn btn-default ">Help</button>
-                    <button type="button" class="btn btn-default">Website Policy</button>
-                    <button type="button" class="btn btn-default">Sitemap</button>
-
+        <div class="container-fluid side-collapse-container">
+            Footer Starts here
+            <div class="row white-panel-row">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 white-panel">
+                    <div class="btn-group  btn-group-sm" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default ">About Us</button>
+                        <button type="button" class="btn btn-default">Contact US</button>
+                        <button type="button" class="btn btn-default">Feedback</button>
+                        <button type="button" class="btn btn-default ">Help</button>
+                        <button type="button" class="btn btn-default">Website Policy</button>
+                        <button type="button" class="btn btn-default">Sitemap</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <h5 class="logofooter">Company Bio</h5>
-                    <p class="footerleft">We are a team of college students working on this project like it's our full
-                        time
-                        job. Any amount would help support and continue development on this project and is greatly
-                        appreciated.</p>
-                </div>
-
-                <div class="col-lg-3 col-sm-12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul class="footer-ul">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-12">
-                    <h5 class="social">Connect</h5>
-                    <ul class="footer-ul">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div style="padding: 40px 10px;" class="footer- right">
-                    <a href="http://google.com/+">Google+</a>
-                    <a class="btn btn-social-icon btn-google"
-                       onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-google']);"><span
-                            class="fa fa-google"></span></a>
-                    <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                    <a class="btn btn-social-icon btn-facebook"
-                       onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span
-                            class="fa fa-facebook"></span></a>
-                    <a href="http://twitter.com/">Twitter</a>
-                    <a class="btn btn-social-icon btn-twitter"
-                       onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-twitter']);"><span
-                            class="fa fa-twitter"></span></a>
+                <div style="padding: 40px 10px;" class="col-lg-6 col-md-6 col-sm-4 col-xs-12 white-panel">
+                    <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i
+                            class="fa fa-facebook"></i></a>
                 </div>
             </div>
             <div>
