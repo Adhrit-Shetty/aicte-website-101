@@ -29,7 +29,7 @@ $.ripple(".btn", {
     duration: 0.7, // The duration of the ripple
 
     // Filter function for modifying the speed of the ripple
-    rate: function(pxPerSecond) {
+    rate: function (pxPerSecond) {
         return pxPerSecond;
     },
 
@@ -39,7 +39,7 @@ $.ripple(".btn", {
 $.material.init();
 
 /***********Offcanvas**************/
-$('.navmenu-brand').click(function() {
+$('.navmenu-brand').click(function () {
     $('.navmenu').offcanvas('hide');
 });
 
@@ -64,21 +64,30 @@ $('#fullNav').on('affix-top.bs.affix', function () {
 $(document).ready(function () {
     var sideslider = $('[data-toggle=collapse-side]');
     var sel = sideslider.attr('data-target');
-    var sel2 = sideslider.attr('data-target-2');
+    var sel2 = sideslider.attr('data-target-2'),
+        scrolled = [];
     sideslider.click(function (event) {
+        event.stopPropagation();
         $(sel).toggleClass('in');
         $(sel2).toggleClass('out');
+        console.log($(window).scrollTop());
+        scrolled.push($(window).scrollTop());
         $('#fullNav').toggleClass('navbar-fixed-top');
         $('#fullNav').toggleClass('affix-top');
         $('#miniNav').toggleClass('not-top');
         $('body').toggleClass('noscroll opaque');
+        console.log("Chana:", scrolled[0]);
     });
 
     $(document).click(function (event) {
         var clickover = $(event.target);
         var _opened = $("body").hasClass("noscroll opaque");
         if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            event.stopPropagation();
             $("#collapse-menu").click();
+            console.log("Click:", scrolled);
+            $('body,html').animate({scrollTop: scrolled[0]}, 0);
+            scrolled = [];
         }
     });
 });
