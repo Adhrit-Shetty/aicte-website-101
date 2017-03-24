@@ -196,6 +196,19 @@ img {
     padding: 10px;
 }
 
+@media screen and (min-width: 992px ) {
+
+    .white-panel {
+        align-items: stretch;
+        flex: 1;
+    }
+
+    .white-panel-row {
+        display: flex;
+    }
+
+}
+
 /**********Added Border***********/
 [class*="col-"] {
     background-clip: padding-box;

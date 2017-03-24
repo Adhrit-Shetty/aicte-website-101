@@ -12,6 +12,9 @@
 
 .border-push-top {
     border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-right-width: 20px;
+    border-left-width: 0;
 }
 
 .main-navigation {
