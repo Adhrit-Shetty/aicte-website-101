@@ -208,13 +208,6 @@ img {
     }
 
 }
-
-/**********Added Border***********/
-[class*="col-"] {
-    background-clip: padding-box;
-    border: 10px solid transparent;
-}
-
 /***Footer***/
 footer {
     background-color: #111;

@@ -10,12 +10,20 @@
     font-weight:bolder;
 }
 
+/*********Box-padding**************/
+[class*="col-"] {
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+
 .border-push-top {
     border-top-width: 20px;
     border-bottom-width: 20px;
     border-right-width: 20px;
     border-left-width: 0;
 }
+
+/*********************/
 
 .main-navigation {
     box-shadow: inset 0 0 1em rgba(0, 0, 0, .2);
