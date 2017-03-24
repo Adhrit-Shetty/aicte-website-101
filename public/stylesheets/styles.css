@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*!*****Navbar******!*/
 
+nav[aria-label="Announcements Pager"] {
+    box-shadow: none;
+}
+
 .navmenu {
     padding-top: 50px;
 }
@@ -172,29 +176,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    width: 100%;
-    max-width: 100%;
+    width: 40%;
     height: auto;
+}
+
+.img-centered {
+    min-height: 150px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .white-panel {
     background: #fff;
-    /*box-shadow:0 0 8px rgba(0,0,0,0.25);*/
     border: 2px solid #eee;
     padding: 10px;
-}
-
-@media screen and (min-width: 992px ) {
-
-    .white-panel {
-        align-items: stretch;
-        flex: 1;
-    }
-
-    .white-panel-row {
-        display: flex;
-    }
-
 }
 
 /***Footer***/
@@ -210,49 +209,6 @@ footer {
     padding-right: 20px;
     padding-top:25px;
 }
-.footerleft {
-    margin-top: 50px;
-    padding: 0 36px;
-}
-
-.logofooter {
-    margin-bottom: 5px;
-    font-size: 25px;
-    color: white;
-    font-weight: 700;
-}
-
-.footerleft p {
-    color: #fff;
-    font-size: 12px !important;
-    font-family: '', sans-serif;
-    margin-bottom: 15px;
-}
-
-.footerleft p i {
-    width: 20px;
-    color: #999;
-}
-
-.footer-ul {
-    list-style-type: none;
-    padding-left: 0px;
-    margin-left: 2px;
-}
-
-.footer-ul li {
-    line-height: 29px;
-    font-size: 12px;
-}
-
-
-
-.social:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
 .nc
 {
 
@@ -412,4 +368,42 @@ footer {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
+}
+
+/*********Bootstrap3 Flexbox**********/
+
+.row-flex, .row-flex > div[class*='col-'] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.row-flex-wrap {
+    -webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex: 0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+    margin: -.2px; /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
+    width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 100%;
+    flex-flow: column nowrap;
+}
+
+.flex-grow {
+    display: flex;
+    -webkit-flex: 2;
+    flex: 2;
 }
