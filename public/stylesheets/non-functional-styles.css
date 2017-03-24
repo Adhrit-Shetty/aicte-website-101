@@ -23,6 +23,16 @@
     border-left-width: 0;
 }
 
+@media screen and (max-width: 992px) {
+    .border-push-top {
+        border-top-width: 20px;
+        border-bottom-width: 10px;
+        border-right-width: 20px;
+        border-left-width: 20px;
+    }
+
+}
+
 /*********************/
 
 .main-navigation {
