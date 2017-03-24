@@ -1,8 +1,12 @@
-.footerstyle{
-    font-family:"Lato Light",helvetica neue,helvetica,arial,sans-serif;
-    color:white;
+footer {
     padding-right: 20px;
     padding-top:25px;
+}
+
+.footerstyle > a {
+    color: white;
+    padding-right: 20px;
+    padding-top: 25px;
 }
 .nc
 {
