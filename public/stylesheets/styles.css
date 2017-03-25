@@ -39,7 +39,6 @@ nav[aria-label="Announcements Pager"] {
 .navbar {
 
     display: block;
-
     /*text-align: center;*/
 }
 
@@ -131,10 +130,19 @@ nav[aria-label="Announcements Pager"] {
 
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1212px) {
 
     .extend-input {
         width: 76vw !important;
+    }
+
+    .nav > li > a {
+        padding: 10px 10px;
+    }
+
+    .navbar-right {
+        position: relative;
+        left: -5%;
     }
 }
 
@@ -144,16 +152,21 @@ nav[aria-label="Announcements Pager"] {
     }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 868px) {
     .nav > li > a {
-        padding: 10px 6px;
+        padding: 10px 5px;
     }
 }
 
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 820px) {
     .nav > li > a {
-        padding: 10px 3.7px;
+        padding: 10px 1.8px;
     }
+}
+
+.navbar .navbar-form {
+    padding: 0;
+    margin: 0;
 }
 
 /***********Main**********/
@@ -198,7 +211,6 @@ img {
     background: #fff;
     border: 2px solid #eee;
     padding: 10px;
-
 }
 
 @media screen and (min-width: 992px ) {
@@ -216,9 +228,7 @@ img {
 /***Footer***/
 footer {
     background-color: #111;
-    min-height: 100px;
-    font-family: 'Lato Light', 'Roboto', sans-serif;
-    color: white;
+
 }
 
 /* Fix bootstrap */
@@ -260,29 +270,6 @@ footer {
 
 .scroll-top a:focus {
     outline: none;
-}
-
-/********Search*******/
-
-.form-control, .form-group .form-control {
-    border: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#FFA500)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-    background-image: -webkit-linear-gradient(#FFA500, #FFA500), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: -o-linear-gradient(#FFA500, #FFA500), -o-linear-gradient(#D2D2D2, #D2D2D2);
-    background-image: linear-gradient(#FFA500, #FFA500), linear-gradient(#D2D2D2, #D2D2D2);
-    -webkit-background-size: 0 2px, 100% 1px;
-    background-size: 0 2px, 100% 1px;
-    background-repeat: no-repeat;
-    background-position: center bottom, center -webkit-calc(100% - 1px);
-    background-position: center bottom, center calc(100% - 1px);
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-transition: background 0s ease-out;
-    -o-transition: background 0s ease-out;
-    transition: background 0s ease-out;
-    float: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: 0;
 }
 
 /*********Bootstrap3 Flexbox**********/
