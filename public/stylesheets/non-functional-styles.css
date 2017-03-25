@@ -1,3 +1,9 @@
+/*****General*****/
+main {
+    font-size: 1.2em;
+    line-height: 150%;
+}
+
 /********Footer********/
 footer a {
     color: white;
@@ -158,6 +164,10 @@ footer a:hover, footer a:focus {
     transform: scaleX(1);
 }
 
+.page-header {
+    text-align: center;
+}
+
 /********Search*******/
 
 .form-control, .form-group .form-control {
@@ -185,6 +195,15 @@ footer a:hover, footer a:focus {
     color: rgb(255, 255, 255);
 }
 
-#fullNav {
+#fullNav, #miniNav {
     background-color: black;
+}
+
+/*****L3******/
+.pdf-border-right {
+    border-right: 2px solid red;
+}
+
+.pdf-font-big {
+    font-size: 2em;
 }
