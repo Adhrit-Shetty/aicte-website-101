@@ -317,3 +317,11 @@ footer {
     -webkit-flex: 2;
     flex: 2;
 }
+
+/*****************Better Flexbox from getbootstrap's examples*****************/
+/*.row-eq-height {*/
+/*display: -webkit-box;*/
+/*display: -webkit-flex;*/
+/*display: -ms-flexbox;*/
+/*display:         flex;*/
+/*}*/
