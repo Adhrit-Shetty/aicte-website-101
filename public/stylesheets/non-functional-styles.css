@@ -1,8 +1,12 @@
-.footerstyle{
-    font-family:"Lato Light",helvetica neue,helvetica,arial,sans-serif;
-    color:white;
+footer {
     padding-right: 20px;
     padding-top:25px;
+}
+
+.footerstyle > a {
+    color: white;
+    padding-right: 20px;
+    padding-top: 25px;
 }
 .nc
 {
@@ -21,6 +25,16 @@
     border-bottom-width: 20px;
     border-right-width: 20px;
     border-left-width: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .border-push-top {
+        border-top-width: 20px;
+        border-bottom-width: 10px;
+        border-right-width: 20px;
+        border-left-width: 20px;
+    }
+
 }
 
 /*********************/

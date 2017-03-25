@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
     <link rel="stylesheet" href="../stylesheets/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/materialize.css">
-    <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <!--<link rel="stylesheet" href="../stylesheets/bootstrap-mod.css">-->
     <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
 
 </head>
 
@@ -31,14 +32,14 @@
                          style="height:150px;width:150px;padding:10px;">
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7 content__container" id="mastHeadBrand">
-                    <h1 class="header" style="color:white;">All India Council for Technical Education<br/>
-                        <small class="hidden-xs">
-                               </small>
+                    <h1 class="heading">All India Council for Technical Education<br/>
+                        <small class="hidden-xs"
+                               style="text-shadow:0px 0px 0px; color:white;"></small>
                     </h1>
                 </div>
             </div>
         </section>
-        <nav role="navigation" class="navbar navbar-inverse navshadow" id="fullNav" style="background-color:black;">
+        <nav role="navigation" class="navbar navbar-inverse all" id="fullNav" style="background-color:black;">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
@@ -68,8 +69,7 @@
                                    aria-expanded="false">ABOUT US<span
                                     class="caret"></span>
                             </a>
-                                <ul class="dropdown-menu " role="menu"
-                                    style="font-family:'Lato-Light', 'Roboto', sans-serif;">
+                                <ul class="dropdown-menu " role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="">About AICTE</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="">Regional office</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="">Faculty</a></li>
@@ -200,68 +200,65 @@
 
     <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row">
-            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel nc1 ">
-                <div class="row row-flex row-flex-wrap">
-                    <div class="col-xs-12">
-                        <div class="flex-col">
-                            <h3 class="page-header"><i>Announcements</i></h3>
-                            dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
-                            pellentesque nibh
-                            et
-                            tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla,
-                            eu
-                            tincidunt
-                            dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt
-                            arcu
-                            commodo,
-                            vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat. Nulla id
-                            dapibus
-                            neque.
-                            Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus eu
-                            pellentesque
-                            vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus nec
-                            facilisis
-                            placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo
-                            rhoncus eu.
-                            Nulla
-                            libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit gravida
-                            lectus
-                            gravida
-                            tincidunt.dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
-                            pellentesque
-                            nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo
-                            nulla,
-                            eu
-                            tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum
-                            tincidunt
-                            arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat
-                            volutpat.
-                            Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam
-                            consectetur
-                            tellus
-                            eu pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus
-                            lorem,
-                            luctus
-                            nec facilisis placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat
-                            fringilla leo
-                            rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis
-                            at elit
-                            gravida lectus gravida tincidunt.
-                            <nav aria-label="Announcements Pager">
-                                <ul class="pager">
-                                    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a>
-                                    </li>
-                                    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+        <div class="row white-panel-row">
+            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel border-push-top">
+                <h3 class="page-header"><i>Announcements</i></h3>
+                dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
+                pellentesque nibh
+                et
+                tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla,
+                eu
+                tincidunt
+                dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt
+                arcu
+                commodo,
+                vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat. Nulla id
+                dapibus
+                neque.
+                Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus eu
+                pellentesque
+                vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus nec
+                facilisis
+                placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo
+                rhoncus eu.
+                Nulla
+                libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit gravida
+                lectus
+                gravida
+                tincidunt.dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
+                pellentesque
+                nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo
+                nulla,
+                eu
+                tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum
+                tincidunt
+                arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat
+                volutpat.
+                Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam
+                consectetur
+                tellus
+                eu pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus
+                lorem,
+                luctus
+                nec facilisis placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat
+                fringilla leo
+                rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis
+                at elit
+                gravida lectus gravida tincidunt.
+                rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis
+                at elit
+                gravida lectus gravida tincidunt.
+                <nav aria-label="Announcements Pager">
+                    <ul class="pager">
+                        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="row ">
-                    <div class="col-xs-12 white-panel "
+                    <div class="col-xs-12 white-panel nc1"
                          style="background: -webkit-linear-gradient(to left, #fceabb , #f8b500);">
                         <h3 class="page-header"><i>Introduction</i></h3>
                         <p>
@@ -289,33 +286,29 @@
                         </p>
                     </div>
                 </div>
-                <div class="row row-flex ">
+                <div class="row white-panel-row nc1">
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
-                        <div class="flex-col">
-                            <h3 class="page-header"><i>Vision</i></h3>
-                            “To be a world class organization leading technological and socioeconomic development of the
-                            Country by enhancing the global competitiveness of technical manpower and by ensuring high
-                            quality technical education to all sections of the society.”
-                        </div>
+                        <h3 class="page-header"><i>Vision</i></h3>
+                        “To be a world class organization leading technological and socioeconomic development of the
+                        Country by enhancing the global competitiveness of technical manpower and by ensuring high
+                        quality technical education to all sections of the society.”
                     </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel ">
-                        <div class="flex-col">
-                            <h3 class="page-header"><i>Pledge</i></h3>
-                            India is my country and all Indians are my brothers and sisters.
-                            I love my country and I am proud of its rich and varied heritage.
-                            I shall always strive to be worthy of it.
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel nc1">
+                        <h3 class="page-header"><i>Pledge</i></h3>
+                        India is my country and all Indians are my brothers and sisters.
+                        I love my country and I am proud of its rich and varied heritage.
+                        I shall always strive to be worthy of it.
 
-                            I shall give respect to my parents, teachers and elders
-                            and treat everyone with courtesy.
+                        I shall give respect to my parents, teachers and elders
+                        and treat everyone with courtesy.
 
-                            To my country and my people, I pledge my devotion.
+                        To my country and my people, I pledge my devotion.
 
-                            In their well being and prosperity alone, lies my happiness.
-                        </div>
+                        In their well being and prosperity alone, lies my happiness.
                     </div>
                 </div>
                 <div class="row ">
-                    <div class="col-xs-12 white-panel ">
+                    <div class="col-xs-12 white-panel nc1">
                         <h3 class="page-header"><i>Mission</i></h3>
 
                         A true facilitator and an objective regulator
@@ -343,7 +336,7 @@
                 <div class="row row-flex row-flex-wrap">
                     <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 white-panel">
                         <div class="flex-col">
-                            <h3 class="page-header "><i>Anti-Ragging</i></h3>
+                            <h3 class="page-header nc1"><i>Anti-Ragging</i></h3>
                             <img src="../images/stop-ragging.jpg" alt="ANTI-RAGGING"
                                  class="img-responsive img-centered">
                         </div>
@@ -353,11 +346,11 @@
                             <div class="row row-flex">
                                 <div class="col-xs-12">
                                     <div class="flex-col">
-                                        <h3 class="page-header "><i>Recent</i></h3>
+                                        <h3 class="page-header nc1"><i>Recent</i></h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-flex ">
+                            <div class="row row-flex nc1">
                                 <div class="col-xs-6">
                                     <div class="flex-col">
                                         <ol>
@@ -385,21 +378,22 @@
             </div>
         </div>
     </main>
-    <footer class="footerstyle">
+    <footer>
         <div class="container-fluid side-collapse-container">
             <div class="row ">
-                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
-                    <div>
-                        <a class="footerstyle" href="">About Us</a>
-                        <a class="footerstyle" href="">Contact US</a>
-                        <a class="footerstyle" href="">Feedback</a>
-                        <a class="footerstyle" href="">Help</a>
-                        <a class="footerstyle" href="">Website Policy</a>
-                        <a class="footerstyle" href="">Sitemap</a>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 ">
+                    <div class="footerstyle">
+                        <a href="">About Us</a>
+                        <a href="">Contact US</a>
+                        <a href="">Feedback</a>
+                        <a href="">Help</a>
+                        <a href="">Website Policy</a>
+                        <a href="">Site map</a>
                     </div>
                 </div>
-                <div style="padding: 40px 10px;" class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
-                    <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i
+                <div style="padding: 40px 10px;" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
+                       class="btn btn-info btn-social-icon btn-facebook"><i
                             class="fa fa-facebook"></i></a>
                 </div>
             </div>
