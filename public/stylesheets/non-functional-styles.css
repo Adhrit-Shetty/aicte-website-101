@@ -155,3 +155,7 @@ footer a:hover, footer a:focus {
     box-shadow: none;
     border-radius: 0;
 }
+
+.btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
+    color: rgb(255, 255, 255);
+}
