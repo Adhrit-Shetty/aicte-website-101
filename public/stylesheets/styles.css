@@ -6,11 +6,14 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
-    background: #e1e1e1;
+    background: #e0ba7b;
+    font-size:1.6em;
+    line-height:150%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato-Light', 'Roboto', sans-serif;
+    font-family: 'Fira Sans', 'Roboto', sans-serif;
+
 }
 /*******button styling*******/
 
@@ -36,6 +39,7 @@ nav[aria-label="Announcements Pager"] {
 .navbar {
 
     display: block;
+
     /*text-align: center;*/
 }
 
@@ -194,6 +198,7 @@ img {
     background: #fff;
     border: 2px solid #eee;
     padding: 10px;
+
 }
 
 @media screen and (min-width: 992px ) {
