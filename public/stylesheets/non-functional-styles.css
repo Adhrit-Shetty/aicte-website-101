@@ -15,7 +15,9 @@ footer a:hover, footer a:focus {
 
 .footerstyle > li {
     display: inline-block;
-    padding: 5px;
+    padding-bottom: 10px;
+    padding-left:15px;
+    padding-right:26px;
 }
 
 .footerstyle > li > a {
