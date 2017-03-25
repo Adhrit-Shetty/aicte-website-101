@@ -10,246 +10,205 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet">
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
-    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-pink.min.css" />-->
-    <link rel="stylesheet" href="../bower_components/Yamm3/yamm/yamm.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../stylesheets/materialize.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        #fullNav {
+            background-color: black;
+        }
+    </style>
 
 </head>
 
 <body>
 <div id="wrapper">
     <header>
-        <section id="brand" class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
-                     style="height:150px;width:150px;padding: 10px">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
-                <h1>All India Council for Technical Education<br/>
-                    <small>Important Company Claim</small>
-                </h1>
-            </div>
-            <form class="col-lg-3 col-md-3 col-sm-3 col-xs-9" style="padding: auto;margin: 0;">
-                <label class="sr-only">Search</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-addon">
-                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </div>
+        <section id="brand" class="container side-collapse-container"
+                 style="background-image: url('../images/4.jpg');width:100%;">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 ">
+                    <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
+                         style="height:150px;width:150px;padding:10px;">
                 </div>
-            </form>
-        </section>
-        <nav id="nav">
-            <div class="navbar navbar-default">
-                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <ul class="nav navbar-nav visible-lg visible-md visible-sm">
-                    <li class="active"><a href="#">About Us</a></li>
-                    <li><a href="#">Bureaus</a></li>
-                    <li><a href="#">Grievance</a></li>
-                    <li><a href="#">Reports</a></li>
-                    <li><a href="#">Statistics</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Students</a></li>
-                    <li><a href="#">Bulletin</a></li>
-                </ul>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7 content__container" id="mastHeadBrand">
+                    <h1 class="heading">All India Council for Technical Education<br/>
+                        <small class="hidden-xs"
+                               style="text-shadow:0px 0px 0px; color:white;"></small>
+                    </h1>
+                </div>
             </div>
-            <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-                <button class="navmenu-brand">X</button>
-                <div class="nav navmenu-nav">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                       aria-expanded="false" aria-controls="collapseOne">
-                                        About Us
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingOne">
-                                <ul class="list-group">
-                                    <li><a href="">About AICTE</a></li>
-                                    <li><a href="">Regional office</a></li>
-                                    <li><a href="">Faculty</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                                       aria-expanded="false" aria-controls="collapseTwo">
-                                        Bureau
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingTwo">
-                                <ul class="list-group">
-                                    <li><a href="#">Administrative Bureau</a></li>
-                                    <li><a href="#">Academic Bureau</a></li>
-                                    <li><a href="#">Finance Bureau</a></li>
-                                    <li><a href="#">Approval Bureau</a></li>
-                                    <li><a href="#">Parliament Questions</a></li>
-                                    <li><a href="#">Research,Institutions and faculty development</a></li>
+        </section>
+        <nav role="navigation" class="navbar navbar-inverse all" id="fullNav" style="background-color:black;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button data-toggle="collapse-side" data-target=".side-collapse"
+                            data-target-2=".side-collapse-container"
+                            type="button" class="navbar-toggle pull-left" id="collapse-menu">
+                        <span class="icon-bar" id="bar1"></span>
+                        <span class="icon-bar" id="bar2"></span>
+                        <span class="icon-bar" id="bar3"></span>
+                    </button>
+                    <a href="" class="navbar-brand hidden-xs"><i class="fa fa-home" style="font-size: 2em;"></i></a>
+                </div>
+                <div class="navbar-inverse side-collapse in not-top" id="miniNav">
+                    <nav role="navigation" class="navbar-collapse" style="background-color:black;">
+                        <ul class="nav navbar-nav">
+                            <li class="visible-xs" style="display:block;"><a href="#"><img src="../images/aicte.png"
+                                                                                           alt="AICTE"
+                                                                                           class="img-centered"></a>
+                            </li>
+                            <li class="visible-xs" style="width: 94%;padding: 0 3%;">
+                                <label class="sr-only">Search</label>
+                                <form method="POST" style="padding: 0;margin: 0" id="searchMiniNav">
+                                    <div class="input-group">
+                                        <label class="sr-only">Search</label>
+                                        <input type="text" name="search" class="form-control" placeholder="Search"
+                                               aria-describedby="search">
+                                        <span class="input-group-btn"><button class="btn btn-default"><span
+                                                class="glyphicon glyphicon-search"></span></button></span>
+                                    </div>
+                                </form>
+                            </li>
+                            <li><a class="dropdown-toggle nc hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">ABOUT US&nbsp;<span class="caret"></span>
+                            </a>
+                                <ul class="dropdown-menu " role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="">About AICTE</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="">Regional office</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="">Faculty</a></li>
 
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseThree"
-                                       aria-expanded="false" aria-controls="collapseThree">
-                                        Grievances
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingThree">
-                                <ul class="list-group">
-                                    <li><a href="#">Anti Ragging</a></li>
-                                    <li><a href="#">RTI</a></li>
-                                    <li><a href="#">CVC</a></li>
-                                    <li><a href="#">Public grievance</a></li>
-                                    <li><a href="#">SC/ST Cell</a></li>
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">BUREAUS&nbsp;<span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Administrative Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Academic Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Finance Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Approval Bureau</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Parliament Questions</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Research,Institutions and faculty
+                                        development</a></li>
+
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFour">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseFour"
-                                       aria-expanded="false" aria-controls="collapseFour">
-                                        Reports
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingFour">
-                                <ul class="list-group">
-                                    <li><a href="#">Annual Report</a></li>
-                                    <li><a href="#">Committee Report</a></li>
-                                    <li><a href="#">Knowledge Commission Report</a></li>
-                                    <li><a href="#">Sarva Shiksha Abhiyan </a></li>
-                                    <li><a href="#">Rashtiya Uchatar Shiksha Abhiyan - RUSA</a></li>
+
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">GRIEVANCES&nbsp;<span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Anti Ragging</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">RTI</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">CVC</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Public grievance</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">SC/ST Cell</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab">
-                                <h4 class="panel-title">
-                                    <a role="button">
-                                        Dashboard
-                                    </a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseFive"
-                                       aria-expanded="false" aria-controls="collapseThree">
-                                        Education
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingFive">
-                                <ul class="list-group">
-                                    <li><a href="#">Educational Network</a></li>
-                                    <li><a href="#">Collaborations</a></li>
-                                    <li><a href="#">Mobile Education</a></li>
-                                    <li><a href="#">Finishing Schools</a></li>
-                                    <li><a href="#">Vocal Education</a></li>
-                                    <li><a href="#">Community Colleges</a></li>
-                                    <li><a href="#">Distance Education</a></li>
-                                    <li><a href="#">Institutions in India</a></li>
-                                    <li><a href="#">Use of ICT</a></li>
-                                    <li><a href="#">Library Services</a></li>
-                                    <li><a href="#">Project Factory</a></li>
+
+                            </li>
+                            <li class="dropdown nc ">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">REPORTS&nbsp;<span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Annual Report</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Committee Report</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Knowledge Commission Report</a>
+                                    </li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Sarva Shiksha Abhiyan </a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Rashtiya Uchatar Shiksha Abhiyan
+                                        - RUSA</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSix">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
-                                       aria-expanded="false" aria-controls="collapseSix">
-                                        Students
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingSix">
-                                <ul class="list-group">
-                                    <li><a href="#">Admission</a></li>
-                                    <li><a href="#">Scholarship</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">Ethics</a></li>
-                                    <li><a href="#">Loans</a></li>
-                                    <li><a href="#">Facilities for Differently abled</a></li>
-                                    <li><a href="#">Facilities for Girls</a></li>
-                                    <li><a href="#">Placements</a></li>
-                                    <li><a href="#">Want to be Entrepreneur</a></li>
-                                    <li><a href="#">Research funds</a></li>
-                                    <li><a href="#">Model Syllabus</a></li>
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">DASHBOARD&nbsp;<span
+                                        class="fa fa-dashboard"></span></a>
+
+
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">EDUCATION&nbsp;<span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Educational Network</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Collaborations</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Mobile Education</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Finishing Schools</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Vocal Education</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Community Colleges</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Distance Education</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Institutions in India</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Use of ICT</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Library Services</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Project Factory</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSeven">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseSeven"
-                                       aria-expanded="false" aria-controls="collapseSeven">
-                                        Bulletin
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingSeven">
-                                <ul class="list-group">
-                                    <li><a href="#">Advertisements</a></li>
-                                    <li><a href="#">Jobs</a></li>
-                                    <li><a href="#">Circulars</a></li>
-                                    <li><a href="#">Tenders</a></li>
-                                    <li><a href="#">Newsletters</a></li>
-                                    <li><a href="#">Photo-gallery</a></li>
-                                    <li><a href="#">Start-Up Policy</a></li>
+
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">STUDENTS&nbsp;<span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Admission</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Scholarship</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Awards</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Ethics</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Loans</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Facilities for Differently
+                                        abled</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Facilities for Girls</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Placements</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Want to be Entrepreneur</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Research funds</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Model Syllabus</a></li>
                                 </ul>
-                            </div>
+
+                            </li>
+                            <li class="dropdown nc">
+                                <a class="dropdown-toggle hvr-underline-from-center " data-toggle="dropdown" href="#"
+                                   aria-expanded="false">BULLETIN&nbsp;<span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Advertisements</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Jobs</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Circulars</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Tenders</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Newsletters</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Photo-gallery</a></li>
+                                    <li><a class="hvr-shutter-out-horizontal" href="#">Start-Up Policy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navbar-right">
+                            <form method="post" class="navbar-form hidden-xs">
+                                <label class="sr-only">SEARCH</label>
+                                <input type="text" name="search" class="form-control extend-input" placeholder="Search"
+                                       aria-describedby="search">
+                                <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </form>
                         </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </nav>
-        <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">About Us</li>
-        </ol>
+
     </header>
 
     <main class="container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row" align="center">
-            <div class="row">
-                <div class="col-xs-12 white-panel align= center">
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
                     <h1 class="page-header">Parliament Questions </h1>
                     <div>
 
@@ -308,83 +267,70 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 white-panel align= center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger"><h4>Add name of link </h4></button>
-                        <button type="button" class="btn btn-danger"><h4><a href=""><i
-                                class="glyphicon glyphicon-new-window" aria-hidden="true"></i></a></h4>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger"><h4>Add name of link </h4></button>
-                        <button type="button" class="btn btn-danger"><h4><a href=""><i
-                                class="glyphicon glyphicon-new-window" aria-hidden="true"></i></a></h4>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger"><h4>Add name of link </h4></button>
-                        <button type="button" class="btn btn-danger"><h4><a href=""><i
-                                class="glyphicon glyphicon-new-window" aria-hidden="true"></i></a></h4>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger"><h4>Add name of link </h4></button>
-                        <button type="button" class="btn btn-danger"><h4><a href=""><i
-                                class="glyphicon glyphicon-new-window" aria-hidden="true"></i></a></h4>
-                        </button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger"><h4>Add name of link </h4></button>
-                        <button type="button" class="btn btn-danger"><h4><a href=""><i
-                                class="glyphicon glyphicon-new-window" aria-hidden="true"></i></a></h4>
-                        </button>
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">LINKS</h3>
+                        <div class="text-center">
+                            <a href="">
+                                <button type="button" class="btn btn-danger pdf-font-big"><span
+                                        class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
+                                        class="glyphicon glyphicon-new-window"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </a>
+                            <a href="">
+                                <button type="button" class="btn btn-danger pdf-font-big"><span
+                                        class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
+                                        class="glyphicon glyphicon-new-window"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+            </div>
 
     </main>
-
-</div>
-<footer>
-    <div class="container">
+    <footer class="container-fluid side-collapse-container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <h5 class="logofooter">Company Bio</h5>
-                <p class="footerleft">We are a team of college students working on this project like it's our full time
-                    job. Any amount would help support and continue development on this project and is greatly
-                    appreciated.</p>
-            </div>
-            <div class="col-lg-3 col-sm-12">
-                <h5 class="white-text">Settings</h5>
-                <ul class="footer-ul">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-sm-12">
-                <h5 class="social">Connect</h5>
-                <ul class="footer-ul">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
+            <div class="col-xs-12 ">
+                <ul class="nav footerstyle">
+                    <li class="facebook">
+
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Website Policy</a></li>
+                    <li><a href="">Site map</a></li>
+                    <li><a href="">Downloads</a></li>
+                    <li><a href="">Video Conferencing</a></li>
+                    <li><a href="">Login</a></li>
+                    <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
+                       class="btn btn-info btn-social-icon btn-facebook"><i
+                            class="fa fa-facebook fa-align-right"></i></a></li>
+
+
                 </ul>
             </div>
         </div>
-    </div>
-</footer>
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="text-muted text-center">© Copyright 2017 All India Council for Technical Education</p>
+            </div>
+        </div>
+    </footer>
+    <ul class="nav scroll-top">
+        <li><a href="#" tabindex="-1" title="Scroll to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+    </ul>
+</div>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
 <script src="../bower_components/Ripple.js/dist/ripple.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../javascripts/material.min.js"></script>
 <script src="../javascripts/indexjs.js"></script>
 </body>
 </html>
+
