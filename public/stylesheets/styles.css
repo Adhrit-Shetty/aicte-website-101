@@ -1,12 +1,14 @@
 /***********General**********/
 html, body {
     height: 100%;
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     background: #e1e1e1;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -224,10 +226,9 @@ img {
 }
 /***Footer***/
 footer {
+    padding: 1rem;
     background-color: #111;
-    min-height: 100px;
-    font-family: 'Lato Light', 'Roboto', sans-serif;
-    color: white;
+
 }
 
 /* Fix bootstrap */
