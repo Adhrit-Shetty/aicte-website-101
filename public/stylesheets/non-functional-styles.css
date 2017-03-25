@@ -30,9 +30,34 @@ footer a:hover, footer a:focus {
 
 .border-push-top {
     border-top-width: 20px;
-    border-bottom-width: 20px;
+}
+
+.border-push-left {
+    border-left-width: 20px;
+}
+
+.border-push-right {
     border-right-width: 20px;
-    border-left-width: 0;
+}
+
+.border-push-bottom {
+    border-bottom-width: 20px;
+}
+
+.border-pull-top {
+    border-top-width: 0px;
+}
+
+.border-pull-left {
+    border-left-width: 0px;
+}
+
+.border-pull-right {
+    border-right-width: 0px;
+}
+
+.border-pull-bottom {
+    border-bottom-width: 0px;
 }
 
 @media screen and (max-width: 992px) {
@@ -158,4 +183,8 @@ footer a:hover, footer a:focus {
 
 .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
     color: rgb(255, 255, 255);
+}
+
+#fullNav {
+    background-color: black;
 }
