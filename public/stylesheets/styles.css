@@ -66,6 +66,13 @@ nav[aria-label="Announcements Pager"] {
     width: 100%;
 }
 
+/*@media screen and (min-width: 768px){*/
+/*.dropdown:hover .dropdown-menu {*/
+/*display: block;*/
+/*margin-top: 0;*/
+/*}*/
+/*}*/
+
 @media screen and (max-width: 768px) {
     .side-collapse-container {
         width: 100%;
