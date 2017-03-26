@@ -221,18 +221,18 @@ img {
     padding: 10px;
 }
 
-@media screen and (min-width: 992px ) {
+/*@media screen and (min-width: 992px ) {*/
 
-    .white-panel {
-        align-items: stretch;
-        flex: 1;
-    }
+/*.white-panel {*/
+/*align-items: stretch;*/
+/*flex: 1;*/
+/*}*/
 
-    .white-panel-row {
-        display: flex;
-    }
+/*.white-panel-row {*/
+/*display: flex;*/
+/*}*/
 
-}
+/*}*/
 /***Footer***/
 footer {
     background-color: #111;
@@ -281,47 +281,41 @@ footer {
 }
 
 /*********Bootstrap3 Flexbox**********/
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.row-flex, .row-flex > div[class*='col-'] {
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand.
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
     display: -webkit-box;
-    display: -moz-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
-.row-flex-wrap {
-    -webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex: 0;
-}
-
-.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
-    margin: -.2px; /* hack adjust for wrapping */
-}
-
-.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
-    width: 100%;
-}
-
-.flex-col {
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 100%;
-    flex-flow: column nowrap;
-}
-
-.flex-grow {
-    display: flex;
-    -webkit-flex: 2;
-    flex: 2;
-}
-
-/*****************Better Flexbox from getbootstrap's examples*****************/
-/*.row-eq-height {*/
-/*display: -webkit-box;*/
-/*display: -webkit-flex;*/
-/*display: -ms-flexbox;*/
-/*display:         flex;*/
-/*}*/
+/****************************/
