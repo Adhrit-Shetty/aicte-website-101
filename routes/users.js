@@ -86,22 +86,7 @@ router.use(morgan('dev'));
          var token = request.body.token || request.query.token || request.headers['x-access-token'];
          jwt.verify(token, config.secretKey, function(err, decoded){
              if (err) {
-                 // if (err.name == "TokenExpiredError") {
-                 //     decoded = jwt.decode(token);
-                 //     console.log(decoded.data);
-                 //
-                 //     decoded.data.logged = false;
-                 //     User.findByIdAndUpdate(decoded.data._id, {$set: decoded.data},
-                 //     {new: true}, function (error, new_data) {
-                 //        if (error)
-                 //            throw error;
-                 //        else
-                 //        {
-                 //            console.log(new_data);
-                 //
-                 //        }
-                 //     });
-                 // }
+                 response.json(err);
              }
              else
              {
