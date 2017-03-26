@@ -288,27 +288,18 @@ footer a:hover, footer a:focus {
 }
 
 /*****L3******/
-pdf-border-right {
+.pdf-border-right {
     border-right: 2px solid red;
 }
 
-div.pdf-font-big {
+div.pdf-font-big button {
     display: inline-block;
-    line-height: 200%;
-    font-size: 2em;
+    /*line-height: 200%;*/
+    font-size: 2rem;
     color: red;
     padding: 10px;
-    /*background-color: lightgrey;*/
-}
+    white-space: normal;
 
-div.pdf-font-big a, div.pdf-font-big a {
-    text-decoration: none;
-    color: red;
-}
-
-div.pdf-font-big a:hover, div.pdf-font-big a:focus {
-    /*box-shadow: 0 0 5px 5px darkred;*/
-    color: orange;
 }
 
 .align{
