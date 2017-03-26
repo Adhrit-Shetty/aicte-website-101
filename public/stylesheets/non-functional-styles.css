@@ -366,7 +366,8 @@ h3{
 div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
-    background-color: #FDB839;
+    background-color:white;
+    opacity:0.8;
 }
 div.white-panel:hover .page-header{
     transition: all 0.5s ease-in;
@@ -400,4 +401,24 @@ ul.scroll-top>li>a:hover{
 
 .fade-in-2{
     animation: fadeIn 5s;
+}
+
+h3{
+    border-bottom-color:#FFA500;
+}
+
+div.white-panel:hover {
+    transition: all 0.5s ease-in;
+    color: #555152;
+    background-color: white;
+    opacity:0.9;
+}
+div.white-panel:hover .page-header{
+    transition: all 0.5s ease-in;
+    border-color: #FFA500;
+    color: #FFA500;
+}
+ul.scroll-top>li>a:hover{
+    background-color: #ffb300;
+    color:white;
 }
