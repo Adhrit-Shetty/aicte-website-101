@@ -25,15 +25,25 @@ footer a:hover, footer a:focus {
 .footerstyle > li {
     display: inline-block;
     padding-bottom: 10px;
-    padding-left:15px;
-    padding-right:26px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .footerstyle > li > a {
     padding: 10px;
 }
-.box-shadow{
-    box-shadow:0px 23px 23px -20px black;}
+
+.box-shadow {
+    box-shadow: 0px 23px 23px -20px black;
+}
+
+#facebookIcon a {
+    color: #03A9F8;
+}
+
+#facebookIcon a:hover, #facebookIcon a:focus {
+    color: #3890ec;
+}
 
 /*********Box-padding**************/
 [class*="col-"] {
@@ -177,7 +187,6 @@ footer a:hover, footer a:focus {
     }
 }
 
-
 /*********************/
 
 .main-navigation {
@@ -202,6 +211,7 @@ footer a:hover, footer a:focus {
     position: relative;
     overflow: hidden;
 }
+
 .hvr-underline-from-center:before {
     content: "";
     position: absolute;
@@ -218,10 +228,12 @@ footer a:hover, footer a:focus {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
 }
+
 /* Shutter Out Horizontal */
 .hvr-shutter-out-horizontal {
     display: inline-block;
@@ -238,6 +250,7 @@ footer a:hover, footer a:focus {
     /*-webkit-transition-duration: 0.5s;*/
     /*transition-duration: 0.5s;*/
 }
+
 .hvr-shutter-out-horizontal:before {
     content: "";
     position: absolute;
@@ -258,9 +271,11 @@ footer a:hover, footer a:focus {
     webkit-transition-timing-function: 0.5s;
     transition-timing-function:0.5s;*/
 }
+
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
     color: black;
 }
+
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -326,15 +341,16 @@ div.pdf-font-big button {
 
 }
 
-.align{
-    text-align:left;
+.align {
+    text-align: left;
 }
 
-.subheading{
+.subheading {
     text-decoration: underline;
 }
-.size{
-    font-size:22px;
+
+.size {
+    font-size: 22px;
 }
 
 .page-header {
