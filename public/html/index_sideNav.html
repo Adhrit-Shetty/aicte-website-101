@@ -17,31 +17,32 @@
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
     <style>
-        h3{
-            border-bottom-color:#FFA500;
+        h3 {
+            border-bottom-color: #FFA500;
         }
 
         div.white-panel:hover {
             transition: all 0.5s ease-in;
             color: #555152;
-            background-color: #FDB839;
+            background-color: lightyellow;
         }
-        div.white-panel:hover .page-header{
+
+        div.white-panel:hover .page-header {
             transition: all 0.5s ease-in;
-            border-color: white;
-            color: white;
+            /*border-color: white;*/
+            /*color: white;*/
         }
-        ul.scroll-top>li>a:hover{
+
+        ul.scroll-top > li > a:hover {
             background-color: #ffb300;
-            color:white;
+            color: white;
         }
     </style>
 </head>
 <body>
 <div id="wrapper">
-    <header class="headstyle" style="
-background-image :-webkit-linear-gradient(left top,orange,white,white,green);">
-        <section id="brand" class="container side-collapse-container">
+    <header>
+        <section id="brand" class="container-fluid side-collapse-container">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
                     <a href=""><img src="../images/aicte.png" alt="AICTE"
@@ -49,14 +50,13 @@ background-image :-webkit-linear-gradient(left top,orange,white,white,green);">
                                     style="height:150px;width:150px;padding:10px;"></a>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-left text-capitalize" id="mastHeadBrand">
-                    <h1 class="heading" style="color:#555152; font-weight: bolder;">All India Council for Technical Education<br/>
+                    <h1 class="heading">All India Council for Technical Education<br/>
                         <small id="mastHeadTagline">Lorem Ipsum dolor amet</small>
                     </h1>
                 </div>
             </div>
         </section>
-    </header>
-        <nav role="navigation" class="navbar navbar-inverse box-shadow " id="fullNav" >
+        <nav role="navigation" class="navbar navbar-inverse box-shadow" id="fullNav" style="background-color:#555152;">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
@@ -70,7 +70,7 @@ background-image :-webkit-linear-gradient(left top,orange,white,white,green);">
                                                                  style="font-size: 2em;"></i></a>
                 </div>
                 <div class="navbar-inverse side-collapse in not-top" id="miniNav">
-                    <nav role="navigation" class="navbar-collapse ">
+                    <nav role="navigation" class="navbar-collapse" style="background-color:#555152;">
                         <ul class="nav navbar-nav">
                             <li class="visible-xs" style="display:block;">
                                 <a href=""><img src="../images/aicte.png" alt="AICTE" class="img-centered"></a>
@@ -213,7 +213,7 @@ background-image :-webkit-linear-gradient(left top,orange,white,white,green);">
             </div>
         </nav>
 
-
+    </header>
 
     <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
@@ -371,7 +371,6 @@ background-image :-webkit-linear-gradient(left top,orange,white,white,green);">
         <div class="row is-flex">
             <div class="col-xs-12">
                 <ul class="nav footerstyle">
-                    <li class="facebook">
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Feedback</a></li>
@@ -381,9 +380,11 @@ background-image :-webkit-linear-gradient(left top,orange,white,white,green);">
                     <li><a href="">Downloads</a></li>
                     <li><a href="">Video Conferencing</a></li>
                     <li><a href="">Login</a></li>
-                    <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
-                       class="btn btn-info btn-social-icon btn-facebook"><i
-                            class="fa fa-facebook fa-align-right"></i></a></li>
+                    <li id="facebookIcon" class="text-right">
+                        <button class="btn btn-info"><a
+                                href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+                            <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+                    </li>
                 </ul>
             </div>
         </div>
