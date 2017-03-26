@@ -209,3 +209,14 @@ footer a:hover, footer a:focus {
 .pdf-font-big {
     font-size: 2em;
 }
+
+.align{
+    text-align:left;
+}
+
+.subheading{
+    text-decoration: underline;
+}
+.size{
+    font-size:22px;
+}

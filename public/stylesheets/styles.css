@@ -3,10 +3,10 @@ html, body {
     height: 100%;
 }
 
-body {
+.body{
     font-family: 'Roboto', sans-serif;
     padding: 0;
-    background: #e0ba7b;
+    background-color: #ECECEC;
     /*font-size:1.6em;*/
     line-height:150%;
 }
