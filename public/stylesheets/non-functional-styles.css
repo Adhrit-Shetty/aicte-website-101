@@ -1,4 +1,13 @@
 /*****General*****/
+/***background-image***/
+body {
+    background: url("../images/flag.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 main {
     font-size: 1.2em;
     line-height: 150%;
@@ -290,6 +299,16 @@ footer a:hover, footer a:focus {
 
 #fullNav, #miniNav {
     background-color: black;
+}
+
+.pager li > a {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+    background-color: lightgreen;
+    color: darkgreen;
 }
 
 /*****L3******/
