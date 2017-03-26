@@ -223,7 +223,7 @@ img {
 }
 
 .white-panel {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.54);
     border: 2px solid #eee;
     padding: 10px;
 }
