@@ -223,8 +223,8 @@ footer a:hover, footer a:focus {
     height: 3px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
@@ -245,10 +245,10 @@ footer a:hover, footer a:focus {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    /*-webkit-transition-property: color;*/
-    /*transition-property: color;*/
-    /*-webkit-transition-duration: 0.5s;*/
-    /*transition-duration: 0.5s;*/
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .hvr-shutter-out-horizontal:before {
@@ -262,14 +262,14 @@ footer a:hover, footer a:focus {
     background: #FFA500;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 50%;
+    -webkit-transform-origin: 0%;
     transform-origin: 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
-    /*-webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    webkit-transition-timing-function: 0.5s;
-    transition-timing-function:0.5s;*/
+    webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    webkit-transition-timing-function: 0.3s;
+    transition-timing-function:ease-in;
 }
 
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
@@ -313,7 +313,7 @@ footer a:hover, footer a:focus {
 }
 
 #fullNav, #miniNav {
-    background-color: black;
+    background-color:#555152;
 }
 
 .pager li > a {
@@ -356,4 +356,69 @@ div.pdf-font-big button {
 .page-header {
 
     border-bottom: 1px solid #FFA500;
+}
+
+/*index page styling*/
+h3{
+    border-bottom-color:#FFA500;
+}
+
+div.white-panel:hover {
+    transition: all 0.5s ease-in;
+    color: #555152;
+    background-color:white;
+    opacity:0.8;
+}
+div.white-panel:hover .page-header{
+    transition: all 0.5s ease-in;
+    border-color: white;
+    color: white;
+}
+ul.scroll-top>li>a:hover{
+    background-color: #ffb300;
+    color:white;
+}
+
+
+.headstyle
+{
+    background-color:#A6A6A6;
+}
+
+.fade-in{
+    animation: fadeIn 10s;
+    color:#555152;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.fade-in-2{
+    animation: fadeIn 5s;
+}
+
+h3{
+    border-bottom-color:#FFA500;
+}
+
+div.white-panel:hover {
+    transition: all 0.5s ease-in;
+    color: #555152;
+    background-color: white;
+    opacity:0.9;
+}
+div.white-panel:hover .page-header{
+    transition: all 0.5s ease-in;
+    border-color: #FFA500;
+    color: #FFA500;
+}
+ul.scroll-top>li>a:hover{
+    background-color: #ffb300;
+    color:white;
 }
