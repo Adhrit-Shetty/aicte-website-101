@@ -355,30 +355,13 @@ div.pdf-font-big button {
 
 .page-header {
 
-    border-bottom: 1px solid #FFA500;
+    border-bottom: 1px solid #555152;
 }
 
 /*index page styling*/
 h3{
     border-bottom-color:#FFA500;
 }
-
-div.white-panel:hover {
-    transition: all 0.5s ease-in;
-    color: #555152;
-    background-color:white;
-    opacity:0.8;
-}
-div.white-panel:hover .page-header{
-    transition: all 0.5s ease-in;
-    border-color: white;
-    color: white;
-}
-ul.scroll-top>li>a:hover{
-    background-color: #ffb300;
-    color:white;
-}
-
 
 .headstyle
 {
@@ -411,10 +394,10 @@ div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
     background-color: white;
-    opacity:0.9;
+    opacity:1;
 }
 div.white-panel:hover .page-header{
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
     border-color: #FFA500;
     color: #FFA500;
 }
