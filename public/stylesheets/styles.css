@@ -3,7 +3,7 @@ html, body {
     height: 100%;
 }
 
-.body{
+body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     background-color: #ECECEC;
@@ -168,7 +168,7 @@ nav[aria-label="Announcements Pager"] {
 
 @media screen and (max-width: 800px) {
     .nav > li > a {
-        padding: 10px 1.2px;
+        padding: 10px 0.5px;
     }
 }
 
