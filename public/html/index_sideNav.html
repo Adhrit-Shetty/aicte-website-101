@@ -16,13 +16,30 @@
     <link rel="stylesheet" href="../stylesheets/materialize.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        h3{
+            border-bottom-color:#FFA500;
+        }
 
-
+        div.white-panel:hover {
+            transition: all 0.5s ease-in;
+            color: #555152;
+            background-color: #FDB839;
+        }
+        div.white-panel:hover .page-header{
+            transition: all 0.5s ease-in;
+            border-color: white;
+            color: white;
+        }
+        ul.scroll-top>li>a:hover{
+            background-color: #ffb300;
+            color:white;
+        }
+    </style>
 </head>
-
 <body>
 <div id="wrapper">
-    <header>
+    <header style="background-color:#A6A6A6;">
         <section id="brand" class="container side-collapse-container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -37,7 +54,7 @@
                 </div>
             </div>
         </section>
-        <nav role="navigation" class="navbar navbar-inverse all" id="fullNav" style="background-color:#555152;">
+        <nav role="navigation" class="navbar navbar-inverse box-shadow" id="fullNav" style="background-color:#555152;">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
@@ -67,7 +84,8 @@
                                     </div>
                                 </form>
                             </li>
-                            <li><a class="dropdown-toggle nc hvr-underline-from-center" data-toggle="dropdown" href="#"
+                            <li><a class="dropdown-toggle
+                           hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">ABOUT US&nbsp;<span class="caret"></span>
                             </a>
                                 <ul class="dropdown-menu " role="menu">
@@ -77,7 +95,7 @@
 
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">BUREAUS&nbsp;<span class="fa fa-caret-down"></span>
                                 </a>
@@ -91,7 +109,7 @@
                                         development</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">GRIEVANCES&nbsp;<span class="fa fa-caret-down"></span>
                                 </a>
@@ -104,7 +122,7 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc ">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">REPORTS&nbsp;<span class="fa fa-caret-down"></span>
                                 </a>
@@ -118,13 +136,13 @@
                                         - RUSA</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">DASHBOARD&nbsp;<span
                                         class="fa fa-dashboard"></span></a>
 
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">EDUCATION&nbsp;<span class="fa fa-caret-down"></span>
                                 </a>
@@ -143,7 +161,7 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">STUDENTS&nbsp;<span class="fa fa-caret-down"></span>
                                 </a>
@@ -163,7 +181,7 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center " data-toggle="dropdown" href="#"
                                    aria-expanded="false">BULLETIN&nbsp;<span class="fa fa-caret-down"></span>
                                 </a>
@@ -194,7 +212,7 @@
 
     </header>
 
-    <main class="body container-fluid side-collapse-container">
+    <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
         <div class="row is-flex">
             <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel border-push-bottom border-push-right border-push-left-xs
@@ -202,46 +220,24 @@
                 <h3 class="page-header">Announcements</h3>
                 dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
                 pellentesque nibh
-                et
-                tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla,
-                eu
-                tincidunt
-                dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt
-                arcu
-                commodo,
-                vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat. Nulla id
-                dapibus
-                neque.
-                Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus eu
-                pellentesque
-                vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus nec
-                facilisis
-                placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo
-                rhoncus eu.
-                Nulla
-                libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit gravida
-                lectus
+                et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla,
+                eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt
+                arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat. Nulla id
+                dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus eu
+                pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus
+                nec
+                facilisis placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo
+                rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit
                 gravida
-                tincidunt.dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
-                pellentesque
-                nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo
-                nulla,
-                eu
-                tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum
-                tincidunt
-                arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat
-                volutpat.
-                Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam
-                consectetur
+                lectus gravida tincidunt.dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas.
+                Sed
+                pellentesque nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus
+                commodo
+                nulla, eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum
+                tincidunt arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat
+                volutpat.Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam
+                consectetur tellus eu pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin
                 tellus
-                eu pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus
-                lorem,
-                luctus
-                nec facilisis placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat
-                fringilla leo
-                rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis
-                at elit
-                gravida lectus gravida tincidunt.
                 <nav aria-label="Announcements Pager">
                     <ul class="pager">
                         <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a>
