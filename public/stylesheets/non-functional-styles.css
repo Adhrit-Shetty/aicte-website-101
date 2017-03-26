@@ -262,7 +262,7 @@ footer a:hover, footer a:focus {
     background: #FFA500;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 0%;
+    -webkit-transform-origin: 50%;
     transform-origin: 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
@@ -387,7 +387,7 @@ ul.scroll-top>li>a:hover{
 
 .fade-in{
     animation: fadeIn 10s;
-    color:#555152;
+    color:white;
 }
 
 @keyframes fadeIn{
@@ -400,7 +400,7 @@ ul.scroll-top>li>a:hover{
 }
 
 .fade-in-2{
-    animation: fadeIn 5s;
+    animation: fadeIn 10s;
 }
 
 h3{
@@ -411,7 +411,7 @@ div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
     background-color: white;
-    opacity:0.9;
+    opacity:1;
 }
 div.white-panel:hover .page-header{
     transition: all 0.5s ease-in;
@@ -422,3 +422,4 @@ ul.scroll-top>li>a:hover{
     background-color: #ffb300;
     color:white;
 }
+
