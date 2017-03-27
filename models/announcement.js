@@ -8,14 +8,12 @@ var announcement = new Schema(
         name:
             {
                 type : String,
-                required : true,
-                unique : true
+                required : true
             },
         href:
             {
                 type : String,
-                required : true,
-                unique : true
+                required : true
             }
     },
     {

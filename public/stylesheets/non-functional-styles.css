@@ -341,10 +341,6 @@ div.pdf-font-big button {
 
 }
 
-.align {
-    text-align: left;
-}
-
 .subheading {
     text-decoration: underline;
 }
@@ -354,7 +350,6 @@ div.pdf-font-big button {
 }
 
 .page-header {
-
     border-bottom: 1px solid #555152;
 }
 

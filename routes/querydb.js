@@ -6,10 +6,13 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var path = require('path');
 var fs = require('fs');
+var async = require('async');
 var Institute = require('../models/institution');
 var Year = require('../models/year');
 var Verify = require('./verify');
 var router = express.Router();
+var out = [];
+
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({extended : true}));
 //====================================================================================
@@ -19,37 +22,30 @@ app.use(morgan('dev'));
 //===========================ROUTING==================================================
 router.post('/',function(request,response) {
     console.log(request.body);
-    var i,j;
-    Institute.find(request.body.institute, function (err, data) {
-        var out =[];
+    Institute.find(request.body.institute,function (err, idata) {
         if (err)
             response.json(err);
-        else if (data == undefined)
+        else if (idata == undefined)
             response.json("No such entry!");
         else {
-            console.log("\n\n:FOUND I:" + data + "\n\n");
-            for (i = 0; i < data.length; i++) {
-                for (j = 0; j < data[i].year.length; j++) {
-                    Year.findOne({$and: [request.body.year, {'_id': data[i].year[j]}]}, function (err, result) {
-                        if (err)
-                            throw err;
-                        else if (result != undefined) {
-                            console.log("FOUND Y:" + i + j + " " + result.intake);
-                            out.push({
-                                intake: result.intake,
-                                enrolled: result.enrolled,
-                                passed: result.passed,
-                                placed: result.placed
-                            });
-                            console.log(out);
-                        }
-                    });
+            console.log(idata);
+            var query = {
+                $and:[request.body.year,{'instituteid':{$in :idata}}]};
+            Year.find(query,{"_id" : 0,"y" : 1,"intake" : 1,"passed" : 1,"placed" : 1,"enrolled" : 1,"instituteid" : 1})
+                .populate('instituteid',{'name' :1 ,"_id" : 0})
+                .sort({"instituteid": -1,"y" : -1})
+                .exec(function (err, ydata) {
+                if (err)
+                    response.json(err);
+                else if (ydata == undefined)
+                    response.json("No such entry!");
+                else {
+
+                      response.json(ydata);
                 }
-            }
-            Institute.find(request.body.institute, function (err, data) {
-                response.json(out);
             });
         }
+
     });
 });
 //====================================================================================
