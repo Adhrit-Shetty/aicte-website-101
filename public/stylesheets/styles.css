@@ -3,7 +3,7 @@ html, body {
     height: 100%;
 }
 
-.body{
+body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     background-color: #ECECEC;
@@ -65,6 +65,13 @@ nav[aria-label="Announcements Pager"] {
     z-index: 1;
     width: 100%;
 }
+
+/*@media screen and (min-width: 768px){*/
+/*.dropdown:hover .dropdown-menu {*/
+/*display: block;*/
+/*margin-top: 0;*/
+/*}*/
+/*}*/
 
 @media screen and (max-width: 768px) {
     .side-collapse-container {
@@ -168,7 +175,7 @@ nav[aria-label="Announcements Pager"] {
 
 @media screen and (max-width: 800px) {
     .nav > li > a {
-        padding: 10px 1.2px;
+        padding: 10px 0;
     }
 }
 
@@ -216,23 +223,11 @@ img {
 }
 
 .white-panel {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.65);
     border: 2px solid #eee;
     padding: 10px;
 }
 
-@media screen and (min-width: 992px ) {
-
-    .white-panel {
-        align-items: stretch;
-        flex: 1;
-    }
-
-    .white-panel-row {
-        display: flex;
-    }
-
-}
 /***Footer***/
 footer {
     background-color: #111;
@@ -281,47 +276,41 @@ footer {
 }
 
 /*********Bootstrap3 Flexbox**********/
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.row-flex, .row-flex > div[class*='col-'] {
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand.
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
     display: -webkit-box;
-    display: -moz-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
-.row-flex-wrap {
-    -webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex: 0;
-}
-
-.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
-    margin: -.2px; /* hack adjust for wrapping */
-}
-
-.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
-    width: 100%;
-}
-
-.flex-col {
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 100%;
-    flex-flow: column nowrap;
-}
-
-.flex-grow {
-    display: flex;
-    -webkit-flex: 2;
-    flex: 2;
-}
-
-/*****************Better Flexbox from getbootstrap's examples*****************/
-/*.row-eq-height {*/
-/*display: -webkit-box;*/
-/*display: -webkit-flex;*/
-/*display: -ms-flexbox;*/
-/*display:         flex;*/
-/*}*/
+/****************************/

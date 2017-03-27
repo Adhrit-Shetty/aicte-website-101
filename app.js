@@ -18,6 +18,8 @@ var u_institute = require('./routes/update_institute.js');
 var u_year = require('./routes/update_year.js');
 var year = require('./routes/year.js');
 var users = require('./routes/users.js');
+var dashboard = require('./routes/querydb.js');
+
 var app = express();
 var url = 'mongodb://localhost:27017/Aicte101';
 var mongoose = require('mongoose'),
@@ -58,6 +60,7 @@ app.all('*', function(req, res, next){
 });
 //app.use('/', home);
 app.use('/users', users);
+app.use('/dashboard', dashboard);
 app.get('*',onGetRequest);
 app.use('/',search);
 app.use('/my_institute.html',institute);
@@ -110,7 +113,7 @@ function onGetRequest(request,response,next)
         console.log("Request from user :"+request.url);
         var link;
         if(request.url=='/')
-            link='/index.html';
+            link='/index_sideNav.html';
         else
             link=(request.url).toString();
         console.log('Link:',link);

@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet">
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../bower_components/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bower_components/Ripple.js/dist/ripple.min.css">
     <link rel="stylesheet" href="../stylesheets/bootstrap-material-design.min.css">
@@ -24,12 +23,12 @@
     <header>
         <section id="brand" class="container side-collapse-container"
                  style="background-image: url('../images/4.jpg');width:100%;">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 ">
+            <div class="row is-flex">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
                     <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
                          style="height:150px;width:150px;padding:10px;">
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7 content__container" id="mastHeadBrand">
+                <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs" id="mastHeadBrand">
                     <h1 class="heading">All India Council for Technical Education<br/>
                         <small class="hidden-xs"
                                style="text-shadow:0px 0px 0px; color:white;"></small>
@@ -203,48 +202,23 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Introduction</h4>
+                        <h4 class="modal-title">Sakshat ICT</h4>
                     </div>
                     <div class="modal-body">
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row">
+        <div class="row is-flex">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-12 white-panel border-pull-left">
-                                <h3 class="page-header">ICT in Education</h3>
-
-                                <p>
-                                    Realising the importance of Information and Communication Technology (ICT) the
-                                    Ministry of Human Resource Development as per the Mission Document, ICT is the tool
-                                    in education available to enhance the current enrolment rate in Higher Education, at
-                                    present 15 percent to 30 percent...
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 white-panel border-pull-left">
-                                <h1 class="text-center"><i class="fa fa-mobile"></i></h1>
-                                <h3 class="page-header">Mobile Internet</h3>
-                                The Mobile Web refers to browser-based access to the Internet or web applications using
-                                a mobile device - such as a smartphone - connected to a wireless network. In 2008 an
-                                important milestone in the transition from fixed to mobile Web use was reached when
-                                mobile access to the Internet...
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 white-panel border-push-top border-pull-left border-pull-right">
+                <div class="row is-flex">
+                    <div class="col-lg-push-6 col-lg-6 col-md-push-6 col-md-6 col-sm-12 col-xs-12 white-panel border-push-top border-pull-left border-pull-right border-pull-right-md">
                         <h3 class="page-header">Introduction</h3>
                         <div>
                             <p>
@@ -255,12 +229,39 @@
                                 responsibly and without discrimination. ICT can be employed to give users quick access
                                 to ideas and experiences from a wide range of people, communities and cultures.
                             </p>
-                            <p>More at <a href="http://sakshat.ac.in">Sakshat ICT</a></p>
+                            <p class="text-center"><a href="" data-target="#myModal" data-toggle="modal">More...</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-pull-6 col-lg-6 col-md-pull-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="row is-flex">
+                            <div class="col-lg-12 white-panel border-pull-left border-pull-left-xs border-pull-right-xs border-pull-left-sm
+                             border-pull-right-sm border-pull-top-md border-pull-left-md border-pull-right-md">
+                                <h3 class="page-header">ICT in Education</h3>
+                                <p>
+                                    Realising the importance of Information and Communication Technology (ICT) the
+                                    Ministry of Human Resource Development as per the Mission Document, ICT is the tool
+                                    in education available to enhance the current enrolment rate in Higher Education, at
+                                    present 15 percent to 30 percent...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row is-flex">
+                            <div class="col-xs-12 white-panel border-pull-left border-pull-bottom border-pull-left-xs border-pull-right-xs
+                             border-pull-bottom-xs border-pull-bottom-sm border-pull-left-sm border-pull-right-sm border-pull-bottom-md border-pull-left-md
+                             border-pull-right-md">
+                                <h1 class="text-center"><i class="fa fa-mobile"></i></h1>
+                                <h3 class="page-header">Mobile Internet</h3>
+                                The Mobile Web refers to brow is-flexser-based access to the Internet or web
+                                applications using
+                                a mobile device - such as a smartphone - connected to a wireless network. In 2008 an
+                                important milestone in the transition from fixed to mobile Web use was reached when
+                                mobile access to the Internet...
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 white-panel border-pull-right">
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel border-pull-right border-pull-bottom-xs border-pull-right-md">
                         <div>
                             <img src="../images/info_tech_ict.png" alt="Executive Committee"
                                  style="width: 45%;height: 177px;" class="img-centered">
@@ -284,8 +285,8 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-12 white-panel border-pull-left border-push-top">
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel border-pull-left border-push-top border-pull-left-md">
                         <h1 class="text-center"><i class="fa fa-globe"></i></h1>
                         <h3 class="page-header">Internet Access Worldwide</h3>
                         <p>
@@ -298,8 +299,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="row white-panel-row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 white-panel border-pull-left">
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel border-pull-left border-pull-left-md">
                         <h3 class="page-header">More Information</h3>
                         <ol>
                             <li><a href="http://nptel.ac.in/">NPTEL</a></li>
@@ -320,11 +321,9 @@
         </div>
     </main>
     <footer class="container-fluid side-collapse-container">
-        <div class="row">
-            <div class="col-xs-12 ">
+        <div class="row is-flex">
+            <div class="col-xs-12">
                 <ul class="nav footerstyle">
-                    <li class="facebook">
-
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Feedback</a></li>
@@ -334,11 +333,11 @@
                     <li><a href="">Downloads</a></li>
                     <li><a href="">Video Conferencing</a></li>
                     <li><a href="">Login</a></li>
-                    <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
-                       class="btn btn-info btn-social-icon btn-facebook"><i
-                            class="fa fa-facebook fa-align-right"></i></a></li>
-
-
+                    <li id="facebookIcon" class="text-right">
+                        <button class="btn btn-info"><a
+                                href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+                            <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+                    </li>
                 </ul>
             </div>
         </div>

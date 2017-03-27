@@ -22,22 +22,21 @@
 <body>
 <div id="wrapper">
     <header>
-        <section id="brand" class="container side-collapse-container"
-                 style="background-image: url('../images/4.jpg');width:100%;">
+        <section id="brand" class="container-fluid side-collapse-container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 ">
-                    <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
-                         style="height:150px;width:150px;padding:10px;">
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    <a href=""><img src="../images/aicte.png" alt="AICTE"
+                                    class="img-circle"
+                                    style="height:150px;width:150px;padding:10px;"></a>
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7 content__container" id="mastHeadBrand">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-left text-capitalize" id="mastHeadBrand">
                     <h1 class="heading">All India Council for Technical Education<br/>
-                        <small class="hidden-xs"
-                               style="text-shadow:0px 0px 0px; color:white;"></small>
+                        <small id="mastHeadTagline" class="fade-in">We Promote Transparency And Accountability</small>
                     </h1>
                 </div>
             </div>
         </section>
-        <nav role="navigation" class="navbar navbar-inverse all" id="fullNav" style="background-color:black;">
+        <nav role="navigation" class="navbar navbar-inverse box-shadow" id="fullNav" >
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
@@ -47,14 +46,14 @@
                         <span class="icon-bar" id="bar2"></span>
                         <span class="icon-bar" id="bar3"></span>
                     </button>
-                    <a href="" class="navbar-brand hidden-xs"><i class="fa fa-home" style="font-size: 2em;"></i></a>
+                    <a href="" class="navbar-brand hidden-xs"><i class="fa fa-home" id="homeIcon"
+                                                                 style="font-size: 2em;"></i></a>
                 </div>
                 <div class="navbar-inverse side-collapse in not-top" id="miniNav">
-                    <nav role="navigation" class="navbar-collapse" style="background-color:black;">
+                    <nav role="navigation" class="navbar-collapse" >
                         <ul class="nav navbar-nav">
-                            <li class="visible-xs" style="display:block;"><a href="#"><img src="../images/aicte.png"
-                                                                                           alt="AICTE"
-                                                                                           class="img-centered"></a>
+                            <li class="visible-xs" style="display:block;">
+                                <a href=""><img src="../images/aicte.png" alt="AICTE" class="img-centered"></a>
                             </li>
                             <li class="visible-xs" style="width: 94%;padding: 0 3%;">
                                 <label class="sr-only">Search</label>
@@ -68,8 +67,9 @@
                                     </div>
                                 </form>
                             </li>
-                            <li><a class="dropdown-toggle nc hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">ABOUT US&nbsp;<span class="caret"></span>
+                            <li><a class="dropdown-toggle
+                           hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">&nbsp;ABOUT US&nbsp;<span class="fa fa-chevron-down"></span>
                             </a>
                                 <ul class="dropdown-menu " role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="">About AICTE</a></li>
@@ -78,9 +78,9 @@
 
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">BUREAUS&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;BUREAUS&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Administrative Bureau</a></li>
@@ -90,13 +90,11 @@
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Parliament Questions</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Research,Institutions and faculty
                                         development</a></li>
-
                                 </ul>
-
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">GRIEVANCES&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;GRIEVANCES&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Anti Ragging</a></li>
@@ -107,9 +105,9 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc ">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">REPORTS&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;REPORTS&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Annual Report</a></li>
@@ -121,15 +119,15 @@
                                         - RUSA</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
-                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">DASHBOARD&nbsp;<span
+                            <li class="dropdown ">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">&nbsp;DASHBOARD&nbsp;<span
                                         class="fa fa-dashboard"></span></a>
 
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">EDUCATION&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;EDUCATION&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Educational Network</a></li>
@@ -146,9 +144,9 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">STUDENTS&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;STUDENTS&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Admission</a></li>
@@ -166,9 +164,9 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center " data-toggle="dropdown" href="#"
-                                   aria-expanded="false">BULLETIN&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;BULLETIN&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Advertisements</a></li>
@@ -202,80 +200,44 @@
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="row">
                     <div class="col-xs-12 white-panel">
-                        <h1 class="page-header">ANTI-RAGGING</h1>
+                        <h1 class="page-header">LEGAL PROCEDURES</h1>
                         <div class="align">
 
-                            ALL INDIA COUNCIL FOR TECHNICAL EDUCATION
-                            New Delhi
-                            NOTIFICATION
-                            Dated 01-07-2009
-                            <br>
-                            Sub:Prevention and prohibition of Ragging in technical Institutions, Universities including
-                            Deemed to be Universities imparting technical education.
-                            <br>
-                            F.No.37-3/Legal/AICTE/2009 – In exercise of the powers conferred under Section 23 read with
-                            Section 10 (b), (g), (p) and (q) of AICTE Act, 1987, the All India Council for Technical
-                            Education, hereby makes the following Regulations:
-                            <br>
-                            1. Short title and commencement
-                            <br>
-                            These Regulations may be called the All India Council for Technical Education (Prevention
-                            and
-                            Prohibition of Ragging in Technical Institutions, Universities including Deemed to be
-                            Universities imparting technical education) Regulations 2009
-                            <br>
-                            They shall come into force on the date of the notification.
-                            <br>
-                            2. Objectives
-                            In view of the directions of the Hon’ble Supreme Court in SLP No. 24295 of 2006 dated
-                            16-05-2007
-                            and in Civil Appeal number 887 of 2009,dated 08-05-2009 to prohibit,
-                            prevent and eliminate the scourge of ragging including any conduct by any student or
-                            students
-                            whether by words spoken or written or by an act which has the effect of teasing,
-                            treating or handling with rudeness a fresher or any other student, or indulging in rowdy or
-                            undisciplined activities by any student or students which causes or is likely to
-                            cause annoyance, hardship or psychological harm or to raise fear or apprehension thereof in
-                            any
-                            fresher or any other student or asking any student to do any act which such student
-                            will not in the ordinary course do and which has the effect of causing or generating a sense
-                            of
-                            shame, or torment or embarrassment so as to adversely affect the physique or psyche
-                            of such fresher or any other student, with or without an intent to derive a sadistic
-                            pleasure or
-                            showing off power, authority or superiority by a student over any fresher or any other
-                            student,
-                            in all higher education institutions in the country, and thereby, to provide for the healthy
-                            development, physically and psychologically, of all students,
-                            the All India Council for Technical Education,(AICTE) brings forth these Regulations.
+                            <h4>The Indian LAW</h4>
+
+                            <p>Ancient India represented a distinct tradition of law, and had a historically independent school of legal theory and practice. The Arthashastra, dating from 400 BC and the Manusmriti, from 100 AD, were influential treatises in India, texts that were considered authoritative legal guidance. Manu's central philosophy was tolerance and pluralism, and was cited across Southeast Asia. Early in this period, which finally culminated in the creation of the Gupta Empire, relations with ancient Greece and Rome were not infrequent.</p>
+
+                            <h4>Constitution of India AND Administrative Law</h4>
+
+                            <p>India ie. Bharat is a Union of States. It is a Sovereign Socialist Democratic Republic with a parliamentary system of government. The Republic is governed in terms of the Constitution of India which was adopted by the Constituent Assembly on 26th November 1949 and came into force on 26th January 1950.</p>
+
+                            <p>The Constitution provides for a Parliamentary form of government which is federal in structure with certain unitary features. The constitutional head of the Executive of the Union is the President. As per Article 79 of the Constitution of India, the council of the Parliament of the Union consists of the President and two Houses to be known as the Council of States (Rajya Sabha) and the House of the People (Lok Sabha). Article 74(1) of the Constitution provides that there shall be a Council of Ministers with a Prime Minister as its head to aid and advise the President, who shall exercise his functions in accordance to the advice. The real executive power is thus vested in the Council of Ministers with the Prime Minister as its head.</p>
+
+                            <p>The Council of Ministers is collectively responsible to the House of the People (Lok Sabha). Every State has a Legislative Assembly. Certain States have an upper House called State Legislative Council. Governor is the Head of a State. There shall be a Governor for each State and the executive power of the State shall be vested in him. The council of Ministers with the Chief Minister as its head advises the Governor in the discharge of the executive functions. The Council of the Ministers of a state is collectively responsible to the Legislative Assembly of the State.</p>
+
+                            <p>The Constitution distributes legislative powers between Parliament and State legislatures as per the lists of entries in the Seventh Schedule to the Constitution. The residual powers vest in the Parliament. The centrally administered territories are called Union Territories.</p>
+
 
                         </div>
 
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-xs-12 white-panel">
-                        <h3 class="page-header">PDF</h3>
+                        <h3 class="page-header">LINKS</h3>
                         <div class="text-center">
                             <div class="pdf-font-big">
                                 <a href="">
                                     <button type="button" class="btn btn-danger"><span
-                                            class="pdf-border-right text-capitalize">Anti-Ragging Undertaking </span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
+                                            class="pdf-border-right text-capitalize">http://lawmin.nic.in/</span>&nbsp;<i
+                                            class="fa fa-external-link"
                                             aria-hidden="true"></i>
                                     </button>
                                 </a>
                             </div>
                             <br><br>
-                            <div class="pdf-font-big">
-                                <a href="">
-                                    <button type="button" class="btn btn-danger"><span
-                                            class="pdf-border-right text-capitalize">Anti-Ragging </span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -284,11 +246,9 @@
 
     </main>
     <footer class="container-fluid side-collapse-container">
-        <div class="row">
-            <div class="col-xs-12 ">
+        <div class="row is-flex">
+            <div class="col-xs-12">
                 <ul class="nav footerstyle">
-                    <li class="facebook">
-
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Feedback</a></li>
@@ -298,9 +258,11 @@
                     <li><a href="">Downloads</a></li>
                     <li><a href="">Video Conferencing</a></li>
                     <li><a href="">Login</a></li>
-                    <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
-                       class="btn btn-info btn-social-icon btn-facebook"><i
-                            class="fa fa-facebook fa-align-right"></i></a></li>
+                    <li id="facebookIcon" class="text-right">
+                        <button class="btn btn-info"><a
+                                href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+                            <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -322,4 +284,3 @@
 <script src="../javascripts/indexjs.js"></script>
 </body>
 </html>
-
