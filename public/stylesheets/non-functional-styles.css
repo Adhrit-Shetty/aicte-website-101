@@ -262,7 +262,7 @@ footer a:hover, footer a:focus {
     background: #FFA500;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 0%;
+    -webkit-transform-origin: 50%;
     transform-origin: 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
@@ -370,7 +370,7 @@ h3{
 
 .fade-in{
     animation: fadeIn 10s;
-    color:#555152;
+    color:white;
 }
 
 @keyframes fadeIn{
@@ -383,7 +383,7 @@ h3{
 }
 
 .fade-in-2{
-    animation: fadeIn 5s;
+    animation: fadeIn 10s;
 }
 
 h3{
@@ -405,3 +405,4 @@ ul.scroll-top>li>a:hover{
     background-color: #ffb300;
     color:white;
 }
+

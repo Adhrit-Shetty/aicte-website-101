@@ -16,25 +16,6 @@ $(function () {
         $('select.form-control').removeClass('form-control').css('width', '100%')
     }
 });
-
-/*********Ripple Js********/
-$.ripple(".btn", {
-    debug: false, // Turn Ripple.js logging on/off
-    on: 'mousedown', // The event to trigger a ripple effect
-
-    opacity: 0.4, // The opacity of the ripple
-    color: "auto", // Set the background color. If set to "auto", it will use the text color
-    multi: false, // Allow multiple ripples per element
-
-    duration: 0.7, // The duration of the ripple
-
-    // Filter function for modifying the speed of the ripple
-    rate: function (pxPerSecond) {
-        return pxPerSecond;
-    },
-
-    easing: 'linear' // The CSS3 easing function of the ripple
-});
 /**********Material**********/
 $.material.init();
 
@@ -105,7 +86,7 @@ $('#collapse-menu').click(function () {
 /* smooth scrolling for scroll to top */
 $('.scroll-top').click(function (e) {
     $('.scroll-top a').blur();
-    $('body,html').animate({scrollTop: 0}, 1000, "easeInOutExpo");
+    $('body,html').animate({scrollTop: 0}, 1000);
     e.preventDefault();
 });
 

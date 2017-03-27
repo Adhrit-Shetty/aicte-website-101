@@ -17,29 +17,26 @@
     <link rel="stylesheet" href="../stylesheets/materialize.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
-
-
 </head>
 
 <body>
 <div id="wrapper">
     <header>
-        <section id="brand" class="container side-collapse-container"
-                 style="background-image: url('../images/4.jpg');width:100%;">
+        <section id="brand" class="container-fluid side-collapse-container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 ">
-                    <img src="../images/aicte.png" alt="AICTE" class="img-responsive img-circle"
-                         style="height:150px;width:150px;padding:10px;">
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    <a href=""><img src="../images/aicte.png" alt="AICTE"
+                                    class="img-circle"
+                                    style="height:150px;width:150px;padding:10px;"></a>
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7 content__container" id="mastHeadBrand">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-left text-capitalize" id="mastHeadBrand">
                     <h1 class="heading">All India Council for Technical Education<br/>
-                        <small class="hidden-xs"
-                               style="text-shadow:0px 0px 0px; color:white;"></small>
+                        <small id="mastHeadTagline" class="fade-in">We Promote Transparency And Accountability</small>
                     </h1>
                 </div>
             </div>
         </section>
-        <nav role="navigation" class="navbar navbar-inverse all" id="fullNav" style="background-color:black;">
+        <nav role="navigation" class="navbar navbar-inverse box-shadow" id="fullNav" style="background-color:#555152;">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button data-toggle="collapse-side" data-target=".side-collapse"
@@ -49,14 +46,14 @@
                         <span class="icon-bar" id="bar2"></span>
                         <span class="icon-bar" id="bar3"></span>
                     </button>
-                    <a href="" class="navbar-brand hidden-xs"><i class="fa fa-home" style="font-size: 2em;"></i></a>
+                    <a href="" class="navbar-brand hidden-xs"><i class="fa fa-home" id="homeIcon"
+                                                                 style="font-size: 2em;"></i></a>
                 </div>
                 <div class="navbar-inverse side-collapse in not-top" id="miniNav">
-                    <nav role="navigation" class="navbar-collapse" style="background-color:black;">
+                    <nav role="navigation" class="navbar-collapse" style="background-color:#555152;">
                         <ul class="nav navbar-nav">
-                            <li class="visible-xs" style="display:block;"><a href="#"><img src="../images/aicte.png"
-                                                                                           alt="AICTE"
-                                                                                           class="img-centered"></a>
+                            <li class="visible-xs" style="display:block;">
+                                <a href=""><img src="../images/aicte.png" alt="AICTE" class="img-centered"></a>
                             </li>
                             <li class="visible-xs" style="width: 94%;padding: 0 3%;">
                                 <label class="sr-only">Search</label>
@@ -70,8 +67,9 @@
                                     </div>
                                 </form>
                             </li>
-                            <li><a class="dropdown-toggle nc hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">ABOUT US&nbsp;<span class="caret"></span>
+                            <li><a class="dropdown-toggle
+                           hvr-underline-from-center" data-toggle="dropdown" href="#"
+                                   aria-expanded="false">&nbsp;ABOUT US&nbsp;<span class="fa fa-chevron-down"></span>
                             </a>
                                 <ul class="dropdown-menu " role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="">About AICTE</a></li>
@@ -80,9 +78,9 @@
 
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">BUREAUS&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;BUREAUS&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Administrative Bureau</a></li>
@@ -92,13 +90,11 @@
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Parliament Questions</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Research,Institutions and faculty
                                         development</a></li>
-
                                 </ul>
-
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">GRIEVANCES&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;GRIEVANCES&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Anti Ragging</a></li>
@@ -109,9 +105,9 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc ">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">REPORTS&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;REPORTS&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Annual Report</a></li>
@@ -123,15 +119,15 @@
                                         - RUSA</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown nc">
-                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">DASHBOARD&nbsp;<span
+                            <li class="dropdown ">
+                                <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#">&nbsp;DASHBOARD&nbsp;<span
                                         class="fa fa-dashboard"></span></a>
 
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">EDUCATION&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;EDUCATION&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Educational Network</a></li>
@@ -148,9 +144,9 @@
                                 </ul>
 
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
-                                   aria-expanded="false">STUDENTS&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;STUDENTS&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Admission</a></li>
@@ -166,11 +162,10 @@
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Research funds</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Model Syllabus</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown nc">
+                            <li class="dropdown ">
                                 <a class="dropdown-toggle hvr-underline-from-center " data-toggle="dropdown" href="#"
-                                   aria-expanded="false">BULLETIN&nbsp;<span class="fa fa-caret-down"></span>
+                                   aria-expanded="false">&nbsp;BULLETIN&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Advertisements</a></li>
@@ -198,79 +193,73 @@
         </nav>
 
     </header>
-
-
     <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
         <div class="row">
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="row">
                     <div class="col-xs-12 white-panel">
-                        <h1 class="page-header">Ethics</h1>
+                        <h1 class="page-header">VIGILANCE PROCEDURES</h1>
                         <div class="align">
-                            <h3>Values</h3>
-                            <p>Values are the rules by which we make decisions about right and wrong, should and shouldn't,
-                            good and bad. They also tell us which are more or less important, which is useful when we
-                            have
-                                to trade off meeting one value over another.</p>
 
-                            <h3>Dictionary defines values as:</h3>
-                            <p>Beliefs of a person or social group in which they have an emotional investment (either for
-                            or
-                                against something); "he has very conservatives values"</p>
 
-                            <h3>Morals</h3>
-                            <p>Morals have a greater social element to values and tend to have a very broad acceptance.
-                            Morals
-                            are far more about good and bad than other values. We thus judge others more strongly on
-                            morals
-                            than values. A person can be described as immoral, yet there is no word for them not
-                            following
-                                values.</p>
+                            <p>Anti-corruption measures of the Central Government are a responsibility of</p>
+                            <ol type="disc">
+                                <li>Administrative Vigilance Division [AVD] in the Department of Personnel & Training;</li>
+                                <li>Central Bureau of Investigation;</li>
+                                <li>Vigilance units in the Ministries/Departments of Government of India, Central Public Enterprises and other autonomous organisations [hereinafter referred to as Department];</li>
+                                <li>the disciplinary authorities; and</li>
+                                <li>the Central Vigilance Commission [hereinafter referred to as the Commission].</li></ol>
+                            <p>The AVD is concerned with the rules and regulations regarding vigilance in public services. The SPE wing of the CBI investigates cases involving commission of offences under the Prevention of Corruption Act, 1988 [hereinafter referred to as PC Act] against the public servants and other misconducts allegedly committed by the public servants having vigilance overtones. The disciplinary authority has the over-all responsibility of looking into the misconducts alleged against, or committed by, the public servants within its control and to take appropriate punitive action. It is also required to take appropriate preventive measures so as to prevent commission of misconducts/malpractices by the employees under its control and jurisdiction. The Chief Vigilance Officer [CVO] acts as a Special Assistant/Advisor to the Head of the concerned Department in the discharge of these functions. He also acts as a liaison officer between the Department and the CVC as also between the Department and the CBI. The Central Vigilance Commission acts as the apex organisation for exercising general superintendence and control over vigilance matters in administration and probity in public life.</p>
 
-                            <h3>Dictionary defines morals as:</h3>
-                            <p>Motivation based on ideas of right and wrong</p>
+                        </div>
 
-                            <h3>Ethics</h3>
-                            <p>You can have professional ethics, but you seldom hear about professional morals. Ethics tend
-                            to
-                            be codified into a formal system or set of rules which are explicitly adopted by a group of
-                            people. Thus you have medical ethics. Ethics are thus internally defined and adopted, whilst
-                                morals tend to be externally imposed on other people.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">PDF</h3>
+                        <div class="text-center">
+                            <div class="pdf-font-big">
+                                <a href="">
+                                    <button type="button" class="btn btn-danger"><span
+                                            class="pdf-border-right text-capitalize">Vigilance Procedures</span>&nbsp;<i
+                                            class="fa fa-file-pdf-o"
+                                            aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <br><br>
 
-                            <p>If you accuse someone of being unethical, it is equivalent of calling them unprofessional
-                            and
-                            may well be taken as a significant insult and perceived more personally than if you called
-                            them
-                                immoral (which of course they may also not like).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">LINKS</h3>
+                        <div class="text-center">
+                            <div class="pdf-font-big">
+                                <a href="">
+                                    <button type="button" class="btn btn-danger"><span
+                                            class="pdf-border-right text-capitalize">http://cvc.nic.in/</span>&nbsp;<i
+                                            class="fa fa-external-link"
+                                            aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <br><br>
 
-                            <h3>Dictionary defines ethics as:</h3>
-                            <p>A theory or a system of moral values: “An ethic of service is at war with a craving for
-                            gain".
-                                The rules or standards governing the conduct of a person or the members of a profession.</p>
-
-                            <p>Ethics of principled conviction asserts that intent is the most important factor. If you
-                            have
-                                good principles, then you will act ethically.</p>
-
-                            <p>Ethics of responsibility challenges this, saying that you must understand the consequences
-                            of
-                            your decisions and actions and answer to these, not just your high-minded principles. The
-                            medical maxim 'do no harm', for example, is based in the outcome-oriented ethics of
-                                responsibility.</p>
-                            <p>Ethics and morals must be known to be followed.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
     <footer class="container-fluid side-collapse-container">
-        <div class="row">
-            <div class="col-xs-12 ">
+        <div class="row is-flex">
+            <div class="col-xs-12">
                 <ul class="nav footerstyle">
-                    <li class="facebook">
-
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Feedback</a></li>
@@ -280,11 +269,11 @@
                     <li><a href="">Downloads</a></li>
                     <li><a href="">Video Conferencing</a></li>
                     <li><a href="">Login</a></li>
-                    <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
-                       class="btn btn-info btn-social-icon btn-facebook"><i
-                            class="fa fa-facebook fa-align-right"></i></a></li>
-
-
+                    <li id="facebookIcon" class="text-right">
+                        <button class="btn btn-info"><a
+                                href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+                            <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -306,3 +295,4 @@
 <script src="../javascripts/indexjs.js"></script>
 </body>
 </html>
+
