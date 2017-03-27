@@ -22,7 +22,13 @@ $.material.init();
 /**************Navbar***************/
 $('#fullNav').affix({
     offset: {
-        top: $('#brand').height()
+        top: $('#brand').outerHeight()
+        // top: function(){
+        //     console.log($(window).width());
+        //     if($(window).width() >= 768)
+        //         return (this.top=$('#brand').outerHeight());
+        //     else return (this.top=$('#brand').height());
+        // }
     }
 });
 
