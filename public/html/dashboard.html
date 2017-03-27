@@ -17,7 +17,13 @@
     <link rel="stylesheet" href="../stylesheets/materialize.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
-
+    <style>
+        .scrollable-menu {
+            height: auto;
+            max-height: 300px;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body>
 <div id="wrapper">
@@ -132,7 +138,7 @@
                                 <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">&nbsp;EDUCATION&nbsp;<span class="fa fa-chevron-down"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu scrollable-menu" role="menu">
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Educational Network</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Collaborations</a></li>
                                     <li><a class="hvr-shutter-out-horizontal" href="#">Mobile Education</a></li>
