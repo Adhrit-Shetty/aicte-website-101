@@ -19,7 +19,7 @@ app.use(morgan('dev'));
 //===========================ROUTING==================================================
 A.route('/')
     .post(function(request,response){
-        Announcement.find({},{natural : -1},function(err,data){
+        Announcement.find({},{"_id" : 0,"name" : 1,"href" : 1},{sort : {$natural : -1}},function(err,data){
             console.log("INSIDE!!!");
             if(err)
                 response.json(err);
