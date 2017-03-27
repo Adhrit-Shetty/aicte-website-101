@@ -10,7 +10,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus {
-    color: #FFA500
+    color: #FFA500;
 }
 
 .footerstyle > li {
