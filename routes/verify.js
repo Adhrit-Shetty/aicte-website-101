@@ -51,7 +51,7 @@ exports.verifyOrdinaryUser = function(request, response, next) {
         // if there is no token
         // return an error
         var err = new Error('No token provided!');
-        err.status = 403;
+        //err.status = 403;
         response.json(err);
     }
 };
