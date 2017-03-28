@@ -74,6 +74,19 @@ nav[aria-label="Announcements Pager"] {
     .checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
         margin-left: 0;
     }
+    .navbar-collapse li a{ text-indent:15px; }
+    .side-collapse {
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+        position: fixed;
+        overflow: hidden;
+        transition: width .4s;
+        border-right: 1px solid black;
+        z-index: 10;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -87,12 +100,12 @@ nav[aria-label="Announcements Pager"] {
     .side-collapse-container.out {
         /*left:200px; If u want Push effect*/
     }
-
+    .navbar-collapse li a{ text-indent:15px; }
     .side-collapse {
         top: 50px;
         bottom: 0;
         left: 0;
-        width: 60%;
+        width: 80%;
         position: fixed;
         overflow: hidden;
         transition: width .4s;
@@ -181,6 +194,26 @@ nav[aria-label="Announcements Pager"] {
         padding: 10px 0;
     }
 }
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 480px) {
+    .navbar-collapse li a{ text-indent:15px; }
+    .side-collapse {
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 96%;
+        position: fixed;
+        overflow: hidden;
+        transition: width .4s;
+        border-right: 1px solid black;
+        z-index: 10;
+    }
+
+
+}
+
+
+
 
 .navbar .navbar-form {
     padding: 0;
@@ -226,7 +259,7 @@ img {
 }
 
 .white-panel {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.8);
     border: 2px solid #eee;
     padding: 10px;
 }
@@ -379,7 +412,7 @@ footer {
     }
 
     .navbar-nav .open .dropdown-menu > li > a,
-    .navbar-nav .open .dropdown-menu .dropdown-header {
+    .navbar-nav .open .dropdown-menu {
         padding: 5px 15px 5px 25px;
     }
 

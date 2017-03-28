@@ -187,6 +187,8 @@ footer a:hover, footer a:focus {
     }
 }
 
+
+
 /*********************/
 
 .main-navigation {
@@ -314,6 +316,7 @@ footer a:hover, footer a:focus {
 
 #fullNav, #miniNav {
     background-color:#555152;
+    font-size:13px;
 }
 
 .pager li > a {
@@ -400,4 +403,10 @@ ul.scroll-top>li>a:hover{
     background-color: #ffb300;
     color:white;
 }
+
+.fa{
+    font-size:11px;
+    font-weight:bold;
+}
+
 
