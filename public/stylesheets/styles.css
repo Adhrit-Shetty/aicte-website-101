@@ -362,7 +362,7 @@ footer {
 @media screen and (min-width: 992px) {
     .scrollable-menu {
         height: auto;
-        max-height: 300px;
+        max-height: 275px;
         overflow-x: hidden;
     }
 

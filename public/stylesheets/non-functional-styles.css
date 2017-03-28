@@ -65,19 +65,19 @@ footer a {
     }
 
     .border-pull-top-xs {
-        border-top-width: 0px;
+        border-top-width: 0;
     }
 
     .border-pull-left-xs {
-        border-left-width: 0px;
+        border-left-width: 0;
     }
 
     .border-pull-right-xs {
-        border-right-width: 0px;
+        border-right-width: 0;
     }
 
     .border-pull-bottom-xs {
-        border-bottom-width: 0px;
+        border-bottom-width: 0;
     }
 }
 
@@ -99,19 +99,19 @@ footer a {
     }
 
     .border-pull-top-sm {
-        border-top-width: 0px;
+        border-top-width: 0;
     }
 
     .border-pull-left-sm {
-        border-left-width: 0px;
+        border-left-width: 0;
     }
 
     .border-pull-right-sm {
-        border-right-width: 0px;
+        border-right-width: 0;
     }
 
     .border-pull-bottom-sm {
-        border-bottom-width: 0px;
+        border-bottom-width: 0;
     }
 }
 
@@ -133,19 +133,19 @@ footer a {
     }
 
     .border-pull-top-md {
-        border-top-width: 0px;
+        border-top-width: 0;
     }
 
     .border-pull-left-md {
-        border-left-width: 0px;
+        border-left-width: 0;
     }
 
     .border-pull-right-md {
-        border-right-width: 0px;
+        border-right-width: 0;
     }
 
     .border-pull-bottom-md {
-        border-bottom-width: 0px;
+        border-bottom-width: 0;
     }
 }
 
@@ -167,19 +167,19 @@ footer a {
     }
 
     .border-pull-top {
-        border-top-width: 0px;
+        border-top-width: 0;
     }
 
     .border-pull-left {
-        border-left-width: 0px;
+        border-left-width: 0;
     }
 
     .border-pull-right {
-        border-right-width: 0px;
+        border-right-width: 0;
     }
 
     .border-pull-bottom {
-        border-bottom-width: 0px;
+        border-bottom-width: 0;
     }
 }
 
@@ -188,7 +188,7 @@ footer a {
 /*********************/
 
 .navbar-shadow {
-    box-shadow: 0px 23px 23px -20px #000000;
+    box-shadow: 0 23px 23px -20px #000000;
 }
 
 
