@@ -282,8 +282,9 @@ footer {
 
 .heading {
     font-family: "Lato Light", helvetica neue, helvetica, arial, sans-serif;
-    color: white;
+    color: black;
     font-weight: bolder;
+    align-content: center;
 }
 
 /***************/
