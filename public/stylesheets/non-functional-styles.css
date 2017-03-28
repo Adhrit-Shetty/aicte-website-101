@@ -286,7 +286,7 @@ footer a:hover, footer a:focus {
 
 /********Search*******/
 
-.form-control, .form-group .form-control {
+.form-control, .form-group .form-control, .form-control {
     border: 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#FFA500)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
     background-image: -webkit-linear-gradient(#FFA500, #FFA500), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
@@ -305,6 +305,31 @@ footer a:hover, footer a:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
+}
+
+.navbar .navbar-form .form-control, .navbar .navbar-form .form-group .form-control {
+    border-color: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    height: 28px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.form-group.is-focused .form-control {
+    outline: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#FFA500)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#FFA500, #FFA500), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#FFA500, #FFA500), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#FFA500, #FFA500), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 100% 2px, 100% 1px;
+    background-size: 100% 2px, 100% 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
 }
 
 .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
