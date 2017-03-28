@@ -356,5 +356,24 @@ footer {
     .navbar-nav .open .dropdown-menu > li > a:focus {
         background-image: none;
     }
+}
 
+/*******Rollable Nav*******/
+@media screen and (min-width: 992px) {
+    .scrollable-menu {
+        height: auto;
+        max-height: 300px;
+        overflow-x: hidden;
+    }
+
+    .scrollable-menu::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 4px;
+    }
+
+    .scrollable-menu::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: lightgray;
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .75);
+    }
 }
