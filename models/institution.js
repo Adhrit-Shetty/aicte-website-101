@@ -25,10 +25,6 @@ var dataSchema = new Schema(
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Year'
         }]
-        // year: [{
-        //     type: mongoose.Schema.Types.ObjectId,
-        //     ref: Faculty
-        // }]
     },
     {
         timestamps : true
