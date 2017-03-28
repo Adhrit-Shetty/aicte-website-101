@@ -15,17 +15,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/*******button styling*******/
-
-.card-1 {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-.card-1:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 /*!*****Navbar******!*/
 
 nav[aria-label="Announcements Pager"] {
@@ -65,27 +54,10 @@ nav[aria-label="Announcements Pager"] {
     width: 100%;
 }
 
-.dropdown-menu-cols-2 {
-    min-width: 400px;
-}
-
 @media screen and (max-width: 767px) {
     .checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
         margin-left: 0;
     }
-    .navbar-collapse li a{ text-indent:15px; }
-    .side-collapse {
-        top: 50px;
-        bottom: 0;
-        left: 0;
-        width: 80%;
-        position: fixed;
-        overflow: hidden;
-        transition: width .4s;
-        border-right: 1px solid black;
-        z-index: 10;
-    }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -99,7 +71,11 @@ nav[aria-label="Announcements Pager"] {
     .side-collapse-container.out {
         /*left:200px; If u want Push effect*/
     }
-    .navbar-collapse li a{ text-indent:15px; }
+
+    .navbar-collapse li a {
+        text-indent: 15px;
+    }
+
     .side-collapse {
         top: 50px;
         bottom: 0;
@@ -170,49 +146,17 @@ nav[aria-label="Announcements Pager"] {
     }
 }
 
-@media screen and (max-width: 946px) {
+@media screen and (max-width: 1095px) {
     .nav > li > a {
         padding: 10px 8px;
     }
 }
-
-@media screen and (max-width: 896px) {
-    .nav > li > a {
-        padding: 10px 4.5px;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .nav > li > a {
-        padding: 10px 2px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .nav > li > a {
-        padding: 10px 0;
-    }
-}
 /* Extra Small Devices, Phones */
 @media screen and (max-width : 480px) {
-    .navbar-collapse li a{ text-indent:15px; }
     .side-collapse {
-        top: 50px;
-        bottom: 0;
-        left: 0;
         width: 96%;
-        position: fixed;
-        overflow: hidden;
-        transition: width .4s;
-        border-right: 1px solid black;
-        z-index: 10;
     }
-
-
 }
-
-
-
 
 .navbar .navbar-form {
     padding: 0;
@@ -258,7 +202,7 @@ img {
 }
 
 .white-panel {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.88);
     border: 2px solid #eee;
     padding: 10px;
 }
@@ -266,13 +210,12 @@ img {
 /***Footer***/
 footer {
     background-color: #111;
-
 }
 
 /* Fix bootstrap */
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
     background: none;
-    color: black;
+    color: #000000;
 }
 
 .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:active {
@@ -280,15 +223,16 @@ footer {
     color: #555;
 }
 
-.heading {
-    font-family: "Lato Light", helvetica neue, helvetica, arial, sans-serif;
-    color: black;
+#mastHeadBrand h1 {
+    color: #000000;
     font-weight: bolder;
     align-content: center;
 }
 
-/***************/
-/*box-shadow: 0 0 15px #FFA500;*/
+#mastHeadTagline {
+    color: #ffffff;
+}
+
 /*******Scroll-top*******/
 
 .scroll-top {

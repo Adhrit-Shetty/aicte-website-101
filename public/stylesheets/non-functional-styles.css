@@ -34,7 +34,7 @@ footer a {
 }
 
 .box-shadow {
-    box-shadow: 0px 23px 23px -20px black;
+    box-shadow: 0px 23px 23px -20px #000000;
 }
 
 #facebookIcon a {
@@ -268,14 +268,14 @@ footer a {
     transform-origin: 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
-    webkit-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    webkit-transition-timing-function: 0.3s;
+    -webkit-transition-timing-function: 0.3s;
     transition-timing-function:ease-in;
 }
 
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
-    color: black;
+    color: #000000;
 }
 
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
@@ -332,6 +332,7 @@ footer a {
     transition-duration: .3s;
 }
 
+/***Search button -white***/
 .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
     color: rgb(255, 255, 255);
 }
@@ -341,9 +342,10 @@ footer a {
     font-size:13px;
 }
 
+/***Announcements Pager***/
 .pager li > a {
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid #000000;
 }
 
 .pager li > a:hover, .pager li > a:focus {
@@ -370,46 +372,12 @@ div.pdf-font-big button {
     text-decoration: underline;
 }
 
-.size {
-    font-size: 22px;
-}
-
 .page-header {
     text-align: center;
     border-bottom: 1px solid #555152;
 }
 
-/*index page styling*/
-h3{
-    border-bottom-color:#FFA500;
-}
-
-.headstyle
-{
-    background-color:#A6A6A6;
-}
-
-.fade-in{
-    animation: fadeIn 10s;
-    color:white;
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-.fade-in-2{
-    animation: fadeIn 10s;
-}
-
-h3{
-    border-bottom-color:#FFA500;
-}
+/*Box styling*/
 
 div.white-panel:hover {
     transition: all 0.5s ease-in;
