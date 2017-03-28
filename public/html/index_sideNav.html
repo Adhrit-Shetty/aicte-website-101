@@ -26,6 +26,23 @@
             content: "";
             display: block;
         }
+
+        .custom-list-style {
+            list-style: none;
+        }
+
+        .custom-list-style > li {
+            padding-left: 1.3em;
+        }
+
+        .custom-list-style > li:before {
+            font-family: FontAwesome;
+            content: "\f054"; /* FontAwesome Unicode */
+            display: inline-block;
+            margin-left: -1.3em; /* same as padding-left set on li */
+            width: 1.3em; /* same as padding-left set on li */
+        }
+
     </style>
 </head>
 <body>
@@ -39,7 +56,7 @@
                                     style="height:150px;width:150px;padding:10px;"></a>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-left text-capitalize" id="mastHeadBrand">
-                    <h1 class="heading">All India Council for Technical Education<br/>
+                    <h1>All India Council for Technical Education<br/>
                         <small id="mastHeadTagline" class="fade-in">We Promote Transparency And Accountability</small>
                     </h1>
                 </div>
@@ -76,7 +93,8 @@
                                     </div>
                                 </form>
                             </li>
-                            <li><a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                            <li><a class="dropdown-toggle
+                           hvr-underline-from-center" data-toggle="dropdown" href="#"
                                    aria-expanded="false">ABOUT US&nbsp;<span
                                     class="fa fa-chevron-down"></span>
                             </a>
@@ -196,7 +214,7 @@
             <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel border-push-bottom border-push-right border-push-left-xs
              border-push-right-xs border-push-right-sm border-push-left-sm border-pull-left-md border-push-bottom-md border-push-top-md border-push-right-md">
                 <h3 class="page-header">Announcements</h3>
-                <ul>
+                <ul class="custom-list-style">
                     <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
                     <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
                     <li><a href="#">Feedback form for Faculty nad Students of AICTE Approved Institutions</a></li>
@@ -231,6 +249,7 @@
 
                         <a class="text-center collapsed" data-toggle="collapse" href="#intro" aria-expanded="false"
                            aria-controls="Intro"></a>
+
                         <div id="intro" class="collapse">
                             <p>
                                 The beginning of formal Technical Education in India can be dated back to the mid 19th
@@ -252,8 +271,10 @@
                                 <li>Formation of the All India Council for
                                     Technical Education (AICTE) in 1945 by the Government of India.
                             </ol>
-                            <a class="text-center collapsed" data-toggle="collapse" href="#intro"
-                               aria-expanded="false" aria-controls="Intro">Less...</a>
+                            <p class="text-center ">
+                                <a class="collapsed" data-toggle="collapse" href="#intro"
+                                   aria-expanded="false" aria-controls="Intro">Less...</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -316,7 +337,7 @@
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <ul style="list-style-type:square">
+                                        <ul class="custom-list-style">
                                             <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
                                                 in respect of RFP selection for SWAYAM Project- <a
                                                         href="#">15/03/2017</a></li>
@@ -347,7 +368,7 @@
                                 </div>
                                 <div id="collapse2" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <ul style="list-style-type:square">
+                                        <ul class="custom-list-style">
                                             <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
                                                 in respect of RFP selection for SWAYAM Project- <a
                                                         href="#">15/03/2017</a></li>
@@ -378,7 +399,7 @@
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <ul style="list-style-type:square">
+                                        <ul class="custom-list-style">
                                             <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
                                                 in respect of RFP selection for SWAYAM Project- <a
                                                         href="#">15/03/2017</a></li>
@@ -409,39 +430,7 @@
                                 </div>
                                 <div id="collapse4" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <ul style="list-style-type:square">
-                                            <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
-                                                in respect of RFP selection for SWAYAM Project- <a
-                                                        href="#">15/03/2017</a></li>
-
-                                            <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
-                                                before 7th March, 2017- <a href="#">15/03/2017</a></li>
-
-                                            <li>Request for Proposal for selection of application support and
-                                                Helpdesk services for SWAYAM MOOCs Platform-<a href="#">15/03/2017</a>
-                                            </li>
-
-                                            <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
-                                                in respect of RFP selection for SWAYAM Project- <a
-                                                        href="#">15/03/2017</a></li>
-
-                                            <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
-                                                before 7th March, 2017- <a href="#">15/03/2017</a></li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><i
-                                                class="fa fa-user-circle-o" aria-hidden="true"></i> Photo Gallery</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul style="list-style-type:square">
+                                        <ul class="custom-list-style">
                                             <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
                                                 in respect of RFP selection for SWAYAM Project- <a
                                                         href="#">15/03/2017</a></li>
@@ -482,7 +471,7 @@
                         </div>
                         <div class="row is-flex">
                             <div class="col-xs-12 col-sm-6">
-                                <ul>
+                                <ul class="custom-list-style">
                                     <li><a href="">Smart India Hacksthon-2017</a></li>
                                     <li><a href="">CMAT-2017</a></li>
                                     <li><a href="">PMSSS J&k Admisssion</a></li>
@@ -490,7 +479,7 @@
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-6">
-                                <ul>
+                                <ul class="custom-list-style">
                                     <li><a href="">PMKVY-TI</a></li>
                                     <li><a href="">GPAT-2017</a></li>
                                     <li><a href="">Pragati And Saksham</a></li>
