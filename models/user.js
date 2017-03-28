@@ -9,39 +9,10 @@ var dataSchema = new Schema(
         username:
             {
                 type : String,
-                required : true,
                 unique : true
             },
         password: String,
-        Fname :
-            {
-                type : String,
-            },
-        Mname :
-            {
-                type : String,
-            },
-        Lname :
-            {
-                type : String,
-            },
-        mobno:
-            {
-                type:String,
-                unique:true,
-                validate:
-                    {
-                        validator: function(v)
-                        {
-                            return /^([0-9]{10}$)/.test(v);
-                        }
-                    },
-                required: true
-            },
-        admin:   {
-            type: Boolean,
-            default: false
-        }
+        logged : Boolean,
     },
     {
         timestamps : true
@@ -50,6 +21,6 @@ var dataSchema = new Schema(
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
 dataSchema.plugin(passportLocalMongoose);
-var User = mongoose.model('user',dataSchema);
+var User = mongoose.model('User',dataSchema);
 //====================================================================================
 module.exports=User
