@@ -6,10 +6,8 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
-    margin: 0;
     background-color: #ECECEC;
     line-height: 150%;
-    min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,26 +155,7 @@ nav[aria-label="Announcements Pager"] {
 
 #wrapper {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    min-height: 100%;
-    /* equal to footer height */
-    margin-bottom: -150px;
 }
-
-#wrapper:after {
-    content: "";
-    display: block;
-}
-
-#mastHeadBrand h1 {
-    color: #000000;
-    font-weight: bolder;
-    align-content: center;
-}
-
-#mastHeadTagline {
-    color: #ffffff;
-}
-
 
 /**Used in IndexJs**/
 .opaque {
@@ -215,10 +194,6 @@ footer {
     background-color: #111;
 }
 
-footer, #wrapper:after {
-    height: 150px;
-}
-
 /* Fix bootstrap */
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
     background: none;
@@ -228,6 +203,16 @@ footer, #wrapper:after {
 .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:active {
     background: none;
     color: #555;
+}
+
+#mastHeadBrand h1 {
+    color: #000000;
+    font-weight: bolder;
+    align-content: center;
+}
+
+#mastHeadTagline {
+    color: #ffffff;
 }
 
 /***Forms***/
@@ -371,24 +356,5 @@ footer, #wrapper:after {
     .navbar-nav .open .dropdown-menu > li > a:focus {
         background-image: none;
     }
-}
 
-/*******Scrollable Dropdown Menu*******/
-@media screen and (min-width: 992px) {
-    .scrollable-menu {
-        height: auto;
-        max-height: 275px;
-        overflow-x: hidden;
-    }
-
-    .scrollable-menu::-webkit-scrollbar {
-        -webkit-appearance: none;
-        width: 4px;
-    }
-
-    .scrollable-menu::-webkit-scrollbar-thumb {
-        border-radius: 3px;
-        background-color: lightgray;
-        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .75);
-    }
 }
