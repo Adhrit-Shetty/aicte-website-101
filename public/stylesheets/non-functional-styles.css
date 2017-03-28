@@ -14,7 +14,7 @@ main {
 }
 
 a, a:hover, a:focus {
-    color: #e9a11d;
+    color: #e98b17;
 }
 
 /********Footer********/
@@ -347,8 +347,8 @@ footer a {
 }
 
 .pager li > a:hover, .pager li > a:focus {
-    background-color: lightgreen;
-    color: darkgreen;
+    background-color: rgba(255, 241, 94, 0.42);
+    color: #FFA500;
 }
 
 /*****L3******/
