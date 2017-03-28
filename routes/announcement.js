@@ -17,7 +17,18 @@ app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
 A.route('/')
-    .post(function(request,response,next) {
+    .get(function(request,response){
+        Announcement.find({},{"_id" : 0,"name" : 1,"href" : 1},{sort : {"date" : -1}},function(err,data){
+            console.log("INSIDE!!!");
+            if(err)
+                response.json(err);
+            else
+            {
+                response.json(data);
+            }
+        });
+    })
+.post(function(request,response,next) {
         console.log(request.body);
         Announcement.create(request.body,function(err,data){
             if(err)

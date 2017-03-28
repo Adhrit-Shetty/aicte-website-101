@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet"
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../stylesheets/materialize.css">
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
     <style>
@@ -209,15 +211,22 @@
                     <div class="form-group">
                         <label for="inputName" class="col-sm-2 control-label hidden-xs">Name</label>
                         <div class="col-sm-10 col-xs-12">
-                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            <input type="text" class="form-control" id="inputName" name= "name" placeholder="Name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputLink" class="col-sm-2 control-label hidden-xs">Link</label>
                         <div class="col-sm-10 col-xs-12">
-                            <input type="text" class="form-control" id="inputLink" placeholder="Link">
+                            <input type="text" class="form-control" id="inputLink" name= "href" placeholder="Link">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="inputDate" class="col-sm-2 control-label hidden-xs">Date</label>
+                        <div class="col-sm-10 col-xs-12">
+                            <input type="text" class="form-control" id="inputDate" name= "date" placeholder="MM/DD/YYYY">
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <div class="col-xs-12 text-center">
                             <button type="submit" class="btn btn-warning btn-raised">Save</button>
@@ -259,11 +268,16 @@
     </ul>
 </div>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
 <script src="../javascripts/indexjs.js"></script>
+<script>
+    $(function () {
+        $('#inputDate').datepicker();
+    });
+</script>
 </body>
 </html>
 
