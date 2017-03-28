@@ -13,13 +13,13 @@ main {
     line-height: 150%;
 }
 
+a, a:hover, a:focus {
+    color: #e9a11d;
+}
+
 /********Footer********/
 footer a {
     color: white;
-}
-
-footer a:hover, footer a:focus {
-    color: #FFA500;
 }
 
 .footerstyle > li {

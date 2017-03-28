@@ -17,7 +17,18 @@
     <link rel="stylesheet" href="../stylesheets/materialize.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="Intro"].collapsed:before {
+            content: "More...";
+            display: block;
+        }
 
+        a[aria-controls="Intro"]:before {
+            content: "";
+            display: block;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -201,32 +212,19 @@
              border-push-right-xs border-push-right-sm border-push-left-sm border-pull-left-md border-push-bottom-md border-push-top-md border-push-right-md">
                 <h3 class="page-header">Announcements</h3>
                 <ul style="list-style-type:square">
-                    <h5>
-                        <li><a href="#" class="btn-link-sm">Institutions Hosting the Grand Finals< of Smart India
-                            Hackthon</a></li>
-                        <li><a href="#" class="btn-link-sm">Web Portal has been reopened till 24-03-2017 Apply for
-                            SAksham Scheme</a></li>
-                        <li><a href="#" class="btn-link-sm">Feedback form for Faculty nad Students of AICTE Aporved
-                            Institutions</a></li>
-                        <li><a href="#" class="btn-link-sm">Online Application form for Grievance related to Approvel
-                            Process</a></li>
-                        <li><a href="#" class="btn-link-sm">Institutions Hosting the Grand Finals< of Smart India
-                            Hackthon</a></li>
-                        <li><a href="#" class="btn-link-sm">Web Portal has been reopened till 24-03-2017 Apply for
-                            SAksham Scheme</a></li>
-                        <li><a href="#" class="btn-link-sm">Feedback form for Faculty nad Students of AICTE Aporved
-                            Institutions</a></li>
-                        <li><a href="#" class="btn-link-sm">Online Application form for Grievance related to Approvel
-                            Process</a></li>
-                        <li><a href="#" class="btn-link-sm">Institutions Hosting the Grand Finals< of Smart India
-                            Hackthon</a></li>
-                        <li><a href="#" class="btn-link-sm">Web Portal has been reopened till 24-03-2017 Apply for
-                            SAksham Scheme</a></li>
-                        <li><a href="#" class="btn-link-sm">Feedback form for Faculty nad Students of AICTE Aporved
-                            Institutions</a></li>
-                        <li><a href="#" class="btn-link-sm">Online Application form for Grievance related to Approvel
-                            Process</a></li>
-                    </h5>
+                    <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
+                    <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
+                    <li><a href="#">Feedback form for Faculty nad Students of AICTE Approved Institutions</a></li>
+                    <li><a href="#">Online Application form for Grievance related to Approval Process</a></li>
+                    <li><a href="#">Institutions Hosting the Grand Finals< of Smart India
+                        Hackthon</a></li>
+                    <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
+                    <li><a href="#">Feedback form for Faculty nad Students of AICTE Approved Institutions</a></li>
+                    <li><a href="#">Online Application form for Grievance related to Approval Process</a></li>
+                    <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
+                    <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
+                    <li><a href="#">Feedback form for Faculty nad Students of AICTE Approved Institutions</a></li>
+                    <li><a href="#">Online Application form for Grievance related to Approval Process</a></li>
                 </ul>
                 <nav aria-label="Announcements Pager">
                     <ul class="pager">
@@ -248,8 +246,9 @@
                         post-graduate and research in specialized fields, catering to various aspects of
                         technological development and economic progress.
 
-                        <a href="#demo" class="btn-link-sm" data-toggle="collapse" align="right">...know more</a>
-                        <div id="demo" class="collapse">
+                        <a class="text-center collapsed" data-toggle="collapse" href="#intro" aria-expanded="false"
+                           aria-controls="Intro"></a>
+                        <div id="intro" class="collapse">
                             <p>
                                 The beginning of formal Technical Education in India can be dated back to the mid 19th
                                 Century. The major policy initiatives in the pre-independence period included
@@ -262,15 +261,16 @@
                                 and Leather Technology in Kanpur, N.C.E. in Bengal in 1905 and Industrial schools in
                                 several
                                 provinces. Significant developments include -
-                                <br>
                             </p>
-                            <p>
-                                1-Constitution of the Technical Education Committee of the Central Advisory Board of
-                                Education of 1943<br>
-                                2-Preparation of the Sergeant Report of 1944<br>
-                                3-Formation of the All India Council for
-                                Technical Education (AICTE) in 1945 by the Government of India.
-                            </p>
+                            <ol>
+                                <li>Constitution of the Technical Education Committee of the Central Advisory Board of
+                                    Education of 1943
+                                <li>Preparation of the Sergeant Report of 1944
+                                <li>Formation of the All India Council for
+                                    Technical Education (AICTE) in 1945 by the Government of India.
+                            </ol>
+                            <div><a class="text-center collapsed" data-toggle="collapse" href="#intro"
+                                    aria-expanded="false" aria-controls="Intro">Less...</a></div>
                         </div>
                     </div>
                 </div>
