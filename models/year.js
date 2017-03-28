@@ -24,7 +24,7 @@ yearSchema = new Schema(
         },
         instituteid: {
             type: mongoose.Schema.Types.ObjectId,
-                ref : 'Institute'
+                ref : 'Institution'
         }
     },
     {
@@ -33,5 +33,6 @@ yearSchema = new Schema(
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
 var year = mongoose.model('Year',yearSchema);
+//year.aggregate({$group : {"y" : 1}});
 //====================================================================================
 module.exports=year;
