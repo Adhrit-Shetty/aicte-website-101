@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/*!*****Navbar******!*/
+/******Navbar*******/
 
 nav[aria-label="Announcements Pager"] {
     box-shadow: none;
@@ -34,7 +34,6 @@ nav[aria-label="Announcements Pager"] {
 
 .navbar-brand {
     display: inline-block;
-    /*float: none;*/
 }
 
 .navbar-toggle {
@@ -54,11 +53,6 @@ nav[aria-label="Announcements Pager"] {
     width: 100%;
 }
 
-@media screen and (max-width: 767px) {
-    .checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
-        margin-left: 0;
-    }
-}
 
 @media screen and (max-width: 991px) {
     .side-collapse-container {
@@ -134,16 +128,11 @@ nav[aria-label="Announcements Pager"] {
     .nav > li > a {
         padding: 10px 10px;
     }
-
-    .navbar-right {
-        position: relative;
-        left: -5%;
-    }
 }
 
 @media screen and (max-width: 1095px) {
     .nav > li > a {
-        padding: 10px 8px;
+        padding: 10px 6px;
     }
 }
 /* Extra Small Devices, Phones */
@@ -226,6 +215,12 @@ footer {
     color: #ffffff;
 }
 
+/***Forms***/
+@media screen and (max-width: 767px) {
+    .checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
+        margin-left: 0;
+    }
+}
 /*******Scroll-top*******/
 
 .scroll-top {
