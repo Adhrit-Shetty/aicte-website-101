@@ -4,23 +4,19 @@ var app = express();
 var http = require('http');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
-var path = require('path');
-var fs = require('fs');
-var url = 'mongodb://localhost:27017/Aicte101';
 var Institute = require('../models/institution');
 var Year = require('../models/year');
-
-var institute = express.Router();
-institute.use(bodyParser.json());
-institute.use(bodyParser.urlencoded({extended : true}));
-var i,id;
+var router = express.Router();
+var id;
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({extended : true}));
 app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
-institute.route('/')
-    .post(function(request,response,next) {
+router.route('/')
+    .post(function(request,response) {
         console.log(request.body);
         Institute.find({'name': request.body.name},{'_id' :1},function(err, data){
             if(err)
@@ -64,11 +60,10 @@ institute.route('/')
                                 response.json(final);
                             }
                         });
-
                     }
                 }).limit(1);
             }
         }).limit(1);
     });
 //====================================================================================
-module.exports=institute;
+module.exports=router;
