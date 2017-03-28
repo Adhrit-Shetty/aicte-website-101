@@ -8,13 +8,14 @@ body {
     padding: 0;
     background-color: #ECECEC;
     /*font-size:1.6em;*/
-    line-height:150%;
+    line-height: 150%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', 'Roboto', sans-serif;
 
 }
+
 /*******button styling*******/
 
 .card-1 {
@@ -39,7 +40,7 @@ nav[aria-label="Announcements Pager"] {
 .navbar {
 
     display: block;
-    background-color:black;
+    background-color: black;
     /*text-align: center;*/
 }
 
@@ -247,11 +248,12 @@ footer {
     color: #555;
 }
 
-.heading{
-    font-family:"Lato Light",helvetica neue,helvetica,arial,sans-serif;
-    color:white;
+.heading {
+    font-family: "Lato Light", helvetica neue, helvetica, arial, sans-serif;
+    color: white;
     font-weight: bolder;
 }
+
 /***************/
 /*box-shadow: 0 0 15px #FFA500;*/
 /*******Scroll-top*******/
@@ -355,7 +357,7 @@ footer {
 
     /* since 3.1.0 */
     .navbar-collapse.collapse.in {
-        display: block !important;
+        /*display: block !important;*/
     }
 
     .collapsing {
@@ -365,4 +367,29 @@ footer {
     #homeIcon {
         display: none;
     }
+
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a,
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px;
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-image: none;
+    }
+
 }
