@@ -6,8 +6,10 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
+    margin: 0;
     background-color: #ECECEC;
     line-height: 150%;
+    min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +31,6 @@ nav[aria-label="Announcements Pager"] {
 
     display: block;
     background-color: black;
-    /*text-align: center;*/
 }
 
 .navbar-brand {
@@ -60,10 +61,6 @@ nav[aria-label="Announcements Pager"] {
         position: relative;
         left: 0;
         transition: left .4s;
-    }
-
-    .side-collapse-container.out {
-        /*left:200px; If u want Push effect*/
     }
 
     .navbar-collapse li a {
@@ -155,7 +152,24 @@ nav[aria-label="Announcements Pager"] {
 
 #wrapper {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    min-height: 100%;
 }
+
+#wrapper:after {
+    content: "";
+    display: block;
+}
+
+#mastHeadBrand h1 {
+    color: #000000;
+    font-weight: bolder;
+    align-content: center;
+}
+
+#mastHeadTagline {
+    color: #ffffff;
+}
+
 
 /**Used in IndexJs**/
 .opaque {
@@ -203,16 +217,6 @@ footer {
 .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:active {
     background: none;
     color: #555;
-}
-
-#mastHeadBrand h1 {
-    color: #000000;
-    font-weight: bolder;
-    align-content: center;
-}
-
-#mastHeadTagline {
-    color: #ffffff;
 }
 
 /***Forms***/
@@ -356,5 +360,24 @@ footer {
     .navbar-nav .open .dropdown-menu > li > a:focus {
         background-image: none;
     }
+}
 
+/*******Scrollable Dropdown Menu*******/
+@media screen and (min-width: 992px) {
+    .scrollable-menu {
+        height: auto;
+        max-height: 275px;
+        overflow-x: hidden;
+    }
+
+    .scrollable-menu::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 4px;
+    }
+
+    .scrollable-menu::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: lightgray;
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .75);
+    }
 }
