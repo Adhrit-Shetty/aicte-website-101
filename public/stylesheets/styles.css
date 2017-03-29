@@ -31,7 +31,6 @@ nav[aria-label="Announcements Pager"] {
 
     display: block;
     background-color: black;
-    /*text-align: center;*/
 }
 
 .navbar-brand {
@@ -62,10 +61,6 @@ nav[aria-label="Announcements Pager"] {
         position: relative;
         left: 0;
         transition: left .4s;
-    }
-
-    .side-collapse-container.out {
-        /*left:200px; If u want Push effect*/
     }
 
     .navbar-collapse li a {
@@ -158,8 +153,6 @@ nav[aria-label="Announcements Pager"] {
 #wrapper {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     min-height: 100%;
-    /* equal to footer height */
-    margin-bottom: -150px;
 }
 
 #wrapper:after {
@@ -213,10 +206,6 @@ img {
 /***Footer***/
 footer {
     background-color: #111;
-}
-
-footer, #wrapper:after {
-    height: 150px;
 }
 
 /* Fix bootstrap */

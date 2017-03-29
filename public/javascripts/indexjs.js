@@ -90,4 +90,8 @@ $('.scroll-top').click(function (e) {
     e.preventDefault();
 });
 
-
+/******Footer******/
+$(window).on('resize', function () {
+    $('#wrapper').css('margin-bottom', $('footer').outerHeight());
+    $('footer, #wrapper:after').css('height', this.outerHeight());
+});
