@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var Year = require('../models/year');
 var Institute = require('../models/institution');
 var router = express.Router();
+var id;
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
 router.use(bodyParser.json());
@@ -49,6 +50,56 @@ router.route('/')
                         });
                     }
                 });
+            }
+        }).limit(1);
+    });
+router.route('/update')
+    .post(function(request,response) {
+        console.log(request.body);
+        Institute.find({'name': request.body.name},{'_id' :1},function(err, data){
+            if(err)
+                response.json(err);
+            else if(data[0]==undefined)
+                response.json("No such entry!");
+            else
+            {
+                console.log(data);
+                id = data[0];
+                Year.find({'y': request.body.y , 'instituteid' : id},function(err,new_data){
+                    console.log(new_data);
+                    if(err)
+                        response.json(err);
+                    else if(new_data[0]==undefined)
+                        response.json("No such entry!");
+                    else
+                    {
+                        if(request.body.intake)
+                        {
+                            new_data[0].intake =request.body.intake;
+                        }
+                        if(request.body.enrolled)
+                        {
+                            new_data[0].enrolled =request.body.enrolled;
+                        }
+                        if(request.body.passed)
+                        {
+                            new_data[0].passed =request.body.passed;
+                        }
+                        if(request.body.placed)
+                        {
+                            new_data[0].placed =request.body.placed;
+                        }
+                        console.log(data);
+                        new_data[0].save(function (err,final){
+                            if(err)
+                                response.json(err);
+                            else
+                            {
+                                response.json(final);
+                            }
+                        });
+                    }
+                }).limit(1);
             }
         }).limit(1);
     });
