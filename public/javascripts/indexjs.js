@@ -92,6 +92,6 @@ $('.scroll-top').click(function (e) {
 
 /******Footer******/
 $(window).on('resize', function () {
-    $('#wrapper').css('margin-bottom', $('footer').outerHeight());
-    $('footer, #wrapper:after').css('height', this.outerHeight());
+    $('#wrapper').css('margin-bottom', $('footer').height());
+    $('footer, #wrapper:after').css('height', $('footer').height());
 });
