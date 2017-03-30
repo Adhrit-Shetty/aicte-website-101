@@ -7,9 +7,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var search = require('./routes/search');
 var register = require('./routes/register');
-var announcement= require('./routes/announcement');
-var dashboard = require('./routes/querydb.js');
+var announcement = require('./routes/announcement');
+var announcement_list = require('./routes/announcement_list');
+var User = require('./models/user.js');
+var institute = require('./routes/institute.js');
+var u_institute = require('./routes/update_institute.js');
+var u_year = require('./routes/update_year.js');
+var year = require('./routes/year.js');
+var users = require('./routes/users.js');
 var app = express();
 var url = 'mongodb://localhost:27017/Aicte101';
 var mongoose = require('mongoose'),
@@ -19,9 +27,14 @@ var db = mongoose.connection;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
+app.use(passport.initialize());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',function () {
@@ -40,11 +53,18 @@ app.all('*', function(req, res, next){
     if (req.secure) {
         return next();
     }
-    res.redirect(req.hostname + ":" + app.get('secPort') + req.url);
+    res.redirect('https://localhost:'+app.get('port')+req.url);
 });
-app.use('/dashboard', dashboard);
+app.use('/users', users);
 app.get('*',onGetRequest);
+app.use('/',search);
+app.use('/my_institute.html',institute);
 app.use('/announcement.html',announcement);
+app.use('/announcement_list.html',announcement_list);
+app.use('/my_update_institution.html',u_institute);
+app.use('/my_update_year.html',u_year);
+app.use('/my_year.html',year);
+app.use('/register.html',register);
 //====================================================================================
 //===========================ERROR HANDLING===========================================
 /// catch 404 and forwarding to error handler
@@ -86,12 +106,19 @@ function onGetRequest(request,response,next)
         console.log("Request from user :"+request.url);
         var link;
         if(request.url=='/')
-            link='/index_sideNav.html';
+            link='/adminpage.html';
         else
             link=(request.url).toString();
         console.log('Link:',link);
-         if(path.extname(link)=='.html')
-           link='./public/html'+link;
+        if(path.extname(link)=='.html')
+            link='./public/html'+link;
+        // else if(path.extname(link)=='.jpg'|| path.extname(link)=='.png')
+        //     link='./public/images'+link;
+        // else if(path.extname(link)=='.js')
+        //     link='./public/javascripts'+link;
+        // else if(path.extname(link)=='.css')
+        //     link='./public/stylesheets'+link;
+        // link = path.join(__dirname,link);
         link = path.normalize(link);
         console.log(link+"-"+fs.existsSync(link));
         if(fs.existsSync(link))

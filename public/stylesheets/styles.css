@@ -144,6 +144,17 @@ nav[aria-label="Announcements Pager"] {
     margin: 0;
 }
 
+/* Fix bootstrap */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
+    background: none;
+    color: #000000;
+}
+
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:active {
+    background: none;
+    color: #555;
+}
+
 /***********Main**********/
 
 .pushDown {
@@ -201,22 +212,6 @@ img {
     background: rgba(255, 255, 255, 0.88);
     border: 2px solid #eee;
     padding: 10px;
-}
-
-/***Footer***/
-footer {
-    background-color: #111;
-}
-
-/* Fix bootstrap */
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
-    background: none;
-    color: #000000;
-}
-
-.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:active {
-    background: none;
-    color: #555;
 }
 
 /***Forms***/
