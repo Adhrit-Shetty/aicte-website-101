@@ -43,6 +43,10 @@
             width: 1.3em; /* same as padding-left set on li */
         }
 
+        .white-panel {
+            background-clip: padding-box;
+            border: 10px solid transparent;
+        }
     </style>
 </head>
 <body>
@@ -211,8 +215,7 @@
     <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
         <div class="row is-flex">
-            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel border-push-bottom border-push-right border-push-left-xs
-             border-push-right-xs border-push-right-sm border-push-left-sm border-pull-left-md border-push-bottom-md border-push-top-md border-push-right-md">
+            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel">
                 <h3 class="page-header">Announcements</h3>
                 <ul class="custom-list-style">
                     <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
@@ -238,7 +241,7 @@
             </div>
             <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="row is-flex">
-                    <div class="col-xs-12 white-panel border-pull-top border-pull-right">
+                    <div class="col-xs-12 white-panel">
                         <h3 class="page-header">Introduction</h3>
 
                         Technical education in India contributes a major share to the overall education system and
@@ -285,7 +288,7 @@
                         Country by enhancing the global competitiveness of technical manpower and by ensuring high
                         quality technical education to all sections of the society.”
                     </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel border-pull-right ">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
                         <h3 class="page-header">Pledge</h3>
                         India is my country and all Indians are my brothers and sisters.
                         I love my country and I am proud of its rich and varied heritage.
@@ -300,7 +303,7 @@
                     </div>
                 </div>
                 <div class="row is-flex">
-                    <div class="col-xs-12 white-panel border-pull-right">
+                    <div class="col-xs-12 white-panel">
                         <!--<h3 class="page-header">Mission</h3>-->
                         <!--<p>-->
                         <!--A true facilitator and an objective regulator-->
@@ -463,7 +466,7 @@
                         <img src="../images/stop-ragging.png" alt="ANTI-RAGGING"
                              class="img-responsive img-centered">
                     </div>
-                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel border-pull-right">
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel">
                         <div class="row is-flex">
                             <div class="col-xs-12">
                                 <h3 class="page-header">Recent</h3>
@@ -494,36 +497,43 @@
         </div>
     </main>
 </div>
-    <footer class="container-fluid side-collapse-container">
-        <div class="row is-flex">
-            <div class="col-xs-12">
-                <ul class="nav footerstyle">
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Feedback</a></li>
-                    <li><a href="">Help</a></li>
-                    <li><a href="">Website Policy</a></li>
-                    <li><a href="">Site map</a></li>
-                    <li><a href="">Downloads</a></li>
-                    <li><a href="">Video Conferencing</a></li>
-                    <li><a href="">Login</a></li>
-                    <li id="facebookIcon" class="text-right">
-                        <button class="btn btn-info"><a
-                                href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
-                            <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
-                    </li>
-                </ul>
-            </div>
+<footer class="container-fluid side-collapse-container">
+    <div class="row is-flex">
+        <div class="col-xs-6">
+            <ul class="nav footerstyle">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Feedback</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Website Policy</a></li>
+                <li><a href="">Site map</a></li>
+                <li><a href="">Downloads</a></li>
+            </ul>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="text-muted text-center">© Copyright 2017 All India Council for Technical Education</p>
-            </div>
+        <div class="col-xs-6">
+            <ul class="nav footerstyle">
+                <li><a href="">Video Conferencing</a></li>
+                <li><a href="">Photo Gallery</a></li>
+                <li><a href="">Educational Network</a></li>
+                <li><a href="">Startup Policy</a></li>
+                <li><a href="">Login</a></li>
+                <li id="facebookIcon" class="text-right">
+                    <button class="btn btn-info"><a
+                            href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+                        <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+                </li>
+            </ul>
         </div>
-    </footer>
-    <ul class="nav scroll-top">
-        <li><a href="#" tabindex="-1" title="Scroll to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-    </ul>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="text-muted text-center">© Copyright 2017 All India Council for Technical Education</p>
+        </div>
+    </div>
+</footer>
+<ul class="nav scroll-top">
+    <li><a href="#" tabindex="-1" title="Scroll to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
