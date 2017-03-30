@@ -40,7 +40,7 @@ app.all('*', function(req, res, next){
     if (req.secure) {
         return next();
     }
-    res.redirect('https://localhost:'+app.get('secPort')+req.url);
+    res.redirect(req.hostname + ":" + app.get('secPort') + req.url);
 });
 app.use('/dashboard', dashboard);
 app.get('*',onGetRequest);
