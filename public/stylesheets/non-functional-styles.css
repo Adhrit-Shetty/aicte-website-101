@@ -281,6 +281,14 @@ div.pdf-font-big button {
 
 /*Box styling*/
 
+.white-panel {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 10px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+
+
 div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
