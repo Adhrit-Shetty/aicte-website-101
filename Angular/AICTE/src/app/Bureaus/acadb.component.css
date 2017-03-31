@@ -1,0 +1,21 @@
+thead {
+  background-color: #FFA500;
+  color: #ffffff;
+}
+
+table, th {
+  text-align: center;
+}
+
+.page-header a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f7eddb;
+}
+
+.fa-angle-double-up {
+  color: #ffa500;
+}
