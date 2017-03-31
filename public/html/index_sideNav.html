@@ -18,11 +18,13 @@
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
     <style>
         a[aria-controls="Intro"].collapsed:before {
-            content: "More...";
+            font-family: FontAwesome;
+            content: "\f103";
             display: block;
         }
 
         a[aria-controls="Intro"]:before {
+            font-family: FontAwesome;
             content: "";
             display: block;
         }
@@ -271,7 +273,7 @@
                             </ol>
                             <p class="text-center ">
                                 <a class="collapsed" data-toggle="collapse" href="#intro"
-                                   aria-expanded="false" aria-controls="Intro">Less...</a>
+                                   aria-expanded="false" aria-controls="Intro"><i class="fa fa-angle-double-up"></i></a>
                             </p>
                         </div>
                     </div>
