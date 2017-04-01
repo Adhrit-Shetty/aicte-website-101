@@ -16,6 +16,21 @@
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -198,12 +213,43 @@
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="row">
                     <div class="col-xs-12 white-panel">
-                        <h2 class="page-header">AICTE Quality Improvement Schemes (AQIS)
-                        </h2>
-                        <div class="align">
-                            <p>AICTE Quality Improvement Schemes (AQIS), promotes Quality in Technical Education through <b>Research and Development</b> and several schemes which aim to create technical work on a systematic basis in order to increase the available body of knowledge, including knowledge of man, culture and society and their interdependence on Technology and the use of this knowledge to devise new applications</p>
+                        <h1 class="page-header">AICTE Quality Improvement Schemes (AQIS) </h1>
+                        <div class="text-left" >
+                        <p>AICTE Quality Improvement Schemes (AQIS), promotes Quality in Technical Education through <b>Research and Development</b> and several schemes which aim to create technical work on a systematic basis in order to increase the available body of knowledge, including knowledge of man, culture and society and their interdependence on Technology and the use of this knowledge to devise new applications</p>
                         </div>
 
+                    </div>
+                </div>
+
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">PDF</h3>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">List of 94 AICTE supported Govt./Govt Aided Institutes under E-Shodh Sindhu INFLIBNET Centre, Gandhi Nagar </span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">AQIS Schemes and General Guidelines 2016-17 </span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">

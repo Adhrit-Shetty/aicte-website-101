@@ -12,7 +12,6 @@ var Year = require('../models/year');
 var Verify = require('./verify');
 var _ = require('underscore');
 var router = express.Router();
-var out = [];
 
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({extended : true}));
@@ -22,7 +21,7 @@ app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
 router.get('/',function(request,response) {
-    console.log(request.body);
+      console.log(request.body);
     Institute.find({},function (err, idata) {
         if (err)
             response.json(err);
@@ -31,7 +30,7 @@ router.get('/',function(request,response) {
         else {
             console.log(idata);
             var query = {
-                $and:[request.body.year,{'instituteid':{$in :idata}}]};
+                $and:[{},{'instituteid':{$in :idata}}]};
             Year.find(query,{"_id" : 0,"y" : 1,"intake" : 1,"passed" : 1,"placed" : 1,"enrolled" : 1,"instituteid" : 1})
                 .populate('instituteid',{'name' :1 ,"_id" : 0})
                 .sort({"y" : 1,"instituteid": -1})

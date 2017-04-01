@@ -17,6 +17,21 @@
     <link rel="stylesheet" href="../stylesheets/materialize.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -469,59 +484,37 @@
                     </div>
                 </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 white-panel">
-                        <h2 class="page-header">APPROVALS</h2>
-                        <div class="align">
-                            <p>As defined in the AICTE act 1987, Technical Education means programs, of Education, Research, and training in Engineering and Technology, Architecture, Town Planning, Management, Pharmacy, and Applied Arts and Crafts, and such other programs or areas as the Central Government may in consultation with the Council, by notification in the official gazette declare.</p>
-                            <p><b>Technical Education in India</b> has a history stretching back to the ancient urban centres of learning at Taxila and Nalanda. Western education became ingrained into Indian society with the establishment of the British Raj. Education in India falls under the control of both the Union Government and the states, with some responsibilities lying with the Union and the states having autonomy for others. The various articles of the Indian constitution provide for education as a fundamental right. Most universities in India are Union or State Government controlled.</p>
-
-                            <p>India has made a huge progress in terms of increasing primary education attendance rate and expanding literacy to approximately two thirds of the population. India's improved education system is often cited as one of the main contributors to the economic rise of India. Much of the progress in education has been credited to various private institutions. The private education market in India is estimated to be worth $40 billion in 2008 and will increase to $68 billion by 2012.</p>
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div class="row">
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">PDF</h3>
-                        <div class="text-center">
-                            <p><b>Approved Institutions Public Domain 2015-2016</b></p>
-                            <div class="pdf-font-big">
-                                <a href="">
-                                    <button type="button" class="btn btn-danger"><span
-                                            class="pdf-border-right text-capitalize">View Institutions approved in 2015 - 2016 in Public Domain</span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Help File to View Institutions approved in 2015 - 2016 in Public Domain </span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
+                            </div>
 
-
-                                <a href="">
-                                    <button type="button" class="btn btn-danger"><span
-                                            class="pdf-border-right text-capitalize">Help File to View Institutions approved in 2015 - 2016 in Public Domain</span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">View Institutions approved in 2015 - 2016 in Public Domain </span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
-                                <a href="">
-                                    <button type="button" class="btn btn-danger"><span
-                                            class="pdf-border-right text-capitalize">List of approved institutes 2015-2016</span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </a>
-
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-
-
             </div>
         </div>
 
