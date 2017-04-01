@@ -43,8 +43,10 @@ app.all('*', function(req, res, next){
     res.redirect('https://'+req.hostname+':'+app.get('secPort')+req.url);
 });
 app.use('/dashboard', dashboard);
-app.get('*',onGetRequest);
-app.use('/announcement.html',announcement);
+app.use('/', express.static('dist'));
+app.get('*', function (req, res, next) {
+    res.sendFile(path.resolve('dist/index.html'));
+});
 //====================================================================================
 //===========================ERROR HANDLING===========================================
 /// catch 404 and forwarding to error handler
