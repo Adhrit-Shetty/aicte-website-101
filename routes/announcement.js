@@ -1,21 +1,25 @@
-//========================IMPORTS====================================================
+//========================IMPORTS=======================================
 var express = require('express');
 var app = express();
 var http = require('http');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
+var path = require('path');
+var fs = require('fs');
 var Announcement = require('../models/announcement');
-var router = express.Router();
+
+var A = express.Router();
+A.use(bodyParser.json());
+A.use(bodyParser.urlencoded({extended : true}));
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
-router.use(bodyParser.json());
-router.use(bodyParser.urlencoded({extended : true}));
 app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
-router.route('/')
-    .get(function(request,response){
-        Announcement.find({},{"_id" : 0,"name" : 1,"href" : 1},{sort : {"date" : -1}},function(err,data){
+A.route('/')
+    .get(function(request,response) {
+        Announcement.find({},{"_id" : 0, "date" :1,"name" : 1,"href" : 1},{sort : {"date" :-1}},function(err,data){
+            console.log("INSIDE!!!");
             if(err)
                 response.json(err);
             else
@@ -24,7 +28,7 @@ router.route('/')
             }
         });
     })
-.post(function(request,response) {
+    .post(function(request,response) {
         console.log(request.body);
         Announcement.create(request.body,function(err,data){
             if(err)
@@ -35,5 +39,6 @@ router.route('/')
             }
         });
     });
+
 //====================================================================================
-module.exports=router;
+module.exports=A;

@@ -1,0 +1,35 @@
+<div id="wrapper">
+  <aicte-navhome></aicte-navhome>
+  <router-outlet></router-outlet>
+</div>
+<footer class="container-fluid side-collapse-container">
+    <div class="row is-flex">
+      <div class="col-xs-12">
+        <ul class="nav footerstyle">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Feedback</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Website Policy</a></li>
+          <li><a href="">Site map</a></li>
+          <li><a href="">Downloads</a></li>
+          <li><a href="">Video Conferencing</a></li>
+          <li><a [routerLink]="['./login']">Login</a></li>
+          <li id="facebookIcon" class="text-right">
+            <button class="btn btn-info"><a
+              href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+              <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-muted text-center">© Copyright 2017 All India Council for Technical Education</p>
+      </div>
+    </div>
+  </footer>
+<ul class="nav scroll-top">
+  <li><a href="#" tabindex="-1" title="Scroll to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+

@@ -19,19 +19,21 @@ a, a:hover, a:focus {
 }
 
 /********Footer********/
+footer {
+    background-color: #312c2d;
+}
+
 footer a {
     color: white;
 }
 
 .footerstyle > li {
     display: inline-block;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 10px 2px 10px 2px;
 }
 
 .footerstyle > li > a {
-    padding: 10px;
+    padding: 8px;
 }
 
 #facebookIcon a {
@@ -42,151 +44,11 @@ footer a {
     color: #3890ec;
 }
 
-/*********Box-padding**************/
-[class*="col-"] {
-    background-clip: padding-box;
-    border: 10px solid transparent;
+.text-muted {
+    color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-    .border-push-top-xs {
-        border-top-width: 20px;
-    }
-
-    .border-push-left-xs {
-        border-left-width: 20px;
-    }
-
-    .border-push-right-xs {
-        border-right-width: 20px;
-    }
-
-    .border-push-bottom-xs {
-        border-bottom-width: 20px;
-    }
-
-    .border-pull-top-xs {
-        border-top-width: 0;
-    }
-
-    .border-pull-left-xs {
-        border-left-width: 0;
-    }
-
-    .border-pull-right-xs {
-        border-right-width: 0;
-    }
-
-    .border-pull-bottom-xs {
-        border-bottom-width: 0;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 997px) {
-    .border-push-top-sm {
-        border-top-width: 20px;
-    }
-
-    .border-push-left-sm {
-        border-left-width: 20px;
-    }
-
-    .border-push-right-sm {
-        border-right-width: 20px;
-    }
-
-    .border-push-bottom-sm {
-        border-bottom-width: 20px;
-    }
-
-    .border-pull-top-sm {
-        border-top-width: 0;
-    }
-
-    .border-pull-left-sm {
-        border-left-width: 0;
-    }
-
-    .border-pull-right-sm {
-        border-right-width: 0;
-    }
-
-    .border-pull-bottom-sm {
-        border-bottom-width: 0;
-    }
-}
-
-@media screen and (min-width: 998px)and (max-width: 1191px) {
-    .border-push-top-md {
-        border-top-width: 20px;
-    }
-
-    .border-push-left-md {
-        border-left-width: 20px;
-    }
-
-    .border-push-right-md {
-        border-right-width: 20px;
-    }
-
-    .border-push-bottom-md {
-        border-bottom-width: 20px;
-    }
-
-    .border-pull-top-md {
-        border-top-width: 0;
-    }
-
-    .border-pull-left-md {
-        border-left-width: 0;
-    }
-
-    .border-pull-right-md {
-        border-right-width: 0;
-    }
-
-    .border-pull-bottom-md {
-        border-bottom-width: 0;
-    }
-}
-
-@media screen and (min-width: 1192px) {
-    .border-push-top {
-        border-top-width: 20px;
-    }
-
-    .border-push-left {
-        border-left-width: 20px;
-    }
-
-    .border-push-right {
-        border-right-width: 20px;
-    }
-
-    .border-push-bottom {
-        border-bottom-width: 20px;
-    }
-
-    .border-pull-top {
-        border-top-width: 0;
-    }
-
-    .border-pull-left {
-        border-left-width: 0;
-    }
-
-    .border-pull-right {
-        border-right-width: 0;
-    }
-
-    .border-pull-bottom {
-        border-bottom-width: 0;
-    }
-}
-
-
-
-/*********************/
+/**********Navbar***********/
 
 .navbar-shadow {
     box-shadow: 0 23px 23px -20px #000000;
@@ -325,7 +187,7 @@ footer a {
     right: 0;
 }
 
-.dropdown-toggle.active, .dropdown-toggle.active:hover, .dropdown-toggle.active:focus, .dropdown-toggle.active:active, .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > .active:hover {
+.dropdown-toggle.active, .dropdown-toggle.active:hover, .dropdown-toggle.active:focus, .dropdown-toggle.active:active, .navbar .navbar-nav > li > .active:focus, .navbar .navbar-nav > li > .active:hover {
     background-color: #FFA500;
 }
 
@@ -418,7 +280,19 @@ div.pdf-font-big button {
     border-bottom: 1px solid #555152;
 }
 
+.fa-angle-double-up, .fa-angle-double-down {
+    font-size: 1.5em;
+}
+
 /*Box styling*/
+
+.white-panel {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 10px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+
 
 div.white-panel:hover {
     transition: all 0.5s ease-in;

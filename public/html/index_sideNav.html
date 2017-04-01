@@ -18,11 +18,13 @@
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
     <style>
         a[aria-controls="Intro"].collapsed:before {
-            content: "More...";
+            font-family: FontAwesome;
+            content: "\f103";
             display: block;
         }
 
         a[aria-controls="Intro"]:before {
+            font-family: FontAwesome;
             content: "";
             display: block;
         }
@@ -43,6 +45,26 @@
             width: 1.3em; /* same as padding-left set on li */
         }
 
+        .jumbotron {
+            padding: 0;
+            margin: 0px auto;
+            background: #FFFDFC;
+            color: #fff9f6;
+        }
+
+        .jumbotron .container-fluid {
+            padding: 0;
+        }
+
+        .carousel {
+            z-index: 0;
+        }
+
+        .carousel-inner .item img {
+            max-height: 300px;
+            min-height: 300px;
+            min-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -209,10 +231,59 @@
     </header>
 
     <main class="container-fluid side-collapse-container">
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <div id="feature-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#feaure-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#feaure-carousel" data-slide-to="1"></li>
+                        <li data-target="#feaure-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../images/img1.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <img src="../images/img2.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../images/img3.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        ...
+                    </div>
+
+                    <!-- Controls -->
+
+                    <a class="left carousel-control" href="#feature-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#feature-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <!-- ./carousel-->
+            </div>
+        </div>
+        <!-- ./jumbotron-->
         <!--Main jumbotron for a primary marketing message or call to action -->
         <div class="row is-flex">
-            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel border-push-bottom border-push-right border-push-left-xs
-             border-push-right-xs border-push-right-sm border-push-left-sm border-pull-left-md border-push-bottom-md border-push-top-md border-push-right-md">
+            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel">
                 <h3 class="page-header">Announcements</h3>
                 <ul class="custom-list-style">
                     <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
@@ -237,94 +308,31 @@
                 </nav>
             </div>
             <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <div class="row is-flex">
-                    <div class="col-xs-12 white-panel border-pull-top border-pull-right">
-                        <h3 class="page-header">Introduction</h3>
-
-                        Technical education in India contributes a major share to the overall education system and
-                        plays a vital role in the social and economic development of our nation. In India, technical
-                        education is imparted at various levels such as: craftsmanship, diploma, degree,
-                        post-graduate and research in specialized fields, catering to various aspects of
-                        technological development and economic progress.
-
-                        <a class="text-center collapsed" data-toggle="collapse" href="#intro" aria-expanded="false"
-                           aria-controls="Intro"></a>
-
-                        <div id="intro" class="collapse">
-                            <p>
-                                The beginning of formal Technical Education in India can be dated back to the mid 19th
-                                Century. The major policy initiatives in the pre-independence period included
-                                appointment of
-                                the Indian Universities Commission in 1902, issue of the Indian Education policy
-                                resolution
-                                in 1904 and the Governor General’s policy statement of 1913 stressing the importance of
-                                Technical Education, the establishment of IISc in Bangalore, Institute for Sugar,
-                                Textile
-                                and Leather Technology in Kanpur, N.C.E. in Bengal in 1905 and Industrial schools in
-                                several
-                                provinces. Significant developments include -
-                            </p>
-                            <ol>
-                                <li>Constitution of the Technical Education Committee of the Central Advisory Board of
-                                    Education of 1943
-                                <li>Preparation of the Sergeant Report of 1944
-                                <li>Formation of the All India Council for
-                                    Technical Education (AICTE) in 1945 by the Government of India.
-                            </ol>
-                            <p class="text-center ">
-                                <a class="collapsed" data-toggle="collapse" href="#intro"
-                                   aria-expanded="false" aria-controls="Intro">Less...</a>
-                            </p>
-                        </div>
+                <div class="row is-flex text-center">
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
+                        <a href="" target="_blank">
+                            <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
+                            <h3 class="">Students</h3>
+                            <div><i class="fa fa-user" style="font-size: 2em"></i></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
+                        <a href="" target="_blank">
+                            <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
+                            <h3 class="">College</h3>
+                            <div><i class="fa fa-university" style="font-size: 2em"></i></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
+                        <a href="" target="_blank">
+                            <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
+                            <h3 class="">Employee</h3>
+                            <div><i class="fa fa-id-badge" style="font-size: 2em"></i></div>
+                        </a>
                     </div>
                 </div>
                 <div class="row is-flex">
-                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
-                        <h3 class="page-header">Vision</h3>
-                        “To be a world class organization leading technological and socioeconomic development of the
-                        Country by enhancing the global competitiveness of technical manpower and by ensuring high
-                        quality technical education to all sections of the society.”
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel border-pull-right ">
-                        <h3 class="page-header">Pledge</h3>
-                        India is my country and all Indians are my brothers and sisters.
-                        I love my country and I am proud of its rich and varied heritage.
-                        I shall always strive to be worthy of it.
-
-                        I shall give respect to my parents, teachers and elders
-                        and treat everyone with courtesy.
-
-                        To my country and my people, I pledge my devotion.
-
-                        In their well being and prosperity alone, lies my happiness.
-                    </div>
-                </div>
-                <div class="row is-flex">
-                    <div class="col-xs-12 white-panel border-pull-right">
-                        <!--<h3 class="page-header">Mission</h3>-->
-                        <!--<p>-->
-                        <!--A true facilitator and an objective regulator-->
-                        <!--Transparent governance and accountable approach towards the society.-->
-                        <!--Planned and coordinated development of Technical Education in the Country by ensuring-->
-                        <!--world-class standards of Institutions through accreditation.-->
-                        <!--Facilitating world-class Technical Education through:-->
-                        <!--</p>-->
-                        <!--<p>-->
-                        <!--Emphasis on developing high quality Institutions, academic excellence and innovative-->
-                        <!--research and development programmes;-->
-                        <!--Networking of Institutions for optimum resource utilization;-->
-                        <!--Dissemination of knowledge;-->
-                        <!--Technology forecasting and global manpower planning;-->
-                        <!--Promoting industry-Institution interaction for developing new products, services, and-->
-                        <!--patents;-->
-                        <!--Inculcating entrepreneurship;-->
-                        <!--Encouraging indigenous technology;-->
-                        <!--Focusing on non-formal education;-->
-                        <!--Providing affordable education to all.-->
-                        <!--Making Indian Technical Education globally acceptable.-->
-                        <!--To be a forward-looking organization that has an efficient, flexible and empowered manpower,-->
-                        <!--sensitive to stakeholders’ expectations.-->
-                        <!--</p>-->
+                    <div class="col-xs-12 white-panel">
                         <h3 class="page-header" align="center">Bulletion Board</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
@@ -463,7 +471,7 @@
                         <img src="../images/stop-ragging.png" alt="ANTI-RAGGING"
                              class="img-responsive img-centered">
                     </div>
-                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel border-pull-right">
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel">
                         <div class="row is-flex">
                             <div class="col-xs-12">
                                 <h3 class="page-header">Recent</h3>
@@ -494,36 +502,39 @@
         </div>
     </main>
 </div>
-    <footer class="container-fluid side-collapse-container">
-        <div class="row is-flex">
-            <div class="col-xs-12">
-                <ul class="nav footerstyle">
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Feedback</a></li>
-                    <li><a href="">Help</a></li>
-                    <li><a href="">Website Policy</a></li>
-                    <li><a href="">Site map</a></li>
-                    <li><a href="">Downloads</a></li>
-                    <li><a href="">Video Conferencing</a></li>
-                    <li><a href="">Login</a></li>
-                    <li id="facebookIcon" class="text-right">
-                        <button class="btn btn-info"><a
-                                href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
-                            <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
-                    </li>
-                </ul>
-            </div>
+<footer class="container-fluid side-collapse-container">
+    <div class="row is-flex">
+        <div class="col-xs-12">
+            <ul class="nav footerstyle">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Feedback</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Website Policy</a></li>
+                <li><a href="">Site map</a></li>
+                <li><a href="">Downloads</a></li>
+                <li><a href="">Video Conferencing</a></li>
+                <li><a href="">Photo Gallery</a></li>
+                <li><a href="">Educational Network</a></li>
+                <li><a href="">Startup Policy</a></li>
+                <li><a href="">Login</a></li>
+                <li id="facebookIcon" class="text-right">
+                    <button class="btn btn-info"><a
+                            href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519">
+                        <i class="fa fa-facebook" style="font-size: 2em"></i></a></button>
+                </li>
+            </ul>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="text-muted text-center">© Copyright 2017 All India Council for Technical Education</p>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="text-muted text-center">© Copyright 2017 All India Council for Technical Education</p>
         </div>
-    </footer>
-    <ul class="nav scroll-top">
-        <li><a href="#" tabindex="-1" title="Scroll to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-    </ul>
+    </div>
+</footer>
+<ul class="nav scroll-top">
+    <li><a href="#" tabindex="-1" title="Scroll to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
