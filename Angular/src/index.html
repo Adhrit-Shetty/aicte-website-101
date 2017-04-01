@@ -3,34 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
 
   <title>Welcome to AICTE</title>
   <base href="/">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/bower_components/Ripple.js/dist/ripple.min.css">
+  <link rel="stylesheet" href="./assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
   <link rel="stylesheet"
-        href="assets/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="assets/stylesheets/materialize.css">
-  <link rel="stylesheet" href="assets/stylesheets/styles.css">
-  <link rel="stylesheet" href="assets/stylesheets/non-functional-styles.css">
+        href="./assets/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+  <link rel="stylesheet" href="./assets/stylesheets/non-functional-styles.css">
+  <style>
+    a[aria-controls="Intro"].collapsed:before {
+      content: "More...";
+      display: block;
+    }
 
+    a[aria-controls="Intro"]:before {
+      content: "";
+      display: block;
+    }
+
+    .custom-list-style {
+      list-style: none;
+    }
+
+    .custom-list-style > li {
+      padding-left: 1.3em;
+    }
+
+    .custom-list-style > li:before {
+      font-family: FontAwesome;
+      content: "\f054"; /* FontAwesome Unicode */
+      display: inline-block;
+      margin-left: -1.3em; /* same as padding-left set on li */
+      width: 1.3em; /* same as padding-left set on li */
+    }
+  </style>
 </head>
 <body>
 <aicte-root>Loading...</aicte-root>
-<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
-<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/bower_components/Ripple.js/dist/ripple.min.js"></script>
-<script src="assets/javascripts/material.min.js"></script>
-<script src="assets/javascripts/indexjs.js"></script>
-<script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
-<script src="node_modules/chart.js/dist/Chart.js"></script>
+<script src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./assets/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script src="./assets/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="./assets/javascripts/indexjs.js"></script>
 </body>
 </html>
 
