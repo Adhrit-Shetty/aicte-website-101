@@ -2,12 +2,14 @@ var User = require('../models/user');
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var config = require('./config.js');
 var express = require('express');
+var Institute = require('../models/institution');
+var Year = require('../models/year');
 var app = express();
 
 exports.getToken = function(user) {
     console.log("Successs!!!!"+user+"   \n"+user);
     return jwt.sign({data:user},config.secretKey,{
-        expiresIn: 10
+        expiresIn: 3600
     });
     console.log("Successs!!!!"+user.admin+"   \n"+user);
 };
@@ -37,6 +39,9 @@ exports.verifyOrdinaryUser = function(request, response, next) {
                             }
                         });
                 }
+                else {
+                    response.json(err);
+                }
             }
             else
             {
@@ -51,7 +56,62 @@ exports.verifyOrdinaryUser = function(request, response, next) {
         // if there is no token
         // return an error
         var err = new Error('No token provided!');
-        //err.status = 403;
         response.json(err);
     }
 };
+exports.verifyInstitute = function (request,response,next){
+    console.log(request);
+    Institute.find({name:request.body.name},function (err, idata) {
+        if(idata[0]==undefined)
+            next();
+        else {
+            response.json("Institute Already Present");
+        }
+    });
+}
+
+exports.verifyInstitute = function (request,response,next){
+    console.log(request);
+    Institute.find({name:request.body.name},function (err, idata) {
+        if(idata[0]==undefined)
+            next();
+        else {
+            response.json("Institute Already Present");
+        }
+    });
+}
+
+exports.verifyYear = function (request,response,next){
+    console.log(request);
+    Institute.find({name:request.body.name},function (err, idata) {
+        if(idata[0]==undefined)
+        {
+            response.json("No such Institute");
+        }
+        else {
+            console.log(idata);
+            Year.find({'y': request.body.y , 'instituteid' : idata[0]._id},function(err,new_data){
+                if(new_data[0]==undefined)
+                    next();
+                else {
+                    response.json("Year data already present");
+                }
+            });
+        }
+    }).limit(1);
+}
+exports.trim_nulls = function (data) {
+    var y;
+    for (var x in data) {
+        y = data[x];
+        if (y==="null" || y===null || y==="" || typeof y === "undefined" || (y instanceof Object && Object.keys(y).length == 0)) {
+            delete data[x];
+        }
+        if (y instanceof Object) y = trim_nulls(y);
+    }
+    return data;
+}
+
+//db.users.find().pretty()
+// db.users.update({"username":"A"},{$set:{"logged":false}})
+//db.users.drop()

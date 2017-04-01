@@ -1,0 +1,191 @@
+<header>
+  <section id="brand" class="container-fluid side-collapse-container">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+        <a [routerLink]="['./home']"><img src="../assets/images/aicte.png" alt="AICTE"
+                                          class="img-circle"
+                                          style="height:150px;width:150px;padding:10px;"></a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-left text-capitalize" id="mastHeadBrand">
+        <h1 class="heading">All India Council for Technical Education<br/>
+          <small id="mastHeadTagline" class="fade-in">We Promote Transparency And Accountability</small>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <nav role="navigation" class="navbar navbar-inverse box-shadow" id="fullNav" style="background-color:#555152;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button data-toggle="collapse-side" data-target=".side-collapse"
+                data-target-2=".side-collapse-container"
+                type="button" class="navbar-toggle pull-left" id="collapse-menu">
+          <span class="icon-bar" id="bar1"></span>
+          <span class="icon-bar" id="bar2"></span>
+          <span class="icon-bar" id="bar3"></span>
+        </button>
+        <a [routerLink]="['./home']" class="navbar-brand hidden-xs"><i class="fa fa-home" id="homeIcon"
+                                                                       style="font-size: 2em;"></i></a>
+      </div>
+      <div class="navbar-inverse side-collapse in not-top" id="miniNav">
+        <nav role="navigation" class="navbar-collapse" style="background-color:#555152;">
+          <ul class="nav navbar-nav">
+            <li class="visible-xs" style="display:block;">
+              <a href=""><img src="../assets/images/aicte.png" alt="AICTE" class="img-centered"></a>
+            </li>
+            <li class="visible-xs" style="width: 94%;padding: 0 3%;">
+              <label class="sr-only">Search</label>
+              <form method="POST" style="padding: 0;margin: 0" id="searchMiniNav">
+                <div class="input-group">
+                  <label class="sr-only">Search</label>
+                  <input type="text" name="search" class="form-control" placeholder="Search"
+                         aria-describedby="search">
+                  <span class="input-group-btn"><button class="btn btn-default"><span
+                    class="glyphicon glyphicon-search"></span></button></span>
+                </div>
+              </form>
+            </li>
+            <li><a class="dropdown-toggle
+                           hvr-underline-from-center" data-toggle="dropdown" href="#"
+                   aria-expanded="false">ABOUT US&nbsp;<span class="caret"></span>
+            </a>
+              <ul class="dropdown-menu " role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./aboutAICTE']">About AICTE</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./regional_office']">Regional office</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./faculty']">Faculty</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown ">
+              <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                 aria-expanded="false">BUREAUS&nbsp;<span class="fa fa-caret-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./administration_bureau']">Administrative
+                  Bureau</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./academic_bureau']">Academic Bureau</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./finance_bureau']">Finance Bureau</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./approvals_bureau']">Approval Bureau</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./parliament_questions']">Parliament
+                  Questions</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./rifd']">Research,Institutions and faculty
+                  development</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                 aria-expanded="false">GRIEVANCES&nbsp;<span class="fa fa-caret-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./anti_ragging']">Anti Ragging</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./right_to_information']">RTI</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./central_vigilance_commission']">CVC</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./public_grievance']">Public grievance</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./sc_st_cell']">SC/ST Cell</a></li>
+              </ul>
+
+            </li>
+            <li class="dropdown ">
+              <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                 aria-expanded="false">REPORTS&nbsp;<span class="fa fa-caret-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./annual_report']">Annual Report</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./committee_report']">Committee Report</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./knowledge_commission_report']">Knowledge
+                  Commission Report</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./sarva_shiksha_abhiyan']">Sarva Shiksha
+                  Abhiyan </a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./rusa']">Rashtiya Uchatar Shiksha Abhiyan
+                  - RUSA</a></li>
+              </ul>
+            </li>
+            <li class="dropdown ">
+              <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown"
+                 [routerLink]="['./dashboard']">DASHBOARD&nbsp;<span
+                class="fa fa-dashboard"></span></a>
+
+
+            </li>
+            <li class="dropdown ">
+              <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                 aria-expanded="false">EDUCATION&nbsp;<span class="fa fa-caret-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./educational_network']">Educational
+                  Network</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./collaborations']">Collaborations</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./mobile_education']">Mobile Education</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./finishing_schools']">Finishing Schools</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./vocational_education']">Vocational
+                  Education</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./community_colleges']">Community Colleges</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./distance_education']">Distance Education</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./institutions_in_india']">Institutions in
+                  India</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./use_of_ict']">Use of ICT</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./library_services']">Library Services</a>
+                </li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./project_factory']">Project Factory</a></li>
+              </ul>
+
+            </li>
+            <li class="dropdown ">
+              <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
+                 aria-expanded="false">STUDENTS&nbsp;<span class="fa fa-caret-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./admissions']">Admission</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./scholarships']">Scholarship</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./awards']">Awards</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./ethics']">Ethics</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./loans']">Loans</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./facilities_for_differently_abled']">Facilities
+                  for Differently
+                  abled</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./facilities_for_girls']">Facilities for
+                  Girls</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./placements']">Placements</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./want_to_be_an_entrepreneur']">Want to be an
+                  Entrepreneur</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./research_funds']">Research funds</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./model_syllabus']">Model Syllabus</a></li>
+              </ul>
+
+            </li>
+            <li class="dropdown ">
+              <a class="dropdown-toggle hvr-underline-from-center " data-toggle="dropdown" href="#"
+                 aria-expanded="false">BULLETIN&nbsp;<span class="fa fa-caret-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./advertisements']">Advertisements</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./jobs']">Jobs</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./circulars']">Circulars</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./tenders']">Tenders</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./news_letters']">Newsletters</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./photo_gallery']">Photo-gallery</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./startup_policy']">Start-Up Policy</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar-right">
+            <form method="post" class="navbar-form hidden-xs">
+              <label class="sr-only">SEARCH</label>
+              <input type="text" name="search" class="form-control extend-input" placeholder="Search"
+                     aria-describedby="search">
+              <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+</header>

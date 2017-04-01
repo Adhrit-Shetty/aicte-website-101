@@ -12,11 +12,7 @@ var dataSchema = new Schema(
                 unique : true
             },
         password: String,
-        logged :
-            {
-                type : Boolean,
-                default : false
-            }
+        logged : Boolean
     },
     {
         timestamps : true
