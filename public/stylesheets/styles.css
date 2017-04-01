@@ -4,18 +4,11 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     background-color: #ECECEC;
     line-height: 150%;
     min-height: 100%;
-}
-
-h1, h2{
-    font-family: 'Lato-Light';
-    font-weight:bolder;
-
 }
 
 /******Navbar*******/

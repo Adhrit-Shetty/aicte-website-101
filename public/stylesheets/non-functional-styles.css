@@ -1,4 +1,15 @@
 /*****General*****/
+/*!*****Fonts******!*/
+@font-face {
+    font-family: 'Fira Sans';
+    src: url("../stylesheets/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../stylesheets/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
 /***background-image***/
 body {
     background: teal; /* For browsers that do not support gradients */
@@ -12,7 +23,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family:'Lato-Light';
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans", "Roboto", sans-serif;
 }
 
 main {
@@ -274,7 +289,6 @@ footer a {
 
 div.pdf-font-big button {
     display: inline-block;
-    /*line-height: 200%;*/
     font-size: 2rem;
     color: red;
     padding: 10px;
@@ -283,7 +297,7 @@ div.pdf-font-big button {
 }
 
 .page-header {
-    font-family:'Lato-Light';
+    font-family: 'Fira Sans', "Roboto", sans-serif;
     text-align: center;
     border-bottom: 1px solid #555152;
 }
@@ -296,7 +310,7 @@ div.pdf-font-big button {
 
 .white-panel {
     background: rgba(255, 255, 255, 0.88);
-    padding: 10px;
+    padding: 15px;
     background-clip: padding-box;
     border: 10px solid transparent;
 }
