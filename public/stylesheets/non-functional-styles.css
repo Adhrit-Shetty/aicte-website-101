@@ -345,9 +345,10 @@ div.white-panel:hover {
     opacity:1;
 
 }
-div.white-panel:hover > .page-header{
+
+div.white-panel:hover .page-header {
     font-weight:900;
-   }
+}
 
 div.white-panel:hover .page-header, .white-panel:hover .fa-external-link {
     transition: all 0.4s ease-in;
