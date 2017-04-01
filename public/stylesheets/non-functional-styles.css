@@ -77,6 +77,19 @@ footer a {
 
 /**********Navbar***********/
 
+#mastHeadLogin a {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/*#mastHeadLogin a:hover,#mastHeadLogin a:focus {*/
+/*font-size: 1.5em;*/
+/*}*/
+
+.glyphicon-search {
+    color: #ffffff;
+}
+
 .navbar-shadow {
     box-shadow: 0 23px 23px -20px #000000;
 }
@@ -332,9 +345,10 @@ div.white-panel:hover {
     opacity:1;
 
 }
-div.white-panel:hover > .page-header{
+
+div.white-panel:hover .page-header {
     font-weight:900;
-   }
+}
 
 div.white-panel:hover .page-header, .white-panel:hover .fa-external-link {
     transition: all 0.4s ease-in;
