@@ -16,6 +16,20 @@
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -249,28 +263,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">PDF</h3>
-                        <div class="text-center">
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
                             <div class="pdf-font-big">
-                                <a href="">
+                                <a href="" target="_blank">
                                     <button type="button" class="btn btn-danger"><span
                                             class="pdf-border-right text-capitalize">Anti-Ragging Undertaking </span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
                             </div>
                             <br><br>
                             <div class="pdf-font-big">
-                                <a href="">
+                                <a href="" target="_blank">
                                     <button type="button" class="btn btn-danger"><span
                                             class="pdf-border-right text-capitalize">Anti-Ragging </span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
                             </div>
                         </div>
                     </div>
@@ -296,7 +315,7 @@
                     <li><a href="">Login</a></li>
                     <a href="https://www.facebook.com/pages/All-India-Council-for-Technical-Education/106184416079519"
                        class="btn btn-info btn-social-icon btn-facebook"><i
-                            class="fa fa-facebook fa-align-right"></i></a></li>
+                            class="fa fa-facebook fa-align-right" style="font-size: 1.5em"></i></a></li>
                 </ul>
             </div>
         </div>

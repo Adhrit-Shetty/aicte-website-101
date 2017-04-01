@@ -18,7 +18,6 @@ app.use(morgan('dev'));
 search.route('/')
     .post(function(request,response,next){
         console.log(request.body);
-
         response.redirect('/');
 
     });

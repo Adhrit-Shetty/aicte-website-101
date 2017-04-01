@@ -6,14 +6,12 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var path = require('path');
 var fs = require('fs');
-var url = 'mongodb://localhost:27017/Aicte101';
 var Announcement = require('../models/announcement');
-
 var A = express.Router();
-A.use(bodyParser.json());
-A.use(bodyParser.urlencoded({extended : true}));
 //====================================================================================
 //===========================IMPLEMENTATION===========================================
+A.use(bodyParser.json());
+A.use(bodyParser.urlencoded({extended : true}));
 app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
