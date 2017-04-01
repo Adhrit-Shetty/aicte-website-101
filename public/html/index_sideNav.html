@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../stylesheets/bootstrap-tour.min.css">
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet"
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
@@ -267,7 +266,7 @@
 
         <div class="row is-flex">
             <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel">
-                <h3 class="page-header" id="announcementsTour">Announcements</h3>
+                <h3 class="page-header">Announcements</h3>
                 <ul class="custom-list-style">
                     <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
                     <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
@@ -310,7 +309,7 @@
                 </div>
                 <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
-                        <h3 class="page-header" align="center" id="bulltetinTour">Bulletion Board</h3>
+                        <h3 class="page-header" align="center">Bulletion Board</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -510,36 +509,9 @@
 </ul>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../javascripts/bootstrap-tour.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
 <script src="../javascripts/indexjs.js"></script>
-<script>
-    $(document).ready(function () {
-        // Instance the tour
-        $('[data-toggle="popover"]').popover()
-        var tour = new Tour({
-            steps: [
-                {
-                    element: "#announcementsTour",
-                    title: "Title of my step",
-                    content: "Content of my step"
-                },
-                {
-                    element: "#bulletinTour",
-                    title: "Title of my step",
-                    content: "Content of my step"
-                }
-            ]
-        });
-
-        // Initialize the tour
-        tour.init();
-        // Start the tour
-        tour.start();
-    });
-
-</script>
 </body>
 </html>
 
