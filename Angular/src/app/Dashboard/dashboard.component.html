@@ -108,7 +108,7 @@
           </div>
         </div>
         <select *ngIf="collegeData" formControlName="colleges">
-          <option disabled> --select an option--</option>
+          <option value = "" disabled selected> --select an option--</option>
           <option *ngFor="let name of collegenames" value="{{ name }}">{{ name }}</option>
         </select>
       </form>
