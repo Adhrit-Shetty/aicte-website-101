@@ -77,6 +77,19 @@ footer a {
 
 /**********Navbar***********/
 
+#mastHeadLogin a {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/*#mastHeadLogin a:hover,#mastHeadLogin a:focus {*/
+/*font-size: 1.5em;*/
+/*}*/
+
+.glyphicon-search {
+    color: #ffffff;
+}
+
 .navbar-shadow {
     box-shadow: 0 23px 23px -20px #000000;
 }
