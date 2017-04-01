@@ -59,6 +59,8 @@ import {ProjectfactoryComponent} from './Education/projectfactory.component';
 import {DashboardComponent} from "./Dashboard/dashboard.component";
 import {ChartsModule} from "ng2-charts";
 import {SharedModule} from "./Shared/shared.module";
+import { LoginComponent } from './Login/login.component';
+
 
 
 @NgModule({
@@ -112,7 +114,8 @@ import {SharedModule} from "./Shared/shared.module";
     ModelsyllabusComponent,
     LibraryservicesComponent,
     ProjectfactoryComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
