@@ -12,7 +12,7 @@ var dataSchema = new Schema(
                 unique : true
             },
         password: String,
-        logged : Boolean,
+        logged : Boolean
     },
     {
         timestamps : true
@@ -23,4 +23,4 @@ var dataSchema = new Schema(
 dataSchema.plugin(passportLocalMongoose);
 var User = mongoose.model('User',dataSchema);
 //====================================================================================
-module.exports=User
+module.exports=User;
