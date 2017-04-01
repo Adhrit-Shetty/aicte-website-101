@@ -1,19 +1,13 @@
-a[aria-controls="Intro"].collapsed:before {
-  content: "More...";
-  display: block;
-}
-
-a[aria-controls="Intro"]:before {
-  content: "";
-  display: block;
-}
-
 .custom-list-style {
   list-style: none;
 }
 
 .custom-list-style > li {
   padding-left: 1.3em;
+}
+
+#feature-carousel {
+  padding: 0;
 }
 
 .custom-list-style > li:before {
@@ -24,3 +18,12 @@ a[aria-controls="Intro"]:before {
   width: 1.3em; /* same as padding-left set on li */
 }
 
+.carousel {
+  z-index: 0;
+}
+
+.carousel-inner .item img {
+  max-height: 350px;
+  min-height: 350px;
+  min-width: 100%;
+}

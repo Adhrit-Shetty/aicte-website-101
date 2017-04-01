@@ -1,15 +1,18 @@
 <header>
   <section id="brand" class="container-fluid side-collapse-container">
     <div class="row">
-      <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs">
+      <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
         <a [routerLink]="['./home']"><img src="../assets/images/aicte.png" alt="AICTE"
                         class="img-circle"
                         style="height:150px;width:150px;padding:10px;"></a>
       </div>
-      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 text-left text-capitalize" id="mastHeadBrand">
+      <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 text-center text-capitalize" id="mastHeadBrand">
         <h1>All India Council for Technical Education<br/>
           <small id="mastHeadTagline" class="fade-in">We Promote Transparency And Accountability</small>
         </h1>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" id="mastHeadLogin" style="padding-top: 50px">
+        <a [routerLink]="['./login']">Login <i class="glyphicon glyphicon-log-in"></i></a>
       </div>
     </div>
   </section>
@@ -23,7 +26,7 @@
           <span class="icon-bar" id="bar2"></span>
           <span class="icon-bar" id="bar3"></span>
         </button>
-        <a  class="navbar-brand"><i class="fa fa-home" id="homeIcon"
+        <a  class="navbar-brand" [routerLink]="['./home']"><i class="fa fa-home" id="homeIcon"
                                            style="font-size: 2em;"></i></a>
       </div>
       <div class="navbar-inverse side-collapse in not-top" id="miniNav">
@@ -44,7 +47,7 @@
                 </div>
               </form>
             </li>
-            <li><a class="dropdown-toggle
+            <li routerLinkActive="active" ><a class="dropdown-toggle
                            hvr-underline-from-center" data-toggle="dropdown" href="#"
                    aria-expanded="false">ABOUT US&nbsp;<span
               class="fa fa-chevron-down"></span>
@@ -56,7 +59,7 @@
 
               </ul>
             </li>
-            <li class="dropdown ">
+            <li routerLinkActive="active" class="dropdown ">
               <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                  aria-expanded="false">BUREAUS&nbsp;<span class="fa fa-chevron-down"></span>
               </a>
@@ -70,7 +73,7 @@
                   development</a></li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li  routerLinkActive="active" class="dropdown">
               <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                  aria-expanded="false">GRIEVANCES&nbsp;<span class="fa fa-chevron-down"></span>
               </a>
@@ -83,7 +86,7 @@
               </ul>
 
             </li>
-            <li class="dropdown ">
+            <li routerLinkActive="activate" class="dropdown ">
               <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                  aria-expanded="false">REPORTS&nbsp;<span class="fa fa-chevron-down"></span>
               </a>
@@ -97,18 +100,16 @@
                   - RUSA</a></li>
               </ul>
             </li>
-            <li class="dropdown ">
+            <li routerLinkActive="active">
               <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" [routerLink]="['./dashboard']">DASHBOARD&nbsp;<span
                 class="fa fa-dashboard"></span></a>
-
-
             </li>
-            <li class="dropdown">
+            <li  class="dropdown">
               <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                  aria-expanded="false">EDUCATION&nbsp;<span class="fa fa-chevron-down"></span>
               </a>
               <ul class="dropdown-menu scrollable-menu" role="menu">
-                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./rifd']">Educational Network</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['']">Educational Network</a></li>
                 <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./collaborations']">Collaborations</a></li>
                 <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./mobile_education']">Mobile Education</a></li>
                 <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./finishing_schools']">Finishing Schools</a></li>
@@ -122,12 +123,12 @@
               </ul>
 
             </li>
-            <li class="dropdown">
+            <li routerLinkActive="active" class="dropdown">
               <a class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" href="#"
                  aria-expanded="false">STUDENTS&nbsp;<span class="fa fa-chevron-down"></span>
               </a>
               <ul class="dropdown-menu scrollable-menu" role="menu">
-                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./admission']">Admission</a></li>
+                <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./admissions']">Admission</a></li>
                 <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./scholarship']">Scholarship</a></li>
                 <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./awards']">Awards</a></li>
                 <li><a class="hvr-shutter-out-horizontal" [routerLink]="['./ethics']">Ethics</a></li>
@@ -144,7 +145,7 @@
             </li>
           </ul>
           <div class="navbar-right">
-            <form method="post" class="navbar-form hidden-sm">
+            <form method="post" class="navbar-form hidden-sm hidden-xs">
               <label class="sr-only">SEARCH</label>
               <input type="text" name="search" class="form-control extend-input" placeholder="Search"
                      aria-describedby="search" autocomplete="off">
