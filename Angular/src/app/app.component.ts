@@ -14,9 +14,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    /* smooth scrolling for scroll to top */
     $('.scroll-top').click(function (e) {
       $('.scroll-top a').blur();
-      $('body,html').animate({scrollTop: 0}, 1000, "easeInOutExpo");
+      $('body,html').animate({scrollTop: 0}, 1000);
       e.preventDefault();
     });
     this.router.events.subscribe((evt) => {
