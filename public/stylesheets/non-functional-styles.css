@@ -1,4 +1,15 @@
 /*****General*****/
+/*!*****Fonts******!*/
+@font-face {
+    font-family: 'Fira Sans';
+    src: url("../stylesheets/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../stylesheets/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
 /***background-image***/
 body {
     background: teal; /* For browsers that do not support gradients */
@@ -12,7 +23,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family:'Lato-Light';
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans", "Roboto", sans-serif;
 }
 
 main {
@@ -140,7 +155,7 @@ footer a {
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function:ease-in;
 }
 
@@ -247,7 +262,7 @@ footer a {
 
 /***Search button -white***/
 .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 #fullNav, #miniNav {
@@ -268,12 +283,12 @@ footer a {
 
 /*****L3******/
 .pdf-border-right {
-    border-right: 2px solid red;
+    border-right: 2px solid black;
+    color:black;
 }
 
 div.pdf-font-big button {
     display: inline-block;
-    /*line-height: 200%;*/
     font-size: 2rem;
     color: red;
     padding: 10px;
@@ -282,6 +297,7 @@ div.pdf-font-big button {
 }
 
 .page-header {
+    font-family: 'Fira Sans', "Roboto", sans-serif;
     text-align: center;
     border-bottom: 1px solid #555152;
 }
@@ -294,23 +310,30 @@ div.pdf-font-big button {
 
 .white-panel {
     background: rgba(255, 255, 255, 0.88);
-    padding: 10px;
+    padding: 15px;
     background-clip: padding-box;
     border: 10px solid transparent;
 }
 
 
+div.white-panel{
+    transition:all 0.5s ease-out;
+}
 div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
     background-color: white;
     opacity:1;
+
 }
+div.white-panel:hover > .page-header{
+    font-weight:900;
+   }
 
 div.white-panel:hover .page-header, .white-panel:hover .fa-external-link {
     transition: all 0.4s ease-in;
-    border-color: #FFA500;
-    color: #FFA500;
+    border-color:#FFA500;
+    color: teal;
 }
 
 ul.scroll-top>li>a:hover{
@@ -318,6 +341,10 @@ ul.scroll-top>li>a:hover{
     color:white;
 }
 
+
+div.bgcolor:hover{
+    background-color:#b2d8d8;
+}
 
 
 
