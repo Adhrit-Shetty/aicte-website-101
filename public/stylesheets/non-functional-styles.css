@@ -35,8 +35,14 @@ main {
     line-height: 150%;
 }
 
-a, a:hover, a:focus {
-    color: #e98b17;
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #eb9316;
+    text-decoration: none;
 }
 
 /********Footer********/
