@@ -1,12 +1,18 @@
 /*****General*****/
 /***background-image***/
 body {
-    background-color: dodgerblue;
-    /*background: url("../images/flag.png") no-repeat center center fixed;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
+    background: teal; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top,teal, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left top,teal, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top,teal, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top,teal, white); /* Standard syntax */
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:'Lato-Light';
 }
 
 main {
