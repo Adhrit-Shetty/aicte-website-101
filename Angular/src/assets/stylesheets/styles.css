@@ -4,17 +4,11 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     background-color: #ECECEC;
     line-height: 150%;
     min-height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', 'Roboto', sans-serif;
-
 }
 
 /******Navbar*******/
@@ -117,6 +111,7 @@ nav[aria-label="Announcements Pager"] {
 
     #mastHeadBrand h1 {
         font-size: 3.1rem;
+        font-family:'Lato-Light';
     }
 
 }
@@ -199,8 +194,8 @@ img {
 }
 
 .img-centered {
-    min-height: 150px;
-    min-width: 150px;
+    max-height: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

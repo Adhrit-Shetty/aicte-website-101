@@ -1,29 +1,62 @@
 <main class="container-fluid side-collapse-container">
-  <!--Main jumbotron for a primary marketing message or call to action -->
+  <div class="container-fluid" style="padding: 0 0 15px 0;margin: -15px">
+    <div id="feature-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#feature-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#feature-carousel" data-slide-to="1"></li>
+        <li data-target="#feature-carousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="../assets/images/img1.jpg" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+
+        </div>
+        <div class="item">
+          <img src="../assets/images/img2.jpg" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/images/img3.jpg" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+
+      <a class="left carousel-control" href="#feature-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#feature-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+    <!-- ./carousel-->
+  </div>
+
   <div class="row is-flex">
-    <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel border-push-bottom border-push-right border-push-left-xs
-             border-push-right-xs border-push-right-sm border-push-left-sm border-pull-left-md border-push-bottom-md border-push-top-md border-push-right-md">
+    <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel">
       <h3 class="page-header">Announcements</h3>
-      dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas. Sed
-      pellentesque nibh
-      et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus commodo nulla,
-      eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum tincidunt
-      arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat volutpat. Nulla id
-      dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam consectetur tellus eu
-      pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin tellus lorem, luctus
-      nec
-      facilisis placerat, placerat eget tellus. Maecenas accumsan ornare lacus, volutpat fringilla leo
-      rhoncus eu. Nulla libero nisi, auctor sit amet arcu sit amet, sagittis pretium neque. Duis at elit
-      gravida
-      lectus gravida tincidunt.dolor sit amet, consectetur adipiscing elit. Mauris dapibus suscipit egestas.
-      Sed
-      pellentesque nibh et tincidunt viverra. Morbi convallis, sem quis vehicula facilisis, nibh lectus
-      commodo
-      nulla, eu tincidunt dui velit sit amet nisl. Mauris a facilisis felis, id fringilla enim. Vestibulum
-      tincidunt arcu commodo, vulputate felis id, ultrices nunc. In eu facilisis odio. Aliquam erat
-      volutpat.Nulla id dapibus neque. Sed pretium massa ante, nec auctor ligula gravida id. Aliquam
-      consectetur tellus eu pellentesque vehicula. Aliquam posuere ullamcorper ante porttitor lacinia. Proin
-      tellus
+      <ul class="custom-list-style">
+        <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
+        <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
+        <li><a href="#">Feedback form for Faculty nad Students of AICTE Approved Institutions</a></li>
+        <li><a href="#">Online Application form for Grievance related to Approval Process</a></li>
+        <li><a href="#">Institutions Hosting the Grand Finals< of Smart India Hackthon</a></li>
+        <li><a href="#">Web Portal has been reopened till 24-03-2017 Apply for Saksham Scheme</a></li>
+      </ul>
       <nav aria-label="Announcements Pager">
         <ul class="pager">
           <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a>
@@ -33,81 +66,160 @@
       </nav>
     </div>
     <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-      <div class="row is-flex">
-        <div class="col-xs-12 white-panel border-pull-top border-pull-right">
-          <h3 class="page-header">Introduction</h3>
-          <p>
-            Technical education in India contributes a major share to the overall education system and
-            plays a vital role in the social and economic development of our nation. In India, technical
-            education is imparted at various levels such as: craftsmanship, diploma, degree,
-            post-graduate and research in specialized fields, catering to various aspects of
-            technological development and economic progress.
-          </p>
-
-          <p>
-            The beginning of formal Technical Education in India can be dated back to the mid 19th
-            Century. The major policy initiatives in the pre-independence period included appointment of
-            the Indian Universities Commission in 1902, issue of the Indian Education policy resolution
-            in 1904 and the Governor General’s policy statement of 1913 stressing the importance of
-            Technical Education, the establishment of IISc in Bangalore, Institute for Sugar, Textile
-            and Leather Technology in Kanpur, N.C.E. in Bengal in 1905 and Industrial schools in several
-            provinces. Significant developments include:
-          </p>
-          <p>
-            1-Constitution of the Technical Education Committee of the Central Advisory Board of
-            Education (CABE) of 1943;
-            2-Preparation of the Sergeant Report of 1944; and Formation of the All India Council for
-            Technical Education (AICTE) in 1945 by the Government of India.
-          </p>
+      <div class="row is-flex text-center">
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
+          <a href="" target="_blank">
+            <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
+            <h3 class="">Students</h3>
+            <div><i class="fa fa-user" style="font-size: 2em"></i></div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
+          <a href="" target="_blank">
+            <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
+            <h3 class="">College</h3>
+            <div><i class="fa fa-university" style="font-size: 2em"></i></div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
+          <a href="" target="_blank">
+            <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
+            <h3 class="">Employee</h3>
+            <div><i class="fa fa-id-badge" style="font-size: 2em"></i></div>
+          </a>
         </div>
       </div>
       <div class="row is-flex">
-        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel">
-          <h3 class="page-header">Vision</h3>
-          “To be a world class organization leading technological and socioeconomic development of the
-          Country by enhancing the global competitiveness of technical manpower and by ensuring high
-          quality technical education to all sections of the society.”
-        </div>
-        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 white-panel border-pull-right ">
-          <h3 class="page-header">Pledge</h3>
-          India is my country and all Indians are my brothers and sisters.
-          I love my country and I am proud of its rich and varied heritage.
-          I shall always strive to be worthy of it.
+        <div class="col-xs-12 white-panel">
+          <h3 class="page-header" align="center">Bulletion Board</h3>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span
+                    class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                    Advertisements</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in   2e">
+                <div class="panel-body">
+                  <ul class="custom-list-style">
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
 
-          I shall give respect to my parents, teachers and elders
-          and treat everyone with courtesy.
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
 
-          To my country and my people, I pledge my devotion.
+                    <li>Request for Proposal for selection of application support and
+                      Helpdesk services for SWAYAM MOOCs Platform-<a href="#">15/03/2017</a>
+                    </li>
 
-          In their well being and prosperity alone, lies my happiness.
-        </div>
-      </div>
-      <div class="row is-flex">
-        <div class="col-xs-12 white-panel border-pull-right">
-          <h3 class="page-header">Mission</h3>
-          <p>
-            A true facilitator and an objective regulator
-            Transparent governance and accountable approach towards the society.
-            Planned and coordinated development of Technical Education in the Country by ensuring
-            world-class standards of Institutions through accreditation.
-            Facilitating world-class Technical Education through:
-          </p>
-          <p>
-            Emphasis on developing high quality Institutions, academic excellence and innovative
-            research and development programmes;
-            Networking of Institutions for optimum resource utilization;
-            Dissemination of knowledge;
-            Technology forecasting and global manpower planning;
-            Promoting industry-Institution interaction for developing new products, services, and
-            patents;
-            Inculcating entrepreneurship;
-            Encouraging indigenous technology;
-            Focusing on non-formal education;
-            Providing affordable education to all.
-            Making Indian Technical Education globally acceptable.
-            To be a forward-looking organization that has an efficient, flexible and empowered manpower,
-            sensitive to stakeholders’ expectations.
-          </p>
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><i
+                    class="fa fa-book" aria-hidden="true"></i> Jobs</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="custom-list-style">
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+
+                    <li>Request for Proposal for selection of application support and
+                      Helpdesk services for SWAYAM MOOCs Platform-<a href="#">15/03/2017</a>
+                    </li>
+
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><i
+                    class="fa fa-calendar-o" aria-hidden="true"></i> Circulars</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="custom-list-style">
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+
+                    <li>Request for Proposal for selection of application support and
+                      Helpdesk services for SWAYAM MOOCs Platform-<a href="#">15/03/2017</a>
+                    </li>
+
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><i
+                    class="fa fa-sticky-note-o" aria-hidden="true"></i> Tenders</a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="custom-list-style">
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+
+                    <li>Request for Proposal for selection of application support and
+                      Helpdesk services for SWAYAM MOOCs Platform-<a href="#">15/03/2017</a>
+                    </li>
+
+                    <li>Issue of Corrigendum No.1 Extension of last date of reciept of Bids
+                      in respect of RFP selection for SWAYAM Project- <a
+                        href="#">15/03/2017</a></li>
+
+                    <li>"Smart India Hackathon - 2017 Grand Finale" - Mentor Registration
+                      before 7th March, 2017- <a href="#">15/03/2017</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row is-flex">
@@ -117,7 +229,7 @@
           <img src="../assets/images/stop-ragging.png" alt="ANTI-RAGGING"
                class="img-responsive img-centered">
         </div>
-        <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel border-pull-right">
+        <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel">
           <div class="row is-flex">
             <div class="col-xs-12">
               <h3 class="page-header">Recent</h3>
@@ -125,23 +237,20 @@
           </div>
           <div class="row is-flex">
             <div class="col-xs-12 col-sm-6">
-
-              <ol>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-              </ol>
-
+              <ul class="custom-list-style">
+                <li><a href="">Smart India Hacksthon-2017</a></li>
+                <li><a href="">CMAT-2017</a></li>
+                <li><a href="">PMSSS J&k Admisssion</a></li>
+                <li><a href="">PG Scholarship</a></li>
+              </ul>
             </div>
             <div class="col-xs-12 col-sm-6">
-
-              <ol>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-              </ol>
+              <ul class="custom-list-style">
+                <li><a href="">PMKVY-TI</a></li>
+                <li><a href="">GPAT-2017</a></li>
+                <li><a href="">Pragati And Saksham</a></li>
+                <li><a href="">National E-Scholarship</a></li>
+              </ul>
 
             </div>
           </div>
