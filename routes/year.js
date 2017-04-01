@@ -6,7 +6,6 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var path = require('path');
 var fs = require('fs');
-var url = 'mongodb://localhost:27017/Aicte101';
 var Year = require('../models/year');
 var Institute = require('../models/institution');
 var Verify = require('./verify');
