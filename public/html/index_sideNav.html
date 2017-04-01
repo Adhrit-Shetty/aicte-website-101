@@ -18,11 +18,13 @@
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
     <style>
         a[aria-controls="Intro"].collapsed:before {
-            content: "More...";
+            font-family: FontAwesome;
+            content: "\f103";
             display: block;
         }
 
         a[aria-controls="Intro"]:before {
+            font-family: FontAwesome;
             content: "";
             display: block;
         }
@@ -248,7 +250,7 @@
                         <a class="text-center collapsed" data-toggle="collapse" href="#intro" aria-expanded="false"
                            aria-controls="Intro"></a>
 
-                        <div id="intro" class="collapse">
+                        <div id="intro" class="collapse" aria-labelledby="Introduction">
                             <p>
                                 The beginning of formal Technical Education in India can be dated back to the mid 19th
                                 Century. The major policy initiatives in the pre-independence period included
@@ -271,7 +273,7 @@
                             </ol>
                             <p class="text-center ">
                                 <a class="collapsed" data-toggle="collapse" href="#intro"
-                                   aria-expanded="false" aria-controls="Intro">Less...</a>
+                                   aria-expanded="false" aria-controls="Intro"><i class="fa fa-angle-double-up"></i></a>
                             </p>
                         </div>
                     </div>
