@@ -1,11 +1,18 @@
 /*****General*****/
 /***background-image***/
 body {
-    background: url("../images/flag.png") no-repeat center center fixed;
+    background: teal; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top,teal, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left top,teal, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top,teal, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top,teal, white); /* Standard syntax */
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family:'Lato-Light';
 }
 
 main {
@@ -133,7 +140,7 @@ footer a {
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function:ease-in;
 }
 
@@ -240,7 +247,7 @@ footer a {
 
 /***Search button -white***/
 .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 #fullNav, #miniNav {
@@ -261,7 +268,8 @@ footer a {
 
 /*****L3******/
 .pdf-border-right {
-    border-right: 2px solid red;
+    border-right: 2px solid black;
+    color:black;
 }
 
 div.pdf-font-big button {
@@ -275,6 +283,7 @@ div.pdf-font-big button {
 }
 
 .page-header {
+    font-family:'Lato-Light';
     text-align: center;
     border-bottom: 1px solid #555152;
 }
@@ -293,17 +302,24 @@ div.pdf-font-big button {
 }
 
 
+div.white-panel{
+    transition:all 0.5s ease-out;
+}
 div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
     background-color: white;
     opacity:1;
+
 }
+div.white-panel:hover > .page-header{
+    font-weight:900;
+   }
 
 div.white-panel:hover .page-header, .white-panel:hover .fa-external-link {
     transition: all 0.4s ease-in;
-    border-color: #FFA500;
-    color: #FFA500;
+    border-color:#FFA500;
+    color: teal;
 }
 
 ul.scroll-top>li>a:hover{
@@ -311,6 +327,10 @@ ul.scroll-top>li>a:hover{
     color:white;
 }
 
+
+div.bgcolor:hover{
+    background-color:#b2d8d8;
+}
 
 
 

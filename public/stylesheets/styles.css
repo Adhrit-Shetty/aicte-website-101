@@ -12,8 +12,9 @@ body {
     min-height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', 'Roboto', sans-serif;
+h1, h2{
+    font-family: 'Lato-Light';
+    font-weight:bolder;
 
 }
 
@@ -117,6 +118,7 @@ nav[aria-label="Announcements Pager"] {
 
     #mastHeadBrand h1 {
         font-size: 3.1rem;
+        font-family:'Lato-Light';
     }
 
 }
