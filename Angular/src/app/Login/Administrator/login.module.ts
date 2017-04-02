@@ -13,11 +13,13 @@ import { UpdinstComponent } from './updinst.component';
 import { AuthService } from "../../Shared/Services/auth.service";
 import { AuthGuard } from "../../Shared/Services/auth.guard";
 import { SharedModule } from "../../Shared/shared.module";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   imports: [
     CommonModule,
-    loginRouting
+    loginRouting,
+    ReactiveFormsModule
   ],
   declarations: [
     AdminComponent,

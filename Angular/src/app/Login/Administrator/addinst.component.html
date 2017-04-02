@@ -1,24 +1,38 @@
 <main class="container">
   <div class="row">
     <div class="col-xs-12 white-panel">
-      <form method="post" class="form-horizontal">
+      <form [formGroup]="myForm" class="form-horizontal" (ngSubmit)="onSubmit(myForm.value)">
         <div class="form-group">
           <label for="inputName" class="col-sm-3 control-label hidden-xs">Institute Name</label>
           <div class="col-sm-9 col-xs-12">
-            <input type="text" class="form-control" id="inputName" placeholder="Institute Name">
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Institute Name"
+              formControlName="name">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-3 control-label">Institute Type</label>
           <div class="col-sm-9 col-xs-12">
             <label class="radio-inline">
-              <input type="radio" name="instituteType" value="government"> Government
+              <input
+                type="radio"
+                value="government"
+                formControlName="insttype"> Government
             </label>
             <label class="radio-inline">
-              <input type="radio" name="instituteType" value="government-aided"> Government - Aided
+              <input
+                type="radio"
+                value="government-aided"
+                formControlName="insttype"> Government - Aided
             </label>
             <label class="radio-inline">
-              <input type="radio" name="instituteType" value="unaided-private"> Unaided - Private
+              <input
+                type="radio"
+                value="unaided-private"
+                formControlName="insttype"> Unaided - Private
             </label>
           </div>
         </div>
@@ -26,10 +40,33 @@
           <label class="col-sm-3 control-label">Minority Institute</label>
           <div class="col-sm-9 col-xs-12">
             <label class="radio-inline">
-              <input type="radio" name="minorityType" value="yes"> Yes
+              <input
+                type="radio"
+                value="yes"
+                formControlName="minority"> Yes
             </label>
             <label class="radio-inline">
-              <input type="radio" name="minorityType" value="no"> No
+              <input
+                type="radio"
+                value="no"
+                formControlName="minority"> No
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Women</label>
+          <div class="col-sm-9 col-xs-12">
+            <label class="radio-inline">
+              <input
+                type="radio"
+                value="yes"
+                formControlName="women"> Yes
+            </label>
+            <label class="radio-inline">
+              <input
+                type="radio"
+                value="no"
+                formControlName="women"> No
             </label>
           </div>
         </div>
@@ -37,19 +74,31 @@
           <label class="col-sm-3 control-label">Approval Status</label>
           <div class="col-sm-9 col-xs-12">
             <label class="radio-inline">
-              <input type="radio" name="AppStatus" value="Approved"> Approved
+              <input
+                type="radio"
+                value="Approved"
+                formControlName="ApprovalStatus"> Approved
             </label>
             <label class="radio-inline">
-              <input type="radio" name="AppStatus" value="Unapproved"> Unapproved
+              <input
+                type="radio"
+                value="Unapproved"
+                formControlName="ApprovalStatus"> Unapproved
             </label>
             <label class="radio-inline">
-              <input type="radio" name="AppStatus" value="Closed"> Closed
+              <input
+                type="radio"
+                value="Closed"
+                formControlName="ApprovalStatus"> Closed
             </label>
           </div>
         </div>
         <div class="form-group">
           <div class="col-xs-12 text-center">
-            <button type="submit" class="btn btn-warning btn-raised">Save</button>
+            <div *ngIf="!valid.check" class="text-warning">
+              {{ valid.response }}
+            </div>
+            <button type="submit" class="btn btn-info btn-raised" [disabled]="!myForm.valid">Submit</button>
           </div>
         </div>
       </form>

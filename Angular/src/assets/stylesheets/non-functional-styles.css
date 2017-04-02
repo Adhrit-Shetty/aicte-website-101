@@ -384,5 +384,9 @@ table, th {
     color: #337ab7;
 }
 
+.form-group label.control-label{
+  font-size: 1em;
+}
+
 
 

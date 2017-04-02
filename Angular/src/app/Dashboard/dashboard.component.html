@@ -107,10 +107,10 @@
             <button type="submit" class="btn btn-warning">Submit</button>
           </div>
         </div>
-        <select *ngIf="collegeData" formControlName="colleges">
-          <option value = "" disabled selected> --select an option--</option>
-          <option *ngFor="let name of collegenames" value="{{ name }}">{{ name }}</option>
-        </select>
+          <select *ngIf="collegeData" formControlName="colleges">
+            <option value = "" disabled selected> --select an option--</option>
+            <option *ngFor="let name of collegenames" value="{{ name }}">{{ name }}</option>
+          </select>
       </form>
     </div>
   </div>

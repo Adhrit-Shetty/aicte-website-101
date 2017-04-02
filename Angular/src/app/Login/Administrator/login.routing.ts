@@ -20,7 +20,7 @@ const LOGIN_ROUTES: Routes = [
       {path: '', component: AdminComponent},
       {path: 'add_announcements', component: AnnouncementComponent},
       {path: 'add_new_institution_data', component: AddinstComponent},
-      {path: 'add_new_institution_data_for _year', component: AddinstyComponent},
+      {path: 'add_new_institutions_data_for_year', component: AddinstyComponent},
       {path: 'update_institution_data', component: UpdinstComponent},
       {path: 'update_institution_data_for_year', component: UpdinstyComponent},
       {path: 'register', component: RegisterComponent},

@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit{
   myForm: FormGroup;
   userData: FormGroup;
   request: any;
-  valid: boolean = false;
+  valid: {response: string, check: boolean} ;
   
   constructor(
     private http: HttpService,
@@ -26,6 +26,10 @@ export class LoginComponent implements OnInit{
       'username': ['',[Validators.required]],
       'password': ['',[Validators.required]]
     });
+    this.valid = {
+      response: '',
+      check: false
+    };
   }
   
   ngOnInit(){
@@ -51,14 +55,20 @@ export class LoginComponent implements OnInit{
           console.log(data);
           if(data === "Already logged in") {
             console.log("Logged in");
+            this.valid.check = false;
+            this.valid.response = "Already Logged In!";
           }
           else
           if(data === "Unauthorized"){
             console.log("Unauthorized");
+            this.valid.check = false;
+            this.valid.response = "Unauthorized attempt!";
           }
           else
           if(data.success){
             console.log("ASDAD");
+            this.valid.check = true;
+            this.valid.response = "Valid User!";
             this.auth.loggedIn({name: this.request.username, userdata: data});
             this.auth.navigateTo('/administrator_page');
           }

@@ -1,12 +1,13 @@
 import {Injectable} from '@angular/core';
 import {Http, Response, Headers} from "@angular/http";
 import 'rxjs/Rx';
+import { AuthService } from "./auth.service";
 
 
 @Injectable()
 export class HttpService {
 
-  constructor(private http: Http) {
+  constructor(private http: Http, private auth: AuthService) {
   }
 
   startDashboard() {
@@ -37,5 +38,22 @@ export class HttpService {
     headers.append('x-access-token', token);
     return this.http.get('https://localhost:8000/users/logout', {headers})
       .map((response: Response) => response.json());
+    }
+    
+    registerUser(token: string, request: any){
+    console.log("INSIDE");
+      const body =(request);
+      let headers = new Headers();
+      headers.append('x-access-token', token);
+      return this.http.post('https://localhost:8000/users/register', body, {headers})
+            .map((response: Response) => response.json());
+    }
+    
+    addInstitute(token:string, request:any) {
+      const body =(request);
+      let headers = new Headers();
+      headers.append('x-access-token', token);
+      return this.http.post('https://localhost:8000/my_institute', body, {headers})
+        .map((response: Response) => response.json());
     }
 }

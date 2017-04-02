@@ -9,7 +9,9 @@ export class AuthService {
   name: string;
   token: any;
   
-  constructor(private router: Router, private local: LocalStorageService) { }
+  constructor(private router: Router, private local: LocalStorageService) {
+    //localStorage.setItem('cookie',this.cookie);
+  }
 
   navigateTo(url: string) {
     console.log("ZABARDASTI");
@@ -52,6 +54,14 @@ export class AuthService {
     this.log = false;
     this.clear();
     this.navigateTo('');
+  }
+  
+  setCookie() {
+    localStorage.setItem('cookie','true');
+  }
+  
+  getCookie() {
+    return this.bool(localStorage.getItem('cookie'));
   }
   
   clear() {
