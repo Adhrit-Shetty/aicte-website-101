@@ -17,11 +17,20 @@
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
     <style>
-        #fullNav {
-            background-color: black;
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
         }
-    </style>
 
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -206,72 +215,97 @@
         <!--Main jumbotron for a primary marketing message or call to action -->
         <div class="row">
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-12 white-panel">
-                        <h1 class="page-header">Model Syllabus</h1>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">Undergraduate</h3>
-                        <div class="text-center">
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Rajya Sabha Questions </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">Postgraduation</h3>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF1"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF1" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF1"
+                                   aria-controls="relatedPDF1"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-12 white-panel">
-                        <h3 class="page-header">Post Graduate</h3>
-                        <div class="text-center">
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">Diploma</h3>
-                        <div class="text-center">
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF2"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF2" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF2"
+                                   aria-controls="relatedPDF2"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

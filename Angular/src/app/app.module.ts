@@ -63,6 +63,9 @@ import { LoginComponent } from './Login/login.component';
 import { AuthService } from "./Shared/Services/auth.service";
 import { AuthGuard } from "./Shared/Services/auth.guard";
 import { LocalStorageModule } from "angular-2-local-storage";
+import { StudentComponent } from './User Shortcuts/student.component';
+import { CollegeComponent } from './User Shortcuts/college.component';
+import { EmployeeComponent } from './User Shortcuts/employee.component';
 
 
 
@@ -118,7 +121,10 @@ import { LocalStorageModule } from "angular-2-local-storage";
     LibraryservicesComponent,
     ProjectfactoryComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    StudentComponent,
+    CollegeComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,

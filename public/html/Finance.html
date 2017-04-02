@@ -16,7 +16,21 @@
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
 
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 
 </head>
 
@@ -197,13 +211,14 @@
         </nav>
 
     </header>
-    <main class="container">
+    <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row" align="center">
-            <div class="row">
-                <div class="col-xs-12 white-panel ">
-                    <h1 class="page-header">Budget and Finances</h1>
-                    <div class="align">
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
+                        <h1 class="page-header">Budget and Finances</h1>
+                        <div class="text-left" >
                         <h3 class="subheading">Budget:</h3>
 
                         <p>A <b>budget</b> is a financial document used to project future income and expenses. The budgeting
@@ -239,15 +254,14 @@
                         <li>Investment of funds in Fixed Deposit, Govt. Securities etc to generate fund for non-plan and
                             unforeseen expenses including capital expenditures.</li></ul>
                     </div>
-
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 white-panel align= center">
+                <div class="col-xs-12 white-panel">
                     <h1 class="page-header">Audit</h1>
-                    <div class="align">
+                        <div class="text-left" >
 
-                        <p><b>Internal Audit :</b> The role of internal audit is to ensure proper maintenance of records, proper
+                                    <p><b>Internal Audit :</b> The role of internal audit is to ensure proper maintenance of records, proper
                         application of rules, regulations and instructions issued by the Govt from time to time as well
                         as by the Council and also ensure accuracy in accounts and efficiency in operation. Basic role
                         of Internal Audit is to point out grey areas where authorities have to immediately focus its
@@ -277,10 +291,10 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 white-panel align= center">
-                    <h1 class="page-header">Accrual System</h1>
-                    <div class="align">
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
+                        <h1 class="page-header">Accural System</h1>
+                        <div class="text-left" >
 
                         <h3 >Accrual Accounting</h3>
                         <p>Accrual accounting is an accounting method that measures the performance and position of an
@@ -316,27 +330,33 @@
                         AICTE has implemented the Tally ERP 9.0 software for its accounting system and ready to develop
                             the cost management system for purchases and to control its expenditures.</p>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 white-panel">
-                            <h3 class="page-header">PDF</h3>
-                            <div class="text-center">
-                                <a href="">
-                                    <button type="button" class="btn btn-danger pdf-font-big"><span
-                                            class="pdf-border-right text-capitalize">Accrual accounting procedures</span>&nbsp;<i
-                                            class="fa fa-file-pdf-o"
-                                            aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">PDF</h3>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Accrual accounting procedures </span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
-
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
                             </div>
                         </div>
                     </div>
-
+                </div>
                 </div>
             </div>
-
-        </div>
-
     </main>
 
 </div>

@@ -1,11 +1,33 @@
 /*****General*****/
+/*!*****Fonts******!*/
+@font-face {
+    font-family: 'Fira Sans';
+    src: url("../stylesheets/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../stylesheets/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
 /***background-image***/
 body {
-    background: url("../images/flag.png") no-repeat center center fixed;
+    background: teal; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top,teal, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left top,teal, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top,teal, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top,teal, white); /* Standard syntax */
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans", "Roboto", sans-serif;
 }
 
 main {
@@ -13,8 +35,14 @@ main {
     line-height: 150%;
 }
 
-a, a:hover, a:focus {
-    color: #e98b17;
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #eb9316;
+    text-decoration: none;
 }
 
 /********Footer********/
@@ -48,6 +76,19 @@ footer a {
 }
 
 /**********Navbar***********/
+
+#mastHeadLogin a {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/*#mastHeadLogin a:hover,#mastHeadLogin a:focus {*/
+/*font-size: 1.5em;*/
+/*}*/
+
+.glyphicon-search {
+    color: #ffffff;
+}
 
 .navbar-shadow {
     box-shadow: 0 23px 23px -20px #000000;
@@ -133,7 +174,7 @@ footer a {
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function:ease-in;
 }
 
@@ -240,7 +281,7 @@ footer a {
 
 /***Search button -white***/
 .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised).btn-default {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 #fullNav, #miniNav {
@@ -261,12 +302,12 @@ footer a {
 
 /*****L3******/
 .pdf-border-right {
-    border-right: 2px solid red;
+    border-right: 2px solid black;
+    color:black;
 }
 
 div.pdf-font-big button {
     display: inline-block;
-    /*line-height: 200%;*/
     font-size: 2rem;
     color: red;
     padding: 10px;
@@ -275,6 +316,7 @@ div.pdf-font-big button {
 }
 
 .page-header {
+    font-family: 'Fira Sans', "Roboto", sans-serif;
     text-align: center;
     border-bottom: 1px solid #555152;
 }
@@ -287,23 +329,31 @@ div.pdf-font-big button {
 
 .white-panel {
     background: rgba(255, 255, 255, 0.88);
-    padding: 10px;
+    padding: 15px;
     background-clip: padding-box;
     border: 10px solid transparent;
 }
 
 
+div.white-panel{
+    transition:all 0.5s ease-out;
+}
 div.white-panel:hover {
     transition: all 0.5s ease-in;
     color: #555152;
     background-color: white;
     opacity:1;
+
+}
+
+div.white-panel:hover .page-header {
+    font-weight:900;
 }
 
 div.white-panel:hover .page-header, .white-panel:hover .fa-external-link {
     transition: all 0.4s ease-in;
-    border-color: #FFA500;
-    color: #FFA500;
+    border-color:#FFA500;
+    color: teal;
 }
 
 ul.scroll-top>li>a:hover{
@@ -311,6 +361,28 @@ ul.scroll-top>li>a:hover{
     color:white;
 }
 
+
+div.bgcolor:hover{
+    background-color:#b2d8d8;
+}
+
+/*****Table******/
+thead {
+    background-color: #337ab7;
+    color: #ffffff;
+}
+
+table, th {
+    text-align: center;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #cdf7f6;
+}
+
+.fa-angle-double-up {
+    color: #337ab7;
+}
 
 
 

@@ -17,6 +17,8 @@
     "fs": "0.0.1-security",
     "googleapis": "^18.0.0",
     "jsonwebtoken": "^7.3.0",
+    "mailgun": "^0.5.0",
+    "mailgun-js": "^0.9.1",
     "mongoose": "^4.8.7",
     "morgan": "~1.7.0",
     "passport": "^0.3.2",

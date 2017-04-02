@@ -12,7 +12,6 @@ var Year = require('../models/year');
 var Verify = require('./verify');
 var _ = require('underscore');
 var router = express.Router();
-var out = [];
 
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({extended : true}));
@@ -22,7 +21,7 @@ app.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
 router.get('/',function(request,response) {
-    console.log(request.body);
+      console.log(request.body);
     Institute.find({},function (err, idata) {
         if (err)
             response.json(err);
