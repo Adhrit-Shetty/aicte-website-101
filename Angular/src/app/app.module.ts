@@ -60,6 +60,12 @@ import {DashboardComponent} from "./Dashboard/dashboard.component";
 import {ChartsModule} from "ng2-charts";
 import {SharedModule} from "./Shared/shared.module";
 import { LoginComponent } from './Login/login.component';
+import { AuthService } from "./Shared/Services/auth.service";
+import { AuthGuard } from "./Shared/Services/auth.guard";
+import { LocalStorageModule } from "angular-2-local-storage";
+import { StudentComponent } from './User Shortcuts/student.component';
+import { CollegeComponent } from './User Shortcuts/college.component';
+import { EmployeeComponent } from './User Shortcuts/employee.component';
 
 
 
@@ -115,7 +121,10 @@ import { LoginComponent } from './Login/login.component';
     LibraryservicesComponent,
     ProjectfactoryComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    StudentComponent,
+    CollegeComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -125,9 +134,13 @@ import { LoginComponent } from './Login/login.component';
     ChartsModule,
     SharedModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LocalStorageModule.withConfig({
+      prefix: 'aicte-app',
+      storageType: 'localStorage'
+    })
   ],
-  providers: [],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {

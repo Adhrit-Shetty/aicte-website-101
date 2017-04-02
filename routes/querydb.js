@@ -35,42 +35,42 @@ router.get('/',function(request,response) {
                 .populate('instituteid',{'name' :1 ,"_id" : 0})
                 .sort({"y" : 1,"instituteid": -1})
                 .exec(function (err, ydata) {
-                    if (err)
-                        response.json(err);
-                    else if (ydata == undefined)
-                        response.json("No such entry!");
-                    else {
-                        var tmp = _.groupBy(ydata,"y",function(d){
-                            return d;
-                        });
-                        var out = _(tmp).map(function(g, key) {
-                            return {
-                                y: key,
-                                intake: _(g).reduce(function (m, x) {
-                                    return m + x.intake;
-                                }, 0),
-                                enrolled: _(g).reduce(function (m, x) {
-                                    return m + x.enrolled;
-                                }, 0),
-                                passed: _(g).reduce(function (m, x) {
-                                    return m + x.passed;
-                                }, 0),
-                                placed: _(g).reduce(function (m, x) {
-                                    return m + x.placed;
-                                }, 0)
-                            }
-                        });
-                        response.json(out);                }
-                });
+                if (err)
+                    response.json(err);
+                else if (ydata == undefined)
+                    response.json("No such entry!");
+                else {
+						var tmp = _.groupBy(ydata,"y",function(d){
+							return d;
+						});
+						var out = _(tmp).map(function(g, key) {
+						    return {
+						                           y: key,
+						                           intake: _(g).reduce(function (m, x) {
+						                               return m + x.intake;
+						                           }, 0),
+						                           enrolled: _(g).reduce(function (m, x) {
+						                               return m + x.enrolled;
+						                           }, 0),
+						                           passed: _(g).reduce(function (m, x) {
+						                               return m + x.passed;
+						                           }, 0),
+						                           placed: _(g).reduce(function (m, x) {
+						                               return m + x.placed;
+						                           }, 0)
+						                       }
+						                   });
+						                   response.json(out);                }
+            });
         }
 
     });
 });
 router.post('/',function(request,response) {
     console.log(request.body);
-    var d = Verify.trim_nulls(request.body.institute);
-    var d1 = Verify.trim_nulls(request.body.year);
-    console.log(d);
+	var d = Verify.trim_nulls(request.body.institute);
+	var d1 = Verify.trim_nulls(request.body.year);
+	console.log(d1);
     Institute.find(d,function (err, idata) {
         if (err)
             response.json(err);
@@ -84,16 +84,16 @@ router.post('/',function(request,response) {
                 .populate('instituteid',{'name' :1 ,"_id" : 0})
                 .sort({"instituteid": -1,"y" : 1})
                 .exec(function (err, ydata) {
-                    if (err)
-                        response.json(err);
-                    else if (ydata[0] == undefined)
-                        response.json("No such entry!");
-                    else {
-                        var tmp = _.groupBy(ydata,"instituteid",function(d){
-                            return d;
-                        });
-                        response.json(tmp);                }
-                });
+                if (err)
+                    response.json(err);
+                else if (ydata[0] == undefined)
+                    response.json("No such entry!");
+                else {
+						var tmp = _.groupBy(ydata,"instituteid",function(d){
+							return d;
+						});
+					response.json(tmp);                }
+            });
         }
 
     });
