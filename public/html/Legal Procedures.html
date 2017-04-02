@@ -16,6 +16,21 @@
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -222,21 +237,25 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">LINKS</h3>
-                        <div class="text-center">
-                            <div class="pdf-font-big">
-                                <a href="">
-                                    <button type="button" class="btn btn-danger"><span
-                                            class="pdf-border-right text-capitalize">http://lawmin.nic.in/</span>&nbsp;<i
-                                            class="fa fa-external-link"
-                                            aria-hidden="true"></i>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedlink"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedlink" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">http://cvc.nic.in/ </span>&nbsp;<i
+                                            class="fa fa-external-link" aria-hidden="true"></i>
                                     </button>
                                 </a>
                             </div>
-                            <br><br>
-
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedlink"
+                                   aria-controls="relatedlink"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
