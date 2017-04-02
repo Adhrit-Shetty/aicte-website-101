@@ -141,7 +141,8 @@ import { EmployeeComponent } from './User Shortcuts/employee.component';
     })
   ],
   providers: [AuthService, AuthGuard],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule {
 }

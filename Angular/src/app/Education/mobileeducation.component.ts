@@ -20,4 +20,4 @@ export class MobileeducationComponent implements OnInit {
     console.log(this.data);
   }
 
-}
+ }
