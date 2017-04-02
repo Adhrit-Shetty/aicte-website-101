@@ -37,7 +37,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
+    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'),req.method);
     if (req.secure) {
         return next();
     }
