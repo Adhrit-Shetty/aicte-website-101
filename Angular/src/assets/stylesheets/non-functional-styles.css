@@ -366,5 +366,23 @@ div.bgcolor:hover{
     background-color:#b2d8d8;
 }
 
+/*****Table******/
+thead {
+    background-color: #337ab7;
+    color: #ffffff;
+}
+
+table, th {
+    text-align: center;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #cdf7f6;
+}
+
+.fa-angle-double-up {
+    color: #337ab7;
+}
+
 
 

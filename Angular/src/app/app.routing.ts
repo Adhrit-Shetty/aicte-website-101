@@ -48,6 +48,9 @@ import {ProjectfactoryComponent} from "./Education/projectfactory.component";
 import {VocationaleducationComponent} from "./Education/vocationaleducation.component";
 import {DashboardComponent} from "./Dashboard/dashboard.component";
 import {LoginComponent} from "./Login/login.component";
+import {StudentComponent} from "./User Shortcuts/student.component";
+import {CollegeComponent} from "./User Shortcuts/college.component";
+import {EmployeeComponent} from "./User Shortcuts/employee.component";
 
 
 const APP_ROUTES: Routes = [
@@ -104,6 +107,9 @@ const APP_ROUTES: Routes = [
   {path: 'vocational_education', component: VocationaleducationComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login/administrator_page', loadChildren: 'app/Login/Administrator/login.module#LoginModule'},
+  {path: 'student', component: StudentComponent},
+  {path: 'college', component: CollegeComponent},
+  {path: 'employee', component: EmployeeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', redirectTo: 'home', pathMatch: 'full'},
 ];
