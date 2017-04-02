@@ -1,0 +1,6 @@
+label.radio-inline input[type=radio] {
+ opacity: 1;
+ height: auto;
+ width: auto;
+ overflow: hidden;
+}

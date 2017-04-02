@@ -10,12 +10,24 @@ import { AddinstComponent } from './addinst.component';
 import { AddinstyComponent } from './addinsty.component';
 import { UpdinstyComponent } from './updinsty.component';
 import { UpdinstComponent } from './updinst.component';
+import { AuthService } from "../../Shared/Services/auth.service";
+import { AuthGuard } from "../../Shared/Services/auth.guard";
+import { SharedModule } from "../../Shared/shared.module";
 
 @NgModule({
   imports: [
     CommonModule,
     loginRouting
   ],
-  declarations: [AdminComponent, AdminStartComponent, RegisterComponent, AnnouncementComponent, AddinstComponent, AddinstyComponent, UpdinstyComponent, UpdinstComponent]
+  declarations: [
+    AdminComponent,
+    AdminStartComponent,
+    RegisterComponent, AnnouncementComponent,
+    AddinstComponent,
+    AddinstyComponent,
+    UpdinstyComponent,
+    UpdinstComponent
+  ],
+  providers: []
 })
 export class LoginModule { }
