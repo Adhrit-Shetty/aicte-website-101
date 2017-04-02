@@ -2,12 +2,12 @@
 /*!*****Fonts******!*/
 @font-face {
     font-family: 'Fira Sans';
-    src: url("../stylesheets/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
+    src: url("../../../../public/stylesheets/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url("../stylesheets/Roboto/Roboto-Regular.ttf") format('truetype');
+    src: url("../../../../public/stylesheets/Roboto/Roboto-Regular.ttf") format('truetype');
 }
 
 /***background-image***/
@@ -23,11 +23,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato-Light', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Fira Sans", "Roboto", sans-serif;
+    font-family: "Lato-Light", "Roboto", sans-serif;
 }
 
 main {
@@ -125,7 +125,7 @@ footer a {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background: #FFA500;
+    background:#FFA500;
     height: 3px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -384,10 +384,6 @@ table, th {
     color: #337ab7;
 }
 
-.form-group label.control-label{
-  font-size: 1em;
-}
-
 /********Popover-Tour*********/
 .popover-title {
     background-color: #2c9faa;
@@ -497,4 +493,12 @@ table, th {
     border-left-color: #606060;
 }
 
+
+/******/
+@media (max-width: 991px) {
+
+    .navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: inherit;
+    }
+}
 

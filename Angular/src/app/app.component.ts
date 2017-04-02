@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 import { AuthService } from "./Shared/Services/auth.service";
-
 declare var $: any;
 declare var Tour:any;
 @Component({
@@ -11,17 +10,17 @@ declare var Tour:any;
 })
 
 export class AppComponent implements OnInit {
-  constructor(private router: Router,private auth: AuthService) {}
-
-  ngOnInit() {
-    
-    console.log(localStorage.getItem('cookie'));
+  constructor(private router: Router,private auth: AuthService) {
     if(!localStorage.getItem('cookie'))
-    {
-      console.log("no c set c");
-      this.auth.setCookie();
-    }
-    else console.log("got c");
+      {
+        console.log("no c set c");
+        this.auth.setCookie();
+        this.toggle = true;
+      }
+      else console.log("got c");}
+  toggle: boolean = false;
+  ngOnInit() {
+    console.log(localStorage.getItem('cookie'));
     /* smooth scrolling for scroll to top */
     
     $('.scroll-top').click(function (e) {
@@ -35,11 +34,10 @@ export class AppComponent implements OnInit {
       }
       window.scrollTo(0, 0)
     });
-
+    
     (function () {
 
       var tour = new Tour({
-
         backdrop: true,
         onEnd: function () {
           $('.scroll-top').click();

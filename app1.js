@@ -57,15 +57,13 @@ app.all('*', function(req, res, next){
     res.redirect('https://localhost:'+app.get('port')+req.url);
 });
 app.use('/users', users);
-//app.get('*',onGetRequest);
 app.use('/',search);
-app.use('/my_institute.html',institute);
-app.use('/announcement.html',announcement);
-app.use('/announcement_list.html',announcement_list);
-app.use('/my_update_institution.html',u_institute);
-app.use('/my_update_year.html',u_year);
-app.use('/my_year.html',year);
-app.use('/register.html',register);
+app.use('/my_institute',institute);
+app.use('/announcement',announcement);
+app.use('/announcement_list',announcement_list);
+//app.use('/my_update_institution',u_institute);
+//app.use('/my_update_year.html',u_year);
+app.use('/my_year',year);
 app.use('/', express.static('dist'));
 app.get('*', function (req, res, next) {
     res.sendFile(path.resolve('dist/index.html'));

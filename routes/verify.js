@@ -13,8 +13,17 @@ exports.getToken = function(user) {
     });
     console.log("Successs!!!!"+user.admin+"   \n"+user);
 };
-
-exports.verifyOrdinaryUser = function(request, response, next) {
+exports.verifyUsername = function(request, response, next) {
+    console.log(request.body);
+    User.find({username:request.body.username},function (err, idata) {
+        if(idata[0]==undefined)
+            next();
+        else {
+            response.json("Username is already used");
+        }
+    });
+};
+exports.verifyAdmin = function(request, response, next) {
     // check header or url parameters or post parameters for token
     var token = request.body.token || request.query.token || request.headers['x-access-token'];
     console.log(token);
@@ -68,18 +77,19 @@ exports.verifyInstitute = function (request,response,next){
             response.json("Institute Already Present");
         }
     });
-}
+};
 
-exports.verifyInstitute = function (request,response,next){
+exports.verifyInstituteUpdate = function (request,response,next){
     console.log(request);
     Institute.find({name:request.body.name},function (err, idata) {
         if(idata[0]==undefined)
-            next();
+            response.json("No such Institute");
         else {
-            response.json("Institute Already Present");
+            next();
+
         }
     });
-}
+};
 
 exports.verifyYear = function (request,response,next){
     console.log(request);
@@ -99,7 +109,27 @@ exports.verifyYear = function (request,response,next){
             });
         }
     }).limit(1);
-}
+};
+
+exports.verifyYearUpdate = function (request,response,next){
+    console.log(request);
+    Institute.find({name:request.body.name},function (err, idata) {
+        if(idata[0]==undefined)
+        {
+            response.json("No such Institute");
+        }
+        else {
+            console.log(idata);
+            Year.find({'y': request.body.y , 'instituteid' : idata[0]._id},function(err,new_data){
+                if(new_data[0]==undefined)
+                    response.json("no such year data");
+                else {
+                    next();
+                }
+            });
+        }
+    }).limit(1);
+};
 exports.trim_nulls = function (data) {
     var y;
     for (var x in data) {
@@ -110,8 +140,23 @@ exports.trim_nulls = function (data) {
         if (y instanceof Object) y = trim_nulls(y);
     }
     return data;
-}
+};
 
+exports.verifyToken = function(request,response,next){
+    if(request.cookies.visited=="true")
+    {
+        response.json({"visted" : false});
+        next();
+        console.log()
+    }
+    else
+    {
+        response.cookie('visited', 'true');
+        response.json({"visited " : "true"});
+        next();
+    }
+
+};
 //db.users.find().pretty()
 // db.users.update({"username":"A"},{$set:{"logged":false}})
 //db.users.drop()

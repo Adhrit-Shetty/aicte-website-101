@@ -17,7 +17,7 @@ router.use(bodyParser.urlencoded({extended : true}));
 router.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
-    router.post('/register', function(request, response){
+    router.post('/register',Verify.verifyAdmin,Verify.verifyUsername,function(request, response){
         User.register(new User({ username : request.body.username }),
             request.body.password,function(err, user){
             if(err)
@@ -84,7 +84,7 @@ router.use(morgan('dev'));
         })(request,response,next);
     });
 
-    router.get('/logout',Verify.verifyOrdinaryUser,function(request, response){
+    router.get('/logout',Verify.verifyAdmin,function(request, response){
         console.log("\n\n\nINSIDE!!!\n\n");
          var token = request.body.token || request.query.token || request.headers['x-access-token'];
          jwt.verify(token, config.secretKey, function(err, decoded){
