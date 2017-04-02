@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap-tour.css">
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet"
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
@@ -64,7 +65,7 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pull-right " id="mastHeadLogin"
                      style="padding-top: 50px">
-                    <a href="">Login<i class="glyphicon glyphicon-log-in"></i></a>
+                    <a href="">Login <i class="glyphicon glyphicon-log-in"></i></a>
 
                 </div>
 
@@ -265,7 +266,7 @@
         </div>
 
         <div class="row is-flex">
-            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel">
+            <div class="col-lg-push-9 col-md-push-9 col-lg-3 col-md-3 col-sm-12 col-xs-12 white-panel" id="announcePop">
                 <h3 class="page-header">Announcements</h3>
                 <ul class="custom-list-style">
                     <li><a href="#">Institutions Hosting the Grand Finals of Smart India Hackathon</a></li>
@@ -284,7 +285,7 @@
                 </nav>
             </div>
             <div class="col-lg-pull-3 col-md-pull-3 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <div class="row is-flex text-center">
+                <div class="row is-flex text-center" id="stakeholderPop">
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 white-panel">
                         <a href="" target="_blank">
                             <div><i class="fa fa-external-link pull-right" aria-hidden="true"></i></div>
@@ -308,8 +309,8 @@
                     </div>
                 </div>
                 <div class="row is-flex">
-                    <div class="col-xs-12 white-panel">
-                        <h3 class="page-header" align="center">Bulletion Board</h3>
+                    <div class="col-xs-12 white-panel" id="bulletinPop">
+                        <h3 class="page-header text-center">Bulletion Board</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -444,9 +445,9 @@
                     <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 white-panel">
                         <h3 class="page-header">Anti-Ragging</h3>
                         <img src="../images/antiragging.jpg" alt="ANTI-RAGGING"
-                             class="img-centered" style="height: 100px;width: 100%">
+                             class="img-centered" style="height: 100px;min-width: 150px">
                     </div>
-                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel">
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 white-panel" id="recentPop">
                         <div class="row is-flex">
                             <div class="col-xs-12">
                                 <h3 class="page-header">Recent</h3>
@@ -509,9 +510,72 @@
 </ul>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../javascripts/bootstrap-tour.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
 <script src="../javascripts/indexjs.js"></script>
+<script>
+    (function () {
+
+        var tour = new Tour({
+            storage: false,
+            backdrop: true,
+            onEnd: function () {
+                $('.scroll-top').click();
+            },
+            template: `
+            <div class='popover tour'>
+                <div class='arrow'></div>
+                <h3 class='popover-title'></h3>
+                <div class='popover-content'></div>
+                <div class='popover-navigation text-center'>
+                <button class='btn btn-info btn-raised' data-role='prev'>Prev</button>
+                <span data-role='separator'>|</span>
+                <button class='btn btn-info btn-raised' data-role='next'>Next</button>
+            </div>
+            <button class='btn btn-default btn-raised btn-block' data-role='end'>End tour</button>
+            </div>
+            `
+        });
+
+        tour.addSteps([
+            {
+                element: "#brand",
+                placement: "bottom",
+                title: "Hi! Welcome",
+                content: "I will navigate you through the site."
+            },
+            {
+                element: "#stakeholderPop",
+                placement: "top",
+                title: "Our Stakeholders",
+                content: "Click on any one of the links to direct."
+            },
+            {
+                element: "#announcePop",
+                placement: "left",
+                title: "Announcements",
+                content: "Here you can see upcoming events."
+            },
+            {
+                element: "#bulletinPop",
+                placement: "top",
+                title: "Bulletin Board",
+                content: "Here you can know about the Ads, Jobs, Circular and Tender."
+            },
+            {
+                element: "#recentPop",
+                placement: "top",
+                title: "Recent Links",
+                content: "Here are the Recent Links added to AICTE"
+            }
+        ]);
+        // Initialize the tour
+        tour.init();
+        // Start the tour
+        tour.start();
+    }());
+</script>
 </body>
 </html>
 

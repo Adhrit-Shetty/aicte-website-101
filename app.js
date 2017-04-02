@@ -1,5 +1,6 @@
 //========================IMPORTS=======================================
-var express = require('express');
+var express = require('express'),
+    cors = require('cors');
 var path = require('path');
 var fs = require('fs');
 var favicon = require('serve-favicon');
@@ -10,7 +11,7 @@ var passport = require('passport');
 var register = require('./routes/register');
 var announcement= require('./routes/announcement');
 var dashboard = require('./routes/querydb.js');
-var mail = require('./routes/mail.js');
+//var mail = require('./routes/mail.js');
 var app = express();
 var url = 'mongodb://localhost:27017/Aicte101';
 var mongoose = require('mongoose'),
@@ -28,7 +29,7 @@ db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',function () {
     console.log('Connected to server Successfully');
 });
-
+app.use(cors());
 app.use(favicon(path.join(__dirname,'/public/images/favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -37,15 +38,19 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
+    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'),req.method);
     if (req.secure) {
         return next();
     }
     res.redirect('https://'+req.hostname+':'+app.get('secPort')+req.url);
 });
 app.use('/dashboard', dashboard);
-app.use('/mail',mail);
-app.use('/announcement.html',announcement);
+app.use('/announcement',announcement);
+// app.use('/', express.static('dist'));
+// app.get('*', function (req, res, next) {
+//     res.sendFile(path.resolve('dist/index.html'));
+// });
+
 //====================================================================================
 //===========================ERROR HANDLING===========================================
 /// catch 404 and forwarding to error handler

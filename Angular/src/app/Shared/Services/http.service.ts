@@ -11,7 +11,7 @@ export class HttpService {
 
   startDashboard() {
     console.log("HTTP");
-    return this.http.get('http://localhost:3000/dashboard')
+    return this.http.get('https://localhost:3443/dashboard')
       .map((response: Response) => response.json());
   }
 
@@ -19,7 +19,7 @@ export class HttpService {
     const body = JSON.stringify(data);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/dashboard', body, {headers})
+    return this.http.post('https://localhost:3443/dashboard', body, {headers})
       .map((response: Response) => response.json());
   }
   
@@ -38,19 +38,4 @@ export class HttpService {
     return this.http.get('https://localhost:8000/users/logout', {headers})
       .map((response: Response) => response.json());
     }
-  /*postData( data: any ) {
-   const body = JSON.stringify(data);
-   let headers = new Headers();
-   headers.append('Content-Type', 'application/json');
-   return this.http.post('http://localhost:3000/user', body,{headers} )
-   .map((response: Response) => response.json());
-   }
-
-   putData( data: any ) {
-   const body = JSON.stringify(data);
-   let headers = new Headers();
-   headers.append('Content-Type', 'application/json');
-   return this.http.put('http://localhost:3000/user', body,{headers} )
-   .map((response: Response) => response.json());
-   }*/
 }

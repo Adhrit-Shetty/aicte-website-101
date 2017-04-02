@@ -57,7 +57,7 @@ app.all('*', function(req, res, next){
     res.redirect('https://localhost:'+app.get('port')+req.url);
 });
 app.use('/users', users);
-app.get('*',onGetRequest);
+//app.get('*',onGetRequest);
 app.use('/',search);
 app.use('/my_institute.html',institute);
 app.use('/announcement.html',announcement);
@@ -66,6 +66,10 @@ app.use('/my_update_institution.html',u_institute);
 app.use('/my_update_year.html',u_year);
 app.use('/my_year.html',year);
 app.use('/register.html',register);
+app.use('/', express.static('dist'));
+app.get('*', function (req, res, next) {
+    res.sendFile(path.resolve('dist/index.html'));
+});
 //====================================================================================
 //===========================ERROR HANDLING===========================================
 /// catch 404 and forwarding to error handler

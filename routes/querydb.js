@@ -66,6 +66,8 @@ router.get('/',function(request,response) {
 
     });
 });
+
+
 router.post('/',function(request,response) {
     console.log(request.body);
 	var d = Verify.trim_nulls(request.body.institute);
