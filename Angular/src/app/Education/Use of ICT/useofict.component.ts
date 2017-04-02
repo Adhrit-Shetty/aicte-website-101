@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-// import {data} from './Data/.data';
+import {data} from './Data/useofaicte.data';
 import {GenerateBoxService} from "../../Shared/Services/generate-box.service";
 
 @Component({
@@ -9,13 +9,13 @@ import {GenerateBoxService} from "../../Shared/Services/generate-box.service";
   providers: [GenerateBoxService]
 })
 export class UseofictComponent implements OnInit {
-  // data = data;
+  data = data;
 
   constructor(private generate: GenerateBoxService) {
   }
 
   ngOnInit() {
-    // this.generate.load(this.data);
+   this.generate.load(this.data);
   }
 
 }

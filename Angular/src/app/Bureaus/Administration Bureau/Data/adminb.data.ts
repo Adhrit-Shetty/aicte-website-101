@@ -94,7 +94,7 @@ export const data: Box [] = [
   },
   {
     state: 0,
-    href: './regional',
+    href: './regional_office',
     text: [
       {
         header: 'Regional',
@@ -113,7 +113,7 @@ export const data: Box [] = [
   },
   {
     state: 0,
-    href: './office_procedures',
+    href: 'office_procedures',
     text: [
       {
         header: 'More Information',

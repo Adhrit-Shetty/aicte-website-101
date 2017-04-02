@@ -6,34 +6,20 @@ export const data: Box [] = [
     href: '',
     text: [
       {
-        header: 'Act',
+        header: 'Rashtiya Uchatar Shiksha Abhiyan - RUSA',
         body: `
-            THE ALL INDIA COUNCIL FOR TECHNICAL
-                            EDUCATION ACT 1987
-                            (No 52 OF 1987)
-                            <br>
-
-                            (As Passed by the Houses of Parliament)
-                            An Act
-                            <br>
-                            To provide for the establishment of an All India Council for Technical Education with a view
-                            to the proper planning and co-ordinated development of the technical education system
-                            throughout the country,
-                            the promotion of qualitative improvements of such education in relation to planned
-                            quantitative growth and the regulation and proper maintenance of norms and standards in the
-                            technical education system
-                            and for matters connected therewith.
+            <p>Rashtriya Uchchatar Shiksha Abhiyan (RUSA) is a Centrally Sponsored Scheme (CSS), launched in 2013 aims at providing strategic funding to eligible state higher educational institutions. The central funding (in the ratio of 60:40 for general category States, 90:10 for special category states and 100% for union territories) would be norm based and outcome dependent. The funding would flow from the central ministry through the state governments/union territories to the State Higher Education Councils before reaching the identified institutions. The funding to states would be made on the basis of critical appraisal of State Higher Education Plans, which would describe each state’s strategy to address issues of equity, access and excellence in higher education.</p>
           `
       }
     ],
     link: [],
     pdf: [
       {
-        "name": 'Anti-Ragging Undertaking',
+        "name": 'Rashtiya Uchatar Shiksha Abhiyan - RUSA',
         "href": '',
       },
       {
-        "name": 'Anti-Ragging',
+        "name": 'RUSA Presentation',
         "href": '',
       }
     ]
