@@ -6,36 +6,41 @@ export const data: Box [] = [
     href: '',
     text: [
       {
-        header: 'Act',
+        header: 'Want to be an Entrepreneur?',
         body: `
-            THE ALL INDIA COUNCIL FOR TECHNICAL
-                            EDUCATION ACT 1987
-                            (No 52 OF 1987)
-                            <br>
-
-                            (As Passed by the Houses of Parliament)
-                            An Act
-                            <br>
-                            To provide for the establishment of an All India Council for Technical Education with a view
-                            to the proper planning and co-ordinated development of the technical education system
-                            throughout the country,
-                            the promotion of qualitative improvements of such education in relation to planned
-                            quantitative growth and the regulation and proper maintenance of norms and standards in the
-                            technical education system
-                            and for matters connected therewith.
+                <p>An entrepreneur is a person who has possession of a new enterprise, venture or idea and is
+                            accountable for the inherent
+                        risks and the outcome. The term was originally a loanword from French and was first defined by
+                        the Irish-French economist
+                            Richard Cantillon. Entrepreneur in English is a term applied to a person who is willing to
+                        launch a new venture or enterprise
+                        and accept full responsibility for the outcome. Jean-Baptiste Say, a French economist, is
+                        believed to have coined the word
+                        "entrepreneur" in the 19th century - he defined an entrepreneur as "one who undertakes an
+                        enterprise, especially a
+                        contractor, acting as intermediatory between capital and labour". A broader definition by French
+                        Economist J.B. Say (1800)
+                        "The entrepreneur shifts economic resources out of lower and into higher productivity and
+                            greater yield.</p>
           `
       }
     ],
-    link: [],
-    pdf: [
+    link: [
       {
-        "name": 'Anti-Ragging Undertaking',
+        "name": 'www.techno-preneur.net',
         "href": '',
       },
       {
-        "name": 'Anti-Ragging',
+        "name": 'www.nstedb.com',
         "href": '',
       }
+    ],
+    pdf: [
+      {
+        "name": 'Youth_Entrepreneurship_Toolkit',
+        "href": '',
+      }
+
     ]
   }
 ];

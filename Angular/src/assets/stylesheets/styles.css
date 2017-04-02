@@ -111,7 +111,7 @@ nav[aria-label="Announcements Pager"] {
 
     #mastHeadBrand h1 {
         font-size: 3.1rem;
-        font-family:'Lato-Light';
+        font-family: 'Fira Sans', "Roboto", sans-serif;
         align-self: flex-end;
     }
 
