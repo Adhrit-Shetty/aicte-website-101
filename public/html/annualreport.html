@@ -16,7 +16,21 @@
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
 
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 
 </head>
 
@@ -200,11 +214,12 @@
 
     <main class="container">
         <!--Main jumbotron for a primary marketing message or call to action -->
-        <div class="row" align="center">
-            <div class="row">
-                <div class="col-xs-12 white-panel align= center">
-                    <h1 class="page-header">Annual Report</h1>
-                    <div class="align">
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 white-panel">
+                        <h1 class="page-header">Annual Report</h1>
+                        <div class="text-left">
 
                         <p></p>An <b>Annual report</b> is a comprehensive report on an organisation’s activities throughout the
                         preceding year. Annual reports are intended to give stakeholders and other interested people
@@ -232,28 +247,42 @@
 
                         <p>The details provided in the report are of use to stakeholders to understand the Organisations
                             performance and future direction.</p>
-
                     </div>
 
                 </div>
             </div>
-            <div class="row">
+                <div class="row is-flex">
                 <div class="col-xs-12 white-panel">
-                    <h3 class="page-header">PDF</h3>
-                    <div class="text-center">
-                        <a href="">
-                            <button type="button" class="btn btn-danger pdf-font-big"><span
-                                    class="pdf-border-right text-capitalize">Annual Reports</span>&nbsp;<i
-                                    class="fa fa-file-pdf-o"
-                                    aria-hidden="true"></i>
-                            </button>
-                        </a>
-
+                    <h3 class="page-header">Undergraduate</h3>
+                    <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                       aria-expanded="false" aria-controls="relatedPDF"></a>
+                    <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                        <div class="pdf-font-big bgcolor">
+                            <a href="" target="_blank">
+                                <button type="button" class="btn "><span
+                                        class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
+                                        class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="pdf-font-big bgcolor">
+                            <a href="" target="_blank">
+                                <button type="button" class="btn "><span
+                                        class="pdf-border-right text-capitalize">Rajya Sabha Questions </span>&nbsp;<i
+                                        class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                               aria-controls="relatedPDF"
+                               aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        </div>
     </main>
 
     <footer class="container-fluid side-collapse-container">
