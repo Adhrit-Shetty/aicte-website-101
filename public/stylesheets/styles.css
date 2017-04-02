@@ -11,6 +11,10 @@ body {
     min-height: 100%;
 }
 
+h1, h2,h3{
+    font-family: 'Lato-Light';
+}
+
 /******Navbar*******/
 
 nav[aria-label="Announcements Pager"] {
@@ -49,6 +53,7 @@ nav[aria-label="Announcements Pager"] {
 }
 
 
+
 @media screen and (max-width: 991px) {
     .side-collapse-container {
         width: 100%;
@@ -68,7 +73,7 @@ nav[aria-label="Announcements Pager"] {
         width: 80%;
         position: fixed;
         overflow: hidden;
-        transition: width .4s;
+        transition: width 0.4s;
         border-right: 1px solid black;
         z-index: 10;
     }
@@ -125,7 +130,7 @@ nav[aria-label="Announcements Pager"] {
 
 @media screen and (max-width: 1095px) {
     .nav > li > a {
-        padding: 10px 6px;
+
     }
 }
 /* Extra Small Devices, Phones */

@@ -386,3 +386,11 @@ table, th {
 
 
 
+/******/
+@media (max-width: 991px) {
+
+    .navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: inherit;
+    }
+}
+
