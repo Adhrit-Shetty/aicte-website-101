@@ -46,10 +46,10 @@ app.all('*', function(req, res, next){
 });
 app.use('/dashboard', dashboard);
 app.use('/announcement',announcement);
-// app.use('/', express.static('dist'));
-// app.get('*', function (req, res, next) {
-//     res.sendFile(path.resolve('dist/index.html'));
-// });
+app.use('/', express.static('dist'));
+app.get('*', function (req, res, next) {
+    res.sendFile(path.resolve('dist/index.html'));
+});
 
 //====================================================================================
 //===========================ERROR HANDLING===========================================
