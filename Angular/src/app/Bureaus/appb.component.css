@@ -1,0 +1,12 @@
+a[aria-controls="relatedPDF"].collapsed:before {
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  content: "\f103";
+  display: block;
+}
+
+a[aria-controls="relatedPDF"]:before {
+  font-family: FontAwesome;
+  content: "";
+  display: block;
+}

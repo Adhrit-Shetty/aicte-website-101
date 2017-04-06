@@ -4,7 +4,6 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     background-color: #ECECEC;
@@ -12,9 +11,8 @@ body {
     min-height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', 'Roboto', sans-serif;
-
+h1, h2, h3 {
+    font-family: 'Lato-Light';
 }
 
 /******Navbar*******/
@@ -54,7 +52,6 @@ nav[aria-label="Announcements Pager"] {
     width: 100%;
 }
 
-
 @media screen and (max-width: 991px) {
     .side-collapse-container {
         width: 100%;
@@ -74,7 +71,7 @@ nav[aria-label="Announcements Pager"] {
         width: 80%;
         position: fixed;
         overflow: hidden;
-        transition: width .4s;
+        transition: width 0.4s;
         border-right: 1px solid black;
         z-index: 10;
     }
@@ -117,6 +114,8 @@ nav[aria-label="Announcements Pager"] {
 
     #mastHeadBrand h1 {
         font-size: 3.1rem;
+        font-family: 'Fira Sans', "Roboto", sans-serif;
+        align-self: flex-end;
     }
 
 }
@@ -129,13 +128,14 @@ nav[aria-label="Announcements Pager"] {
 
 @media screen and (max-width: 1095px) {
     .nav > li > a {
-        padding: 10px 6px;
+
     }
 }
+
 /* Extra Small Devices, Phones */
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
     .side-collapse {
-        width: 96%;
+        width: 100%;
     }
 }
 
@@ -181,7 +181,6 @@ nav[aria-label="Announcements Pager"] {
     color: #ffffff;
 }
 
-
 /**Used in IndexJs**/
 .opaque {
     height: 100%;
@@ -199,8 +198,8 @@ img {
 }
 
 .img-centered {
-    min-height: 150px;
-    min-width: 150px;
+    max-height: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -214,6 +213,7 @@ img {
         margin-left: 0;
     }
 }
+
 /*******Scroll-top*******/
 
 .scroll-top {

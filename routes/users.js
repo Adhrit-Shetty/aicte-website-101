@@ -17,12 +17,12 @@ router.use(bodyParser.urlencoded({extended : true}));
 router.use(morgan('dev'));
 //====================================================================================
 //===========================ROUTING==================================================
-    router.post('/register', function(request, response){
+    router.post('/register',Verify.verifyAdmin,Verify.verifyUsername,function(request, response){
         User.register(new User({ username : request.body.username }),
             request.body.password,function(err, user){
             if(err)
             {
-                return response.status(500).json({err: err});
+                response.status(500).json({err: err});
             }
             user.logged =false;
             console.log(user);
@@ -32,7 +32,7 @@ router.use(morgan('dev'));
                 else
                 {
                     passport.authenticate('local')(request, response, function () {
-                        return response.status(200).json({status: 'Registration Successful!'});
+                        response.status(200).json({status: 'Registration Successful!'});
                     });
                 }
             });
@@ -41,47 +41,50 @@ router.use(morgan('dev'));
     router.post('/login',function(request, response,next){
         passport.authenticate('local',function(err,user,info){
             console.log("\n\n\n\n");
-            console.log(info);
+            console.log(user);
             if (err) {
-                return next(err);
+                response.status(500).json({err: err});
             }
+            else
             if (!user) {
-                return response.status(401).json({
-                    err: info
-                });
+                    console.log("false user");
+                response.json("Unauthorized");
             }
+            else
             if (user.logged==true) {
-                return response.status(401).json({
-                    err: "Already logged in"
-                });
+                response.json("Already logged in");
             }
-            request.logIn(user, function(err) {
-                if (err) {
-                    return response.status(500).json({
-                        err: 'Could not log in user'
-                    });
-                }
-                user.logged =true;
-                user.save(function (err,new_data){
-                    if(err)
-                      response.json(err);
-                    else
-                    {
-                        console.log(new_data);
-                        var t = Verify.getToken(user);
-                        console.log("Successs!!!!" + user.admin + "   \n" + user);
-                        response.status(200).json({
-                            status: 'Login successful!',
-                            success: true,
-                            token: t
-                        });
-                    }
-                });
-            });
+            else {
+                console.log("In");
+				request.logIn(user, function (err) {
+					if (err) {
+						response.status(500).json({err: 'Could not log in user'});
+					}
+					else {
+					    console.log("In");
+						user.logged = true;
+						user.save(function (err, new_data) {
+							if (err)
+								response.json(err);
+							else {
+								console.log(new_data);
+								var t = Verify.getToken(user);
+								console.log("Successs!!!!" + user.admin + "   \n" + user);
+								response.status(200).json({
+									status: 'Login successful!',
+									success: true,
+									token: t
+								});
+							}
+						});
+					}
+
+				});
+			}
         })(request,response,next);
     });
 
-    router.get('/logout',Verify.verifyOrdinaryUser,function(request, response){
+    router.get('/logout',Verify.verifyAdmin,function(request, response){
         console.log("\n\n\nINSIDE!!!\n\n");
          var token = request.body.token || request.query.token || request.headers['x-access-token'];
          jwt.verify(token, config.secretKey, function(err, decoded){

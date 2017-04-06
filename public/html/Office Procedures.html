@@ -14,8 +14,23 @@
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet"
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <link rel="stylesheet" href="../../Angular/src/assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../Angular/src/assets/stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -227,18 +242,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">PDF</h3>
-                        <div class="text-center">
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Office Procedures</span>&nbsp;<i
-                                        class="fa fa-file-pdf-o"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
-
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Anti-Ragging Undertaking </span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

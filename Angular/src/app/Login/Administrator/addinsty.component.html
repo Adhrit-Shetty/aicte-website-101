@@ -1,0 +1,82 @@
+<main class="container">
+  <div class="row">
+    <div class="col-xs-12 white-panel">
+      <form [formGroup]="myForm" class="form-horizontal" (ngSubmit)="onSubmit(myForm.value)">
+        <div class="form-group">
+          <label for="inputName" class="col-sm-3 control-label hidden-xs">Institute Name</label>
+          <div class="col-sm-9 col-xs-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Institute Name"
+              formControlName="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 col-xs-3 control-label">Institute Year</label>
+          <div class="col-sm-9 col-xs-9">
+            <select formControlName="year">
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputName" class="col-sm-3 control-label hidden-xs">Intake</label>
+          <div class="col-sm-9 col-xs-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputIntake"
+              placeholder="Intake"
+              formControlName="Intake">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputName" class="col-sm-3 control-label hidden-xs">Enrolled</label>
+          <div class="col-sm-9 col-xs-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputEnrolled"
+              placeholder="Enrolled"
+              formControlName="Enrolled">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputName" class="col-sm-3 control-label hidden-xs">Passed</label>
+          <div class="col-sm-9 col-xs-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputPassed"
+              placeholder="Passed"
+              formControlName="Passed">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputName" class="col-sm-3 control-label hidden-xs">Placed</label>
+          <div class="col-sm-9 col-xs-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputPlaced"
+              placeholder="Placed"
+              formControlName="Placed">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-12 text-center">
+            <div *ngIf="!valid.check" class="text-warning">
+              {{ valid.response }}
+            </div>
+            <button type="submit" class="btn btn-info btn-raised" [disabled]="!myForm.valid">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

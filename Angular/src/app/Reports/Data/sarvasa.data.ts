@@ -6,36 +6,43 @@ export const data: Box [] = [
     href: '',
     text: [
       {
-        header: 'Act',
+        header: 'Sarve Shiksha Abhiyan',
         body: `
-            THE ALL INDIA COUNCIL FOR TECHNICAL
-                            EDUCATION ACT 1987
-                            (No 52 OF 1987)
-                            <br>
+            <p>Sarva Shiksha Abhiyan (SSA) is Government of India's flagship programme for achievement of
+                                Universalization of Elementary Education (UEE) in a time bound manner, as mandated by 86th
+                                amendment to the Constitution of India making free and compulsory Education to the Children of
+                                    6-14 years age group, a Fundamental Right.</p>
 
-                            (As Passed by the Houses of Parliament)
-                            An Act
-                            <br>
-                            To provide for the establishment of an All India Council for Technical Education with a view
-                            to the proper planning and co-ordinated development of the technical education system
-                            throughout the country,
-                            the promotion of qualitative improvements of such education in relation to planned
-                            quantitative growth and the regulation and proper maintenance of norms and standards in the
-                            technical education system
-                            and for matters connected therewith.
+                                <p>SSA is being implemented in partnership with State Governments to cover the entire country and
+                                    address the needs of 192 million children in 1.1 million habitations.</p>
+
+                                <p>The programme seeks to open new schools in those habitations which do not have schooling
+                                facilities and strengthen existing school infrastructure through provision of additional class
+                                    rooms, toilets, drinking water, maintenance grant and school improvement grants.</p>
+
+                                <p>Existing schools with inadequate teacher strength are provided with additional teachers, while
+                                the capacity of existing teachers is being strengthened by extensive training, grants for
+                                developing teaching-learning materials and strengthening of the academic support structure at a
+                                    cluster, block and district level.</p>
+
+                                <p>SSA seeks to provide quality elementary education including life skills. SSA has a special focus
+                                on girl's education and children with special needs. SSA also seeks to provide computer
+                                    education to bR&Dge the digital divide. promote widespread sharing</p>
           `
       }
     ],
-    link: [],
-    pdf: [
+    link: [
       {
-        "name": 'Anti-Ragging Undertaking',
+        "name": 'http://www.ssa.nic.in ',
         "href": '',
       },
       {
-        "name": 'Anti-Ragging',
+        "name": 'http://www.education.nic.in/ssa/ssa_1.asp',
         "href": '',
       }
+    ],
+    pdf: [
+
     ]
   }
 ];

@@ -14,14 +14,23 @@
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet"
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <link rel="stylesheet" href="../../Angular/src/assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../Angular/src/assets/stylesheets/non-functional-styles.css">
     <style>
-        #fullNav {
-            background-color: black;
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
         }
-    </style>
 
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -202,24 +211,25 @@
 
     </header>
 
-    <main class="container">
+    <main class="container-fluid side-collapse-container">
         <!--Main jumbotron for a primary marketing message or call to action -->
         <div class="row">
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="row">
                     <div class="col-xs-12 white-panel">
-                    <h1 class="page-header">Parliament Questions </h1>
-                    <div>
+                        <h1 class="page-header">Parliament Questions</h1>
+                        <div class="text-left" >
 
                         Lok Sabha Questions
-
+                            <p>
                         Generally, the first hour of a sitting of Lok Sabha is devoted to the Questions and this hour is
                         called the Question Hour. It has a special significance in the proceedings of the Parliament.
                         Asking of questions is an inherent and unfettered parliamentary right of members. It is during
                         the Question Hour that the members can ask questions on every aspect of administration and
                         Governmental activity. Government policies in national as well as international spheres come
                         into sharp focus as the members try to elicit pertinent information during the Question Hour.
-
+                            </p>
+                            <p>
                         The Government is, as it were, put on its trial during the Question Hour and every Minister
                         whose turn it is to answer questions has to stand up and answer for his or his administration's
                         acts of omission and commission. Through the Question Hour the Government is able to quickly
@@ -227,22 +237,24 @@
                         questions in the Parliament that the Government remains in touch with the people in as much as
                         members are enabled thereby to ventilate the grievances of the public in matters concerning the
                         administration.
-
+                            </p>
+                            <p>
                         Questions enable Ministries to gauge the popular reaction to their policy and administration.
                         Questions bring to the notice of the Ministers many loopholes which otherwise would have gone
                         unnoticed. Sometimes questions may lead to the appointment of a Commission, a Court of Enquiry
                         or even Legislation when matters raised by Members are grave enough to agitate the public mind
                         and are of wide public importance.
-
+                            </p>
+                            <p>
                         The Question Hour is an interesting part of the Parliamentary proceedings. Although a question
                         mainly seeks information and tries to elicit facts on a particular subject, there are many a
                         time lively and quicksilver repartees between the Members asking the questions and the Ministers
                         answering them. These repartees are sometimes coupled with flashes of wit and humour. That is
                         why the public galleries and the press galleries are packed to the capacity during the Question
                         Hour.
-
+                            </p>
                         Rajya Sabha Questions
-
+                            <p>
                         Question Hour is one of the most significant items of business in parliamentary proceedings and
                         it gives the whole institution of Parliament the great significance it possesses. This Hour has
                         assumed high importance in legislatures because of Government's heavy involvement in matters
@@ -250,40 +262,54 @@
                         answerable to the people. Asking questions is a refined parliamentary device. Questions are
                         asked primarily to elicit information, to ensure accountability, and for exercising a kind of
                         legislative control over executive actions
-
+                            </p>
+                            <p>
                         Answers to questions have to be precise and accurate. The information given through the answers
                         has a high presumption of authenticity and wrong or inaccurate answers can be construed as an
                         attempt to mislead the House, leading to raising of questions of privilege. If it is later found
                         that the information supplied bona fide is inaccurate or incorrect, the Minister has to make a
                         statement in the House correcting the previous answer in case it is a starred question or lay a
                         statement on the Table of the House in the case it is an unstarred question.
-
+                            </p>
+                            <p>
                         Where Ministers feel that they cannot supply complete and accurate information at the moment,
                         they can and generally ask for time in respect of that portion of the question and assure the
                         House to supply it as soon as it is available. Such assurances are closely monitored by the
                         Committee on Government Assurances.
+                            </p>
                     </div>
 
                 </div>
             </div>
-                <div class="row">
+
+                <div class="row is-flex">
                     <div class="col-xs-12 white-panel">
-                        <h3 class="page-header">LINKS</h3>
-                        <div class="text-center">
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
-                            <a href="">
-                                <button type="button" class="btn btn-danger pdf-font-big"><span
-                                        class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
-                                        class="glyphicon glyphicon-new-window"
-                                        aria-hidden="true"></i>
-                                </button>
-                            </a>
+                        <h3 class="page-header">Links</h3>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Lok Sabha Questions </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Rajya Sabha Questions </span>&nbsp;<i
+                                            class="glyphicon glyphicon-new-window" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

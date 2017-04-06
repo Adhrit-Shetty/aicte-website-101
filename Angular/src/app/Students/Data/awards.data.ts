@@ -6,34 +6,20 @@ export const data: Box [] = [
     href: '',
     text: [
       {
-        header: 'Act',
+        header: 'AWARDS',
         body: `
-            THE ALL INDIA COUNCIL FOR TECHNICAL
-                            EDUCATION ACT 1987
-                            (No 52 OF 1987)
-                            <br>
-
-                            (As Passed by the Houses of Parliament)
-                            An Act
-                            <br>
-                            To provide for the establishment of an All India Council for Technical Education with a view
-                            to the proper planning and co-ordinated development of the technical education system
-                            throughout the country,
-                            the promotion of qualitative improvements of such education in relation to planned
-                            quantitative growth and the regulation and proper maintenance of norms and standards in the
-                            technical education system
-                            and for matters connected therewith.
+            <p>An award is something given to a person, a group of people, or an organization to recognize their excellence in a certain field; a certificate of excellence.
+               Awards are often signified by trophies, titles, certificates,commemorative plaques, medals, badges, pins, or ribbons.
+                An award may carry a monetary prize given to the recipient; for example, the Nobel Prize for contributions to society or the Pulitzer Prize for literary achievements.
+               An award may also simply be a public acknowledgment of excellence, without any tangible token or prize of excellence.
+            </p>
           `
       }
     ],
     link: [],
     pdf: [
       {
-        "name": 'Anti-Ragging Undertaking',
-        "href": '',
-      },
-      {
-        "name": 'Anti-Ragging',
+        "name": 'Link',
         "href": '',
       }
     ]

@@ -14,8 +14,35 @@
     <link rel="stylesheet" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet"
           href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/non-functional-styles.css">
+    <link rel="stylesheet" href="../../Angular/src/assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="../../Angular/src/assets/stylesheets/non-functional-styles.css">
+    <style>
+        a[aria-controls="relatedPDF"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedPDF"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+        a[aria-controls="relatedLINKS"].collapsed:before {
+            font-family: FontAwesome;
+            font-size: 1.5em;
+            content: "\f103";
+            display: block;
+        }
+
+        a[aria-controls="relatedLINKS"]:before {
+            font-family: FontAwesome;
+            content: "";
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -203,11 +230,11 @@
                     <div class="col-xs-12 white-panel">
                         <h3 class="page-header">Want to be an Entrepreneur?</h3>
                     <div>
-                        An entrepreneur is a person who has possession of a new enterprise, venture or idea and is
-                        accountable for the inherent
+                        <p>An entrepreneur is a person who has possession of a new enterprise, venture or idea and is
+                            accountable for the inherent
                         risks and the outcome. The term was originally a loanword from French and was first defined by
                         the Irish-French economist
-                        Richard Cantillon. Entrepreneur in English is a term applied to a person who is willing to
+                            Richard Cantillon. Entrepreneur in English is a term applied to a person who is willing to
                         launch a new venture or enterprise
                         and accept full responsibility for the outcome. Jean-Baptiste Say, a French economist, is
                         believed to have coined the word
@@ -216,31 +243,66 @@
                         contractor, acting as intermediatory between capital and labour". A broader definition by French
                         Economist J.B. Say (1800)
                         "The entrepreneur shifts economic resources out of lower and into higher productivity and
-                        greater yield.
+                            greater yield.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 white-panel">
-                    <h3 class="page-header">LINKS</h3>
-                    <div class="text-center">
-                        <a href="">
-                            <button type="button" class="btn btn-danger pdf-font-big"><span
-                            class="pdf-border-right text-capitalize">Link 1 </span>&nbsp;<i
-                            class="glyphicon glyphicon-new-window"
-                            aria-hidden="true"></i>
-                            </button>
-                        </a>
-                        <a href="">
-                            <button type="button" class="btn btn-danger pdf-font-big"><span
-                            class="pdf-border-right text-capitalize">Link 2 </span>&nbsp;<i
-                            class="glyphicon glyphicon-new-window"
-                            aria-hidden="true"></i>
-                            </button>
-                        </a>
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">PDF</h3>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedPDF"
+                           aria-expanded="false" aria-controls="relatedPDF"></a>
+                        <div id="relatedPDF" class="collapse text-center" aria-labelledby="related pdfs">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">Youth_Entrepreneurship_Toolkit</span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedPDF"
+                                   aria-controls="relatedPDF"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="row is-flex">
+                    <div class="col-xs-12 white-panel">
+                        <h3 class="page-header">LINKS</h3>
+                        <a class="text-center collapsed" data-toggle="collapse" href="#relatedLINKS"
+                           aria-expanded="false" aria-controls="relatedLINKS"></a>
+                        <div id="relatedLINKS" class="collapse text-center" aria-labelledby="related links">
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">www.techno-preneur.net</span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="pdf-font-big bgcolor">
+                                <a href="" target="_blank">
+                                    <button type="button" class="btn "><span
+                                            class="pdf-border-right text-capitalize">www.nstedb.com</span>&nbsp;<i
+                                            class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    </button>
+                                </a>
+                            </div>
+
+
+                            <div class="text-center">
+                                <a class="collapsed" data-toggle="collapse" href="#relatedLINKS"
+                                   aria-controls="relatedLINKS"
+                                   aria-expanded="false"><i class="fa fa-angle-double-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
         </div>
     </main>

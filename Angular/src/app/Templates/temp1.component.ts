@@ -5,6 +5,7 @@ import {CommonModule} from '@angular/common'
 import {Box} from "../Shared/box";
 import {GenerateBoxService} from "../Shared/Services/generate-box.service";
 
+var $: any;
 @Component({
   selector: 'aicte-temp1',
   templateUrl: './temp1.component.html',

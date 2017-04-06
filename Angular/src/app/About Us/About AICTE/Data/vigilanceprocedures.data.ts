@@ -16,6 +16,11 @@ export const data: Box [] = [
                                 <li>the disciplinary authorities; and</li>
                                 <li>the Central Vigilance Commission [hereinafter referred to as the Commission].</li></ol>
                             <p>The AVD is concerned with the rules and regulations regarding vigilance in public services. The SPE wing of the CBI investigates cases involving commission of offences under the Prevention of Corruption Act, 1988 [hereinafter referred to as PC Act] against the public servants and other misconducts allegedly committed by the public servants having vigilance overtones. The disciplinary authority has the over-all responsibility of looking into the misconducts alleged against, or committed by, the public servants within its control and to take appropriate punitive action. It is also required to take appropriate preventive measures so as to prevent commission of misconducts/malpractices by the employees under its control and jurisdiction. The Chief Vigilance Officer [CVO] acts as a Special Assistant/Advisor to the Head of the concerned Department in the discharge of these functions. He also acts as a liaison officer between the Department and the CVC as also between the Department and the CBI. The Central Vigilance Commission acts as the apex organisation for exercising general superintendence and control over vigilance matters in administration and probity in public life.</p>`
+      },
+      {
+        header: '',
+        body: ``
+
       }
     ],
     link: [

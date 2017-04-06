@@ -1,5 +1,6 @@
 //========================IMPORTS=======================================
-var express = require('express');
+var express = require('express'),
+	cors = require('cors');
 var path = require('path');
 var fs = require('fs');
 var favicon = require('serve-favicon');
@@ -40,7 +41,7 @@ db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',function () {
     console.log('Connected to server Successfully');
 });
-
+app.use(cors());
 app.use(favicon(path.join(__dirname,'/public/images/favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -56,15 +57,17 @@ app.all('*', function(req, res, next){
     res.redirect('https://localhost:'+app.get('port')+req.url);
 });
 app.use('/users', users);
-app.get('*',onGetRequest);
 app.use('/',search);
-app.use('/my_institute.html',institute);
-app.use('/announcement.html',announcement);
-app.use('/announcement_list.html',announcement_list);
-app.use('/my_update_institution.html',u_institute);
-app.use('/my_update_year.html',u_year);
-app.use('/my_year.html',year);
-app.use('/register.html',register);
+app.use('/my_institute',institute);
+app.use('/announcement',announcement);
+app.use('/announcement_list',announcement_list);
+//app.use('/my_update_institution',u_institute);
+//app.use('/my_update_year.html',u_year);
+app.use('/my_year',year);
+app.use('/', express.static('dist'));
+app.get('*', function (req, res, next) {
+    res.sendFile(path.resolve('dist/index.html'));
+});
 //====================================================================================
 //===========================ERROR HANDLING===========================================
 /// catch 404 and forwarding to error handler
@@ -79,9 +82,8 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
+    app.use(function(err, req, res) {
+        res.json({
             message: err.message,
             error: err
         });
@@ -90,16 +92,14 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
+app.use(function(err, req, res) {
+    res.json({
+        message: err.message
     });
 });
 //====================================================================================
 //=========================FUNCTIONS==================================================
-function onGetRequest(request,response,next)
+function onGetRequest(request,response)
 {
     try
     {
